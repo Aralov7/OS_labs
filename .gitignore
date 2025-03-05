@@ -1,0 +1,56 @@
+# VS Code settings folder
+.vscode/
+
+# Project's build files
+build/*
+
+# Logs
+*.log
+
+# Media
+*.png
+*.jpg
+*.webm
+*.mp4
+*.mkv
+*.mp3
+
+# C++ .gitignore template below
+
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+*.txt
+
+
+
+# Executables
+*.exe
+*.out
+*.app
+lab1/src/child
+lab1/src/parent
