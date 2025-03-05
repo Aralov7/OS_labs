@@ -1,0 +1,6 @@
+root@fa7703109f3c:/workspaces/OS_labs/lab1/src# ./parent 
+Введите данные в формате: «число число число<endline>».
+1 2 3 4 5
+Программа завершила работу без ошибок
+root@fa7703109f3c:/workspaces/OS_labs/lab1/src# cat result.txt 
+15

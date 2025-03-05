@@ -44,7 +44,7 @@ build/*
 *.la
 *.a
 *.lib
-*.txt
+
 
 
 
@@ -52,5 +52,6 @@ build/*
 *.exe
 *.out
 *.app
+
 lab1/src/child
 lab1/src/parent

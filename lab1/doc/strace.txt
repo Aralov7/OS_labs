@@ -1,0 +1,108 @@
+root@fa7703109f3c:/workspaces/OS_labs/lab1/src# strace -f ./parent
+execve("./parent", ["./parent"], 0x7ffe2ce2eb88 /* 30 vars */) = 0
+brk(NULL)                               = 0x1d36000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8a0de99000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=25258, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 25258, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f8a0de92000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\20t\2\0\0\0\0\0"..., 832) = 832
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=1922136, ...}, AT_EMPTY_PATH) = 0
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+mmap(NULL, 1970000, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f8a0dcb1000
+mmap(0x7f8a0dcd7000, 1396736, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x26000) = 0x7f8a0dcd7000
+mmap(0x7f8a0de2c000, 339968, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17b000) = 0x7f8a0de2c000
+mmap(0x7f8a0de7f000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1ce000) = 0x7f8a0de7f000
+mmap(0x7f8a0de85000, 53072, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f8a0de85000
+close(3)                                = 0
+mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8a0dcae000
+arch_prctl(ARCH_SET_FS, 0x7f8a0dcae740) = 0
+set_tid_address(0x7f8a0dcaea10)         = 7662
+set_robust_list(0x7f8a0dcaea20, 24)     = 0
+rseq(0x7f8a0dcaf060, 0x20, 0, 0x53053053) = 0
+mprotect(0x7f8a0de7f000, 16384, PROT_READ) = 0
+mprotect(0x403000, 4096, PROT_READ)     = 0
+mprotect(0x7f8a0decb000, 8192, PROT_READ) = 0
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+munmap(0x7f8a0de92000, 25258)           = 0
+pipe2([3, 4], 0)                        = 0
+pipe2([5, 6], 0)                        = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLDstrace: Process 7663 attached
+ <unfinished ...>
+[pid  7663] set_robust_list(0x7f8a0dcaea20, 24 <unfinished ...>
+[pid  7662] <... clone resumed>, child_tidptr=0x7f8a0dcaea10) = 7663
+[pid  7663] <... set_robust_list resumed>) = 0
+[pid  7662] close(3)                    = 0
+[pid  7663] close(4 <unfinished ...>
+[pid  7662] close(6 <unfinished ...>
+[pid  7663] <... close resumed>)        = 0
+[pid  7662] <... close resumed>)        = 0
+[pid  7662] newfstatat(1, "",  <unfinished ...>
+[pid  7663] close(5 <unfinished ...>
+[pid  7662] <... newfstatat resumed>{st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}, AT_EMPTY_PATH) = 0
+[pid  7663] <... close resumed>)        = 0
+[pid  7662] getrandom( <unfinished ...>
+[pid  7663] dup2(3, 0 <unfinished ...>
+[pid  7662] <... getrandom resumed>"\x97\xd4\x01\x83\x78\x26\x8d\x63", 8, GRND_NONBLOCK) = 8
+[pid  7663] <... dup2 resumed>)         = 0
+[pid  7662] brk(NULL <unfinished ...>
+[pid  7663] dup2(6, 1 <unfinished ...>
+[pid  7662] <... brk resumed>)          = 0x1d36000
+[pid  7663] <... dup2 resumed>)         = 1
+[pid  7662] brk(0x1d57000)              = 0x1d57000
+[pid  7663] execve("./child", ["child"], 0x7ffec332f4a8 /* 30 vars */ <unfinished ...>
+[pid  7662] write(1, "\320\222\320\262\320\265\320\264\320\270\321\202\320\265 \320\264\320\260\320\275\320\275\321\213\320\265 \320\262 \321"..., 94Введите данные в формате: «число число число<endline>».
+) = 94
+[pid  7662] newfstatat(0, "", {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}, AT_EMPTY_PATH) = 0
+[pid  7662] read(0,  <unfinished ...>
+[pid  7663] <... execve resumed>)       = 0
+[pid  7663] brk(NULL)                   = 0x1e6e000
+[pid  7663] mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fe4e3c66000
+[pid  7663] access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+[pid  7663] openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 4
+[pid  7663] newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=25258, ...}, AT_EMPTY_PATH) = 0
+[pid  7663] mmap(NULL, 25258, PROT_READ, MAP_PRIVATE, 4, 0) = 0x7fe4e3c5f000
+[pid  7663] close(4)                    = 0
+[pid  7663] openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 4
+[pid  7663] read(4, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\20t\2\0\0\0\0\0"..., 832) = 832
+[pid  7663] pread64(4, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+[pid  7663] newfstatat(4, "", {st_mode=S_IFREG|0755, st_size=1922136, ...}, AT_EMPTY_PATH) = 0
+[pid  7663] pread64(4, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+[pid  7663] mmap(NULL, 1970000, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7fe4e3a7e000
+[pid  7663] mmap(0x7fe4e3aa4000, 1396736, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x26000) = 0x7fe4e3aa4000
+[pid  7663] mmap(0x7fe4e3bf9000, 339968, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x17b000) = 0x7fe4e3bf9000
+[pid  7663] mmap(0x7fe4e3c4c000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x1ce000) = 0x7fe4e3c4c000
+[pid  7663] mmap(0x7fe4e3c52000, 53072, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fe4e3c52000
+[pid  7663] close(4)                    = 0
+[pid  7663] mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fe4e3a7b000
+[pid  7663] arch_prctl(ARCH_SET_FS, 0x7fe4e3a7b740) = 0
+[pid  7663] set_tid_address(0x7fe4e3a7ba10) = 7663
+[pid  7663] set_robust_list(0x7fe4e3a7ba20, 24) = 0
+[pid  7663] rseq(0x7fe4e3a7c060, 0x20, 0, 0x53053053) = 0
+[pid  7663] mprotect(0x7fe4e3c4c000, 16384, PROT_READ) = 0
+[pid  7663] mprotect(0x403000, 4096, PROT_READ) = 0
+[pid  7663] mprotect(0x7fe4e3c98000, 8192, PROT_READ) = 0
+[pid  7663] prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+[pid  7663] munmap(0x7fe4e3c5f000, 25258) = 0
+[pid  7663] read(0, 1 2 3 4
+ <unfinished ...>
+[pid  7662] <... read resumed>"1 2 3 4\n", 1024) = 8
+[pid  7662] write(4, "\4\0\0\0\1\0\0\0\2\0\0\0\3\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 400) = 400
+[pid  7663] <... read resumed>"\4\0\0\0\1\0\0\0\2\0\0\0\3\0\0\0\4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 400) = 400
+[pid  7662] wait4(7663,  <unfinished ...>
+[pid  7663] openat(AT_FDCWD, "result.txt", O_WRONLY|O_CREAT|O_TRUNC, 0644) = 4
+[pid  7663] write(4, "10\n", 3)         = 3
+[pid  7663] close(4)                    = 0
+[pid  7663] exit_group(0)               = ?
+[pid  7663] +++ exited with 0 +++
+<... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 7663
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=7663, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+close(4)                                = 0
+close(5)                                = 0
+write(1, "\320\237\321\200\320\276\320\263\321\200\320\260\320\274\320\274\320\260 \320\267\320\260\320\262\320\265\321\200\321\210\320"..., 71Программа завершила работу без ошибок
+) = 71
+exit_group(0)                           = ?
++++ exited with 0 +++
