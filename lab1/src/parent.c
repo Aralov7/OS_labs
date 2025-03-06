@@ -8,9 +8,9 @@
 
 #define MAX_SIZE 100
 int main(){
-    int fd1[2], fd2[2];
+    int fd1[2];
 
-    if (pipe(fd1) == -1 || pipe(fd2) == -1) {
+    if (pipe(fd1) == -1) {
         printf("Ошибка при создании pipe\n");
         return 1;
     }
@@ -23,7 +23,6 @@ int main(){
 
     if (pid > 0) { // Родительский процесс
         close(fd1[0]); // Закрываем чтение из первого pipe
-        close(fd2[1]); // Закрываем запись во второй pipe
     
         int number, numbers[MAX_SIZE];
         int size = 0;
@@ -49,26 +48,16 @@ int main(){
         }
     
         // Ожидание завершения дочернего процесса
-        int status;
-        waitpid(pid, &status, 0);
+        wait(NULL);
 
-        if (WIFEXITED(status) && WEXITSTATUS(status) == 1) {
-            fprintf(stderr, "Дочерний процесс завершил работу с ошибкой.\n");
-            return 1;
-        }
+
         close(fd1[1]); // Закрываем запись в первый pipe
-        close(fd2[0]); // Закрываем чтение из второго pipe
     } else { // Дочерний процесс
         close(fd1[1]); // Закрываем запись в первый pipe
-        close(fd2[0]); // Закрываем чтение из второго pipe
 
         // Перенаправление stdin и stdout на pipe
         if (dup2(fd1[0], STDIN_FILENO) == -1) {
             printf("Ошибка при перенаправлении stdin\n");
-            return 1;
-        }
-        if (dup2(fd2[1], STDOUT_FILENO) == -1) {
-            printf("Ошибка при перенаправлении stdout\n");
             return 1;
         }
 
