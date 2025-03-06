@@ -1,0 +1,8 @@
+root@fa7703109f3c:/workspaces/OS_labs/lab2/src# ./main.o 8
+Enter the number of elements in the array: 1000
+{7.00, 0.00, 74.00} - Point 0
+{93.00, 97.00, 50.00} - Point 1
+{50.00, 94.00, 77.00} - Point 2
+2421.924751 - Max area
+Time taken for calculating: 1.659495 seconds
+Number of threads used: 8
