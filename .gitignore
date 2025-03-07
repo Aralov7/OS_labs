@@ -55,4 +55,5 @@ build/*
 
 lab1/src/child
 lab1/src/parent
-lab1/doc/result.txt
+lab3/src/result.txt
+lab1/src/result.txt

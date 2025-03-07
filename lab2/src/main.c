@@ -51,7 +51,7 @@ double triangleArea(Point A, Point B, Point C) {
     return length / 2.0;
 }
 
-//сортировка maxArea, выполняемая в потоке
+//поиск maxArea, выполняемая в потоке
 void *maxAreaThread(void *arg) {
     ThreadData *data = (ThreadData *)arg;
     ExitData exit_data;
