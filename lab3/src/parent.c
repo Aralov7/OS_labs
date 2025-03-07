@@ -19,7 +19,7 @@ int main() {
     size_t shared_size = sizeof(struct SharedData);
 
     // Создание разделяемой памяти
-    int fd = shm_open("/my_shared_memory", O_CREAT | O_RDWR, 0666);
+    int fd = open("/my_shared_memory", O_CREAT | O_RDWR, 0666); //
     if (fd == -1) {
         perror("Ошибка при создании разделяемой памяти");
         return 1;
@@ -32,6 +32,8 @@ int main() {
         perror("Ошибка при отображении разделяемой памяти");
         return 1;
     }
+
+    close(fd);
 
     // Создание семафоров
     sem_t* sem_parent = sem_open("/sem_parent", O_CREAT, 0666, 0);
@@ -81,11 +83,11 @@ int main() {
 
         // Удаление ресурсов
         munmap(shared_data, shared_size);
-        shm_unlink("/my_shared_memory");
         sem_close(sem_parent);
         sem_close(sem_child);
         sem_unlink("/sem_parent");
         sem_unlink("/sem_child");
+        
     } else { // Дочерний процесс
         execl("./child.o", "child", NULL);
         perror("Ошибка при вызове дочернего процесса");

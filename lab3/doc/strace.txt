@@ -1,0 +1,193 @@
+root@fa7703109f3c:/workspaces/OS_labs/lab3/src# strace -f ./parent.o
+execve("./parent.o", ["./parent.o"], 0x7ffdb9123a48 /* 30 vars */) = 0
+brk(NULL)                               = 0xaf9000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f04bfaf0000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=25258, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 25258, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f04bfae9000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\20t\2\0\0\0\0\0"..., 832) = 832
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=1922136, ...}, AT_EMPTY_PATH) = 0
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+mmap(NULL, 1970000, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f04bf908000
+mmap(0x7f04bf92e000, 1396736, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x26000) = 0x7f04bf92e000
+mmap(0x7f04bfa83000, 339968, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17b000) = 0x7f04bfa83000
+mmap(0x7f04bfad6000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1ce000) = 0x7f04bfad6000
+mmap(0x7f04bfadc000, 53072, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f04bfadc000
+close(3)                                = 0
+mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f04bf905000
+arch_prctl(ARCH_SET_FS, 0x7f04bf905740) = 0
+set_tid_address(0x7f04bf905a10)         = 87501
+set_robust_list(0x7f04bf905a20, 24)     = 0
+rseq(0x7f04bf906060, 0x20, 0, 0x53053053) = 0
+mprotect(0x7f04bfad6000, 16384, PROT_READ) = 0
+mprotect(0x403000, 4096, PROT_READ)     = 0
+mprotect(0x7f04bfb22000, 8192, PROT_READ) = 0
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+munmap(0x7f04bfae9000, 25258)           = 0
+openat(AT_FDCWD, "/my_shared_memory", O_RDWR|O_CREAT, 0666) = 3
+ftruncate(3, 656)                       = 0
+mmap(NULL, 656, PROT_READ|PROT_WRITE, MAP_SHARED, 3, 0) = 0x7f04bfaef000
+close(3)                                = 0
+openat(AT_FDCWD, "/dev/shm/sem.sem_parent", O_RDWR|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+getrandom("\x17\x2f\x13\x56\x16\xe4\x54\x90", 8, GRND_NONBLOCK) = 8
+newfstatat(AT_FDCWD, "/dev/shm/sem.ZAWFl5", 0x7ffe8b5db410, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/dev/shm/sem.ZAWFl5", O_RDWR|O_CREAT|O_EXCL, 0666) = 3
+write(3, "\0\0\0\0\0\0\0\0\200\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0", 32) = 32
+mmap(NULL, 32, PROT_READ|PROT_WRITE, MAP_SHARED, 3, 0) = 0x7f04bfaee000
+link("/dev/shm/sem.ZAWFl5", "/dev/shm/sem.sem_parent") = 0
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=32, ...}, AT_EMPTY_PATH) = 0
+getrandom("\x00\x3e\xae\xf5\x64\xd3\x32\x78", 8, GRND_NONBLOCK) = 8
+brk(NULL)                               = 0xaf9000
+brk(0xb1a000)                           = 0xb1a000
+unlink("/dev/shm/sem.ZAWFl5")           = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/dev/shm/sem.sem_child", O_RDWR|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+getrandom("\x1c\xb8\x82\xa5\x01\x13\x3d\x70", 8, GRND_NONBLOCK) = 8
+newfstatat(AT_FDCWD, "/dev/shm/sem.uM3BBt", 0x7ffe8b5db410, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/dev/shm/sem.uM3BBt", O_RDWR|O_CREAT|O_EXCL, 0666) = 3
+write(3, "\0\0\0\0\0\0\0\0\200\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0", 32) = 32
+mmap(NULL, 32, PROT_READ|PROT_WRITE, MAP_SHARED, 3, 0) = 0x7f04bfaed000
+link("/dev/shm/sem.uM3BBt", "/dev/shm/sem.sem_child") = 0
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=32, ...}, AT_EMPTY_PATH) = 0
+unlink("/dev/shm/sem.uM3BBt")           = 0
+close(3)                                = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLDstrace: Process 87504 attached
+, child_tidptr=0x7f04bf905a10) = 87504
+[pid 87504] set_robust_list(0x7f04bf905a20, 24 <unfinished ...>
+[pid 87501] newfstatat(1, "",  <unfinished ...>
+[pid 87504] <... set_robust_list resumed>) = 0
+[pid 87501] <... newfstatat resumed>{st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}, AT_EMPTY_PATH) = 0
+[pid 87501] write(1, "\320\222\320\262\320\265\320\264\320\270\321\202\320\265 \320\264\320\260\320\275\320\275\321\213\320\265 \320\262 \321"..., 94 <unfinished ...>
+Введите данные в формате: «число число число<endline>».
+[pid 87504] execve("./child.o", ["child"], 0x7ffe8b5dbe78 /* 30 vars */ <unfinished ...>
+[pid 87501] <... write resumed>)        = 94
+[pid 87501] newfstatat(0, "", {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}, AT_EMPTY_PATH) = 0
+[pid 87501] read(0,  <unfinished ...>
+[pid 87504] <... execve resumed>)       = 0
+[pid 87504] brk(NULL)                   = 0x11fd000
+[pid 87504] mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f5b4fa87000
+[pid 87504] access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+[pid 87504] openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+[pid 87504] newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=25258, ...}, AT_EMPTY_PATH) = 0
+[pid 87504] mmap(NULL, 25258, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f5b4fa80000
+[pid 87504] close(3)                    = 0
+[pid 87504] openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+[pid 87504] read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\20t\2\0\0\0\0\0"..., 832) = 832
+[pid 87504] pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+[pid 87504] newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=1922136, ...}, AT_EMPTY_PATH) = 0
+[pid 87504] pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+[pid 87504] mmap(NULL, 1970000, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f5b4f89f000
+[pid 87504] mmap(0x7f5b4f8c5000, 1396736, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x26000) = 0x7f5b4f8c5000
+[pid 87504] mmap(0x7f5b4fa1a000, 339968, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17b000) = 0x7f5b4fa1a000
+[pid 87504] mmap(0x7f5b4fa6d000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1ce000) = 0x7f5b4fa6d000
+[pid 87504] mmap(0x7f5b4fa73000, 53072, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f5b4fa73000
+[pid 87504] close(3)                    = 0
+[pid 87504] mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f5b4f89c000
+[pid 87504] arch_prctl(ARCH_SET_FS, 0x7f5b4f89c740) = 0
+[pid 87504] set_tid_address(0x7f5b4f89ca10) = 87504
+[pid 87504] set_robust_list(0x7f5b4f89ca20, 24) = 0
+[pid 87504] rseq(0x7f5b4f89d060, 0x20, 0, 0x53053053) = 0
+[pid 87504] mprotect(0x7f5b4fa6d000, 16384, PROT_READ) = 0
+[pid 87504] mprotect(0x403000, 4096, PROT_READ) = 0
+[pid 87504] mprotect(0x7f5b4fab9000, 8192, PROT_READ) = 0
+[pid 87504] prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+[pid 87504] munmap(0x7f5b4fa80000, 25258) = 0
+[pid 87504] openat(AT_FDCWD, "/my_shared_memory", O_RDWR) = 3
+[pid 87504] mmap(NULL, 656, PROT_READ|PROT_WRITE, MAP_SHARED, 3, 0) = 0x7f5b4fa86000
+[pid 87504] close(3)                    = 0
+[pid 87504] openat(AT_FDCWD, "/dev/shm/sem.sem_parent", O_RDWR|O_NOFOLLOW) = 3
+[pid 87504] newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=32, ...}, AT_EMPTY_PATH) = 0
+[pid 87504] getrandom("\x48\x27\x2b\x02\xb6\x69\x51\x04", 8, GRND_NONBLOCK) = 8
+[pid 87504] brk(NULL)                   = 0x11fd000
+[pid 87504] brk(0x121e000)              = 0x121e000
+[pid 87504] mmap(NULL, 32, PROT_READ|PROT_WRITE, MAP_SHARED, 3, 0) = 0x7f5b4fa85000
+[pid 87504] close(3)                    = 0
+[pid 87504] openat(AT_FDCWD, "/dev/shm/sem.sem_child", O_RDWR|O_NOFOLLOW) = 3
+[pid 87504] newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=32, ...}, AT_EMPTY_PATH) = 0
+[pid 87504] mmap(NULL, 32, PROT_READ|PROT_WRITE, MAP_SHARED, 3, 0) = 0x7f5b4fa84000
+[pid 87504] close(3)                    = 0
+[pid 87504] futex(0x7f5b4fa84000, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+[pid 87501] <... read resumed>0xaf9770, 1024) = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+[pid 87504] <... futex resumed>)        = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+[pid 87501] --- SIGWINCH {si_signo=SIGWINCH, si_code=SI_KERNEL} ---
+[pid 87504] --- SIGWINCH {si_signo=SIGWINCH, si_code=SI_KERNEL} ---
+[pid 87501] read(0,  <unfinished ...>
+[pid 87504] futex(0x7f5b4fa84000, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY) = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+[pid 87501] <... read resumed>0xaf9770, 1024) = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+[pid 87504] --- SIGWINCH {si_signo=SIGWINCH, si_code=SI_KERNEL} ---
+[pid 87501] --- SIGWINCH {si_signo=SIGWINCH, si_code=SI_KERNEL} ---
+[pid 87504] futex(0x7f5b4fa84000, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+[pid 87501] read(0, 0xaf9770, 1024)     = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+[pid 87504] <... futex resumed>)        = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+[pid 87501] --- SIGWINCH {si_signo=SIGWINCH, si_code=SI_KERNEL} ---
+[pid 87504] --- SIGWINCH {si_signo=SIGWINCH, si_code=SI_KERNEL} ---
+[pid 87501] read(0,  <unfinished ...>
+[pid 87504] futex(0x7f5b4fa84000, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+[pid 87501] <... read resumed>0xaf9770, 1024) = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+[pid 87504] <... futex resumed>)        = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+[pid 87501] --- SIGWINCH {si_signo=SIGWINCH, si_code=SI_KERNEL} ---
+[pid 87504] --- SIGWINCH {si_signo=SIGWINCH, si_code=SI_KERNEL} ---
+[pid 87501] read(0,  <unfinished ...>
+[pid 87504] futex(0x7f5b4fa84000, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+[pid 87501] <... read resumed>0xaf9770, 1024) = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+[pid 87504] <... futex resumed>)        = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+[pid 87501] --- SIGWINCH {si_signo=SIGWINCH, si_code=SI_KERNEL} ---
+[pid 87504] --- SIGWINCH {si_signo=SIGWINCH, si_code=SI_KERNEL} ---
+[pid 87501] read(0,  <unfinished ...>
+[pid 87504] futex(0x7f5b4fa84000, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+[pid 87501] <... read resumed>0xaf9770, 1024) = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+[pid 87504] <... futex resumed>)        = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+[pid 87501] --- SIGWINCH {si_signo=SIGWINCH, si_code=SI_KERNEL} ---
+[pid 87504] --- SIGWINCH {si_signo=SIGWINCH, si_code=SI_KERNEL} ---
+[pid 87501] read(0,  <unfinished ...>
+[pid 87504] futex(0x7f5b4fa84000, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+[pid 87501] <... read resumed>0xaf9770, 1024) = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+[pid 87504] <... futex resumed>)        = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+[pid 87501] --- SIGWINCH {si_signo=SIGWINCH, si_code=SI_KERNEL} ---
+[pid 87504] --- SIGWINCH {si_signo=SIGWINCH, si_code=SI_KERNEL} ---
+[pid 87501] read(0,  <unfinished ...>
+[pid 87504] futex(0x7f5b4fa84000, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+[pid 87501] <... read resumed>0xaf9770, 1024) = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+[pid 87504] <... futex resumed>)        = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+[pid 87501] --- SIGWINCH {si_signo=SIGWINCH, si_code=SI_KERNEL} ---
+[pid 87504] --- SIGWINCH {si_signo=SIGWINCH, si_code=SI_KERNEL} ---
+[pid 87501] read(0,  <unfinished ...>
+[pid 87504] futex(0x7f5b4fa84000, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+[pid 87501] <... read resumed>0xaf9770, 1024) = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+[pid 87504] <... futex resumed>)        = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+[pid 87501] --- SIGWINCH {si_signo=SIGWINCH, si_code=SI_KERNEL} ---
+[pid 87504] --- SIGWINCH {si_signo=SIGWINCH, si_code=SI_KERNEL} ---
+[pid 87501] read(0,  <unfinished ...>
+[pid 87504] futex(0x7f5b4fa84000, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY1 2 3 4 5
+ <unfinished ...>
+[pid 87501] <... read resumed>"1 2 3 4 5\n", 1024) = 10
+[pid 87501] futex(0x7f04bfaed000, FUTEX_WAKE, 1) = 1
+[pid 87504] <... futex resumed>)        = 0
+[pid 87501] futex(0x7f04bfaee000, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 0, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+[pid 87504] openat(AT_FDCWD, "result.txt", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3
+[pid 87504] write(3, "15\n", 3)         = 3
+[pid 87504] close(3)                    = 0
+[pid 87504] futex(0x7f5b4fa85000, FUTEX_WAKE, 1 <unfinished ...>
+[pid 87501] <... futex resumed>)        = 0
+[pid 87504] <... futex resumed>)        = 1
+[pid 87501] write(1, "\320\240\320\265\320\267\321\203\320\273\321\214\321\202\320\260\321\202: \320\241\321\203\320\274\320\274\320\260 \320"..., 60 <unfinished ...>
+Результат: Сумма записана в файл
+[pid 87504] munmap(0x7f5b4fa86000, 656 <unfinished ...>
+[pid 87501] <... write resumed>)        = 60
+[pid 87504] <... munmap resumed>)       = 0
+[pid 87501] wait4(87504,  <unfinished ...>
+[pid 87504] exit_group(0)               = ?
+[pid 87504] +++ exited with 0 +++
+<... wait4 resumed>NULL, 0, NULL)       = 87504
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=87504, si_uid=0, si_status=0, si_utime=0, si_stime=1 /* 0.01 s */} ---
+munmap(0x7f04bfaef000, 656)             = 0
+munmap(0x7f04bfaee000, 32)              = 0
+munmap(0x7f04bfaed000, 32)              = 0
+unlink("/dev/shm/sem.sem_parent")       = 0
+unlink("/dev/shm/sem.sem_child")        = 0
+exit_group(0)                           = ?
++++ exited with 0 +++

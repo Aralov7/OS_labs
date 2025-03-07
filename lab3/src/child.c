@@ -28,7 +28,7 @@ int main() {
 
 
     // Открытие разделяемой памяти
-    int fd = shm_open("/my_shared_memory", O_RDWR, 0666);
+    int fd = open("/my_shared_memory", O_RDWR, 0666);
     if (fd == -1) {
         perror("Ошибка при открытии разделяемой памяти");
         return 1;
@@ -42,6 +42,8 @@ int main() {
         return 1;
     }
 
+    close(fd);
+    
     // Открытие семафоров
     sem_t* sem_parent = sem_open("/sem_parent", 0);
     sem_t* sem_child = sem_open("/sem_child", 0);
@@ -50,32 +52,15 @@ int main() {
         return 1;
     }
 
-    // Ожидание числа от родительского процесса
+    // Ожидание чисел от родительского процесса
     sem_wait(sem_child);
 
     memcpy(numbers, shared_data->numbers, sizeof(shared_data->numbers));
-    // if (number < 0) {
-    //     strncpy(shared_data->message, "Число отрицательное", sizeof(shared_data->message));
-    // } else {
-    //     // Проверка числа
-    //     if (is_composite(number)) {
-    //         // Запись в файл, если число составное
-    //         int file = open("result.txt", O_WRONLY | O_CREAT | O_TRUNC, 0666);
-    //         if (file != -1) {
-    //             dprintf(file, "%d\n", number);
-    //             close(file);
-    //             strncpy(shared_data->message, "Число составное, записано в файл", sizeof(shared_data->message));
-    //         } else {
-    //             strncpy(shared_data->message, "Ошибка записи в файл", sizeof(shared_data->message));
-    //         }
-    //     } else {
-    //         strncpy(shared_data->message, "Число простое", sizeof(shared_data->message));
-    //     }
-    // }
+
     int sum = sum_array(numbers, numbers[0]);
 
     int file = open("result.txt", O_WRONLY | O_CREAT | O_TRUNC, 0666);
-    
+
     if (file == -1) {
         strncpy(shared_data->message, "Ошибка при открытии файла", sizeof(shared_data->message));
         sem_post(sem_parent);
@@ -87,6 +72,7 @@ int main() {
     char buffer[16];
     int n = snprintf(buffer, sizeof(buffer), "%d\n", sum);
     if (n <= 0) {
+        
         strncpy(shared_data->message, "Ошибка при форматировании строки", sizeof(shared_data->message));
         close(file);
         sem_post(sem_parent);
