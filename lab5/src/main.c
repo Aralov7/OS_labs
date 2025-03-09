@@ -5,9 +5,13 @@
 #include <unistd.h>
 #include <time.h>
 #include <sys/time.h>
+#include <sys/wait.h>
 #include <stdbool.h>
 #include <unistd.h>
 #include <fcntl.h>
+#include <sys/types.h> 
+#include <signal.h>    
+#include <errno.h>    
 #define MAX_LISTS 100
 
 #define FATAL(msg) { fprintf(stderr, "FATAL ERROR: %s, exiting.\n", msg); exit(EXIT_FAILURE); }
@@ -88,15 +92,35 @@ compute_node_t* insert_node(compute_node_t* parent, compute_node_t* new_node){
 void insert_node_to_head_node(control_node_t* head, compute_node_t* new_node){
     head->arr[head->list_count++] = new_node;
 }
+int is_process_zombie(pid_t pid) {
+    int status;
+    pid_t result = waitpid(pid, &status, WNOHANG | WUNTRACED);
 
+    if (result == 0) {
+        return 0; // Процесс существует, но не является зомби
+    } else if (result > 0) {
+        if (WIFEXITED(status) || WIFSIGNALED(status)) {
+            return 1; // Процесс завершен (зомби)
+        }
+    } else {
+        if (errno == ECHILD) {
+            return 1; // Процесс не является дочерним
+        } else {
+            perror("waitpid");
+            return 1; // Ошибка
+        }
+    }
+
+    return 0;
+}
 void send_command_to_node(compute_node_t *node, const char *command) {
     zmq_msg_t request; 
     zmq_msg_init_size(&request, strlen(command) + 1);
     strcpy(zmq_msg_data(&request), command);
 
-    if (zmq_msg_send(&request, node->socket, 0) == -1) {
+    if (zmq_msg_send(&request, node->socket, 0) == -1 || (is_process_zombie(node->pid) == 1)) {
         zmq_msg_close(&request);
-        if (strcmp(command, "ping") == 0) {
+        if (strcmp(command, "ping" ) == 0) {
             printf("Ok: 0 // узел %d недоступен\n", node->id);
         } else {
             printf("Error:%d: Node is unavailable\n", node->id);

@@ -1,0 +1,1703 @@
+202676 execve("./main.o", ["./main.o"], 0x7ffd5117e098 /* 24 vars */) = 0
+202676 brk(NULL)                        = 0x55ddcd7e2000
+202676 arch_prctl(0x3001 /* ARCH_??? */, 0x7ffd5f2eed20) = -1 EINVAL (Invalid argument)
+202676 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f607795d000
+202676 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+202676 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=23259, ...}, AT_EMPTY_PATH) = 0
+202676 mmap(NULL, 23259, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f6077957000
+202676 close(3)                         = 0
+202676 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libzmq.so.5", O_RDONLY|O_CLOEXEC) = 3
+202676 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240\233\1\0\0\0\0\0"..., 832) = 832
+202676 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=634936, ...}, AT_EMPTY_PATH) = 0
+202676 mmap(NULL, 636784, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f60778bb000
+202676 mmap(0x7f60778d3000, 397312, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x18000) = 0x7f60778d3000
+202676 mmap(0x7f6077934000, 106496, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x79000) = 0x7f6077934000
+202676 mmap(0x7f607794e000, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x92000) = 0x7f607794e000
+202676 close(3)                         = 0
+202676 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+202676 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0"..., 832) = 832
+202676 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+202676 pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0"..., 48, 848) = 48
+202676 pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\315A\vq\17\17\tLh2\355\331Y1\0m"..., 68, 896) = 68
+202676 newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=2220400, ...}, AT_EMPTY_PATH) = 0
+202676 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+202676 mmap(NULL, 2264656, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6077692000
+202676 mprotect(0x7f60776ba000, 2023424, PROT_NONE) = 0
+202676 mmap(0x7f60776ba000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f60776ba000
+202676 mmap(0x7f607784f000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f607784f000
+202676 mmap(0x7f60778a8000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x215000) = 0x7f60778a8000
+202676 mmap(0x7f60778ae000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f60778ae000
+202676 close(3)                         = 0
+202676 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libbsd.so.0", O_RDONLY|O_CLOEXEC) = 3
+202676 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+202676 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=89096, ...}, AT_EMPTY_PATH) = 0
+202676 mmap(NULL, 94432, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f607767a000
+202676 mprotect(0x7f607767e000, 69632, PROT_NONE) = 0
+202676 mmap(0x7f607767e000, 53248, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7f607767e000
+202676 mmap(0x7f607768b000, 12288, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x11000) = 0x7f607768b000
+202676 mmap(0x7f607768f000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x14000) = 0x7f607768f000
+202676 mmap(0x7f6077691000, 224, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f6077691000
+202676 close(3)                         = 0
+202676 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libsodium.so.23", O_RDONLY|O_CLOEXEC) = 3
+202676 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+202676 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=355040, ...}, AT_EMPTY_PATH) = 0
+202676 mmap(NULL, 357440, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6077622000
+202676 mprotect(0x7f607762e000, 303104, PROT_NONE) = 0
+202676 mmap(0x7f607762e000, 229376, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xc000) = 0x7f607762e000
+202676 mmap(0x7f6077666000, 69632, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x44000) = 0x7f6077666000
+202676 mmap(0x7f6077678000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x55000) = 0x7f6077678000
+202676 close(3)                         = 0
+202676 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpgm-5.3.so.0", O_RDONLY|O_CLOEXEC) = 3
+202676 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\340L\0\0\0\0\0\0"..., 832) = 832
+202676 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=310264, ...}, AT_EMPTY_PATH) = 0
+202676 mmap(NULL, 329808, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f60775d1000
+202676 mmap(0x7f60775d5000, 172032, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7f60775d5000
+202676 mmap(0x7f60775ff000, 118784, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2e000) = 0x7f60775ff000
+202676 mmap(0x7f607761c000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4a000) = 0x7f607761c000
+202676 mmap(0x7f607761e000, 14416, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f607761e000
+202676 close(3)                         = 0
+202676 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libnorm.so.1", O_RDONLY|O_CLOEXEC) = 3
+202676 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0 \255\0\0\0\0\0\0"..., 832) = 832
+202676 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=497824, ...}, AT_EMPTY_PATH) = 0
+202676 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f60775cf000
+202676 mmap(NULL, 1223168, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f60774a4000
+202676 mprotect(0x7f60774ae000, 446464, PROT_NONE) = 0
+202676 mmap(0x7f60774ae000, 286720, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xa000) = 0x7f60774ae000
+202676 mmap(0x7f60774f4000, 155648, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x50000) = 0x7f60774f4000
+202676 mmap(0x7f607751b000, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x76000) = 0x7f607751b000
+202676 mmap(0x7f607751f000, 719360, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f607751f000
+202676 close(3)                         = 0
+202676 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgssapi_krb5.so.2", O_RDONLY|O_CLOEXEC) = 3
+202676 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+202676 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=338648, ...}, AT_EMPTY_PATH) = 0
+202676 mmap(NULL, 340960, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6077450000
+202676 mprotect(0x7f607745b000, 282624, PROT_NONE) = 0
+202676 mmap(0x7f607745b000, 229376, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb000) = 0x7f607745b000
+202676 mmap(0x7f6077493000, 49152, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x43000) = 0x7f6077493000
+202676 mmap(0x7f60774a0000, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4f000) = 0x7f60774a0000
+202676 close(3)                         = 0
+202676 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libstdc++.so.6", O_RDONLY|O_CLOEXEC) = 3
+202676 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+202676 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2260296, ...}, AT_EMPTY_PATH) = 0
+202676 mmap(NULL, 2275520, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6077224000
+202676 mprotect(0x7f60772be000, 1576960, PROT_NONE) = 0
+202676 mmap(0x7f60772be000, 1118208, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x9a000) = 0x7f60772be000
+202676 mmap(0x7f60773cf000, 454656, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1ab000) = 0x7f60773cf000
+202676 mmap(0x7f607743f000, 57344, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x21a000) = 0x7f607743f000
+202676 mmap(0x7f607744d000, 10432, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f607744d000
+202676 close(3)                         = 0
+202676 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = 3
+202676 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+202676 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=125488, ...}, AT_EMPTY_PATH) = 0
+202676 mmap(NULL, 127720, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6077204000
+202676 mmap(0x7f6077207000, 94208, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f6077207000
+202676 mmap(0x7f607721e000, 16384, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1a000) = 0x7f607721e000
+202676 mmap(0x7f6077222000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1d000) = 0x7f6077222000
+202676 close(3)                         = 0
+202676 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libmd.so.0", O_RDONLY|O_CLOEXEC) = 3
+202676 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+202676 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=47472, ...}, AT_EMPTY_PATH) = 0
+202676 mmap(NULL, 49384, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f60771f7000
+202676 mmap(0x7f60771f9000, 28672, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f60771f9000
+202676 mmap(0x7f6077200000, 8192, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x9000) = 0x7f6077200000
+202676 mmap(0x7f6077202000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xa000) = 0x7f6077202000
+202676 close(3)                         = 0
+202676 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+202676 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+202676 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=21448, ...}, AT_EMPTY_PATH) = 0
+202676 mmap(NULL, 16424, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f60771f2000
+202676 mmap(0x7f60771f3000, 4096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x7f60771f3000
+202676 mmap(0x7f60771f4000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f60771f4000
+202676 mmap(0x7f60771f5000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f60771f5000
+202676 close(3)                         = 0
+202676 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f60771f0000
+202676 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+202676 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+202676 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=940560, ...}, AT_EMPTY_PATH) = 0
+202676 mmap(NULL, 942344, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6077109000
+202676 mmap(0x7f6077117000, 507904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe000) = 0x7f6077117000
+202676 mmap(0x7f6077193000, 372736, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8a000) = 0x7f6077193000
+202676 mmap(0x7f60771ee000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe4000) = 0x7f60771ee000
+202676 close(3)                         = 0
+202676 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libkrb5.so.3", O_RDONLY|O_CLOEXEC) = 3
+202676 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+202676 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=827936, ...}, AT_EMPTY_PATH) = 0
+202676 mmap(NULL, 830576, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f607703e000
+202676 mprotect(0x7f607705f000, 634880, PROT_NONE) = 0
+202676 mmap(0x7f607705f000, 380928, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x21000) = 0x7f607705f000
+202676 mmap(0x7f60770bc000, 249856, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7e000) = 0x7f60770bc000
+202676 mmap(0x7f60770fa000, 61440, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xbb000) = 0x7f60770fa000
+202676 close(3)                         = 0
+202676 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libk5crypto.so.3", O_RDONLY|O_CLOEXEC) = 3
+202676 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+202676 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=182864, ...}, AT_EMPTY_PATH) = 0
+202676 mmap(NULL, 188472, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f607700f000
+202676 mprotect(0x7f6077013000, 163840, PROT_NONE) = 0
+202676 mmap(0x7f6077013000, 110592, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7f6077013000
+202676 mmap(0x7f607702e000, 49152, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1f000) = 0x7f607702e000
+202676 mmap(0x7f607703b000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2b000) = 0x7f607703b000
+202676 mmap(0x7f607703d000, 56, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f607703d000
+202676 close(3)                         = 0
+202676 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcom_err.so.2", O_RDONLY|O_CLOEXEC) = 3
+202676 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+202676 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=18504, ...}, AT_EMPTY_PATH) = 0
+202676 mmap(NULL, 20552, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6077009000
+202676 mmap(0x7f607700b000, 4096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f607700b000
+202676 mmap(0x7f607700c000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f607700c000
+202676 mmap(0x7f607700d000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f607700d000
+202676 close(3)                         = 0
+202676 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libkrb5support.so.0", O_RDONLY|O_CLOEXEC) = 3
+202676 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+202676 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=52016, ...}, AT_EMPTY_PATH) = 0
+202676 mmap(NULL, 54224, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6076ffb000
+202676 mprotect(0x7f6076ffe000, 36864, PROT_NONE) = 0
+202676 mmap(0x7f6076ffe000, 24576, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f6076ffe000
+202676 mmap(0x7f6077004000, 8192, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x9000) = 0x7f6077004000
+202676 mmap(0x7f6077007000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb000) = 0x7f6077007000
+202676 close(3)                         = 0
+202676 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libkeyutils.so.1", O_RDONLY|O_CLOEXEC) = 3
+202676 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+202676 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=22600, ...}, AT_EMPTY_PATH) = 0
+202676 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6076ff9000
+202676 mmap(NULL, 24592, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6076ff2000
+202676 mmap(0x7f6076ff4000, 8192, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f6076ff4000
+202676 mmap(0x7f6076ff6000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7f6076ff6000
+202676 mmap(0x7f6076ff7000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7f6076ff7000
+202676 close(3)                         = 0
+202676 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libresolv.so.2", O_RDONLY|O_CLOEXEC) = 3
+202676 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+202676 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=68552, ...}, AT_EMPTY_PATH) = 0
+202676 mmap(NULL, 80456, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6076fde000
+202676 mmap(0x7f6076fe1000, 40960, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f6076fe1000
+202676 mmap(0x7f6076feb000, 12288, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xd000) = 0x7f6076feb000
+202676 mmap(0x7f6076fee000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xf000) = 0x7f6076fee000
+202676 mmap(0x7f6076ff0000, 6728, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f6076ff0000
+202676 close(3)                         = 0
+202676 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6076fdc000
+202676 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6076fd9000
+202676 arch_prctl(ARCH_SET_FS, 0x7f6076fd99c0) = 0
+202676 set_tid_address(0x7f6076fd9c90)  = 202676
+202676 set_robust_list(0x7f6076fd9ca0, 24) = 0
+202676 rseq(0x7f6076fda360, 0x20, 0, 0x53053053) = 0
+202676 mprotect(0x7f60778a8000, 16384, PROT_READ) = 0
+202676 mprotect(0x7f6076fee000, 4096, PROT_READ) = 0
+202676 mprotect(0x7f6076ff7000, 4096, PROT_READ) = 0
+202676 mprotect(0x7f6077007000, 4096, PROT_READ) = 0
+202676 mprotect(0x7f607700d000, 4096, PROT_READ) = 0
+202676 mprotect(0x7f607703b000, 4096, PROT_READ) = 0
+202676 mprotect(0x7f60770fa000, 53248, PROT_READ) = 0
+202676 mprotect(0x7f60771ee000, 4096, PROT_READ) = 0
+202676 mprotect(0x7f60771f5000, 4096, PROT_READ) = 0
+202676 mprotect(0x7f6077202000, 4096, PROT_READ) = 0
+202676 mprotect(0x7f6077222000, 4096, PROT_READ) = 0
+202676 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6076fd7000
+202676 mprotect(0x7f607743f000, 45056, PROT_READ) = 0
+202676 mprotect(0x7f60774a0000, 8192, PROT_READ) = 0
+202676 mprotect(0x7f607751b000, 12288, PROT_READ) = 0
+202676 mprotect(0x7f607761c000, 4096, PROT_READ) = 0
+202676 mprotect(0x7f6077678000, 4096, PROT_READ) = 0
+202676 mprotect(0x7f607768f000, 4096, PROT_READ) = 0
+202676 mprotect(0x7f607794e000, 32768, PROT_READ) = 0
+202676 mprotect(0x55ddcc77f000, 4096, PROT_READ) = 0
+202676 mprotect(0x7f6077997000, 8192, PROT_READ) = 0
+202676 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+202676 munmap(0x7f6077957000, 23259)    = 0
+202676 getrandom("\xd0\xc5\x35\x3b\x81\x3d\xff\xa5", 8, GRND_NONBLOCK) = 8
+202676 brk(NULL)                        = 0x55ddcd7e2000
+202676 brk(0x55ddcd803000)              = 0x55ddcd803000
+202676 openat(AT_FDCWD, "/sys/devices/system/cpu/online", O_RDONLY|O_CLOEXEC) = 3
+202676 read(3, "0-7\n", 1024)           = 4
+202676 close(3)                         = 0
+202676 openat(AT_FDCWD, "/sys/devices/system/cpu", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+202676 newfstatat(3, "", {st_mode=S_IFDIR|0755, st_size=0, ...}, AT_EMPTY_PATH) = 0
+202676 getdents64(3, 0x55ddcd7f3ee0 /* 23 entries */, 32768) = 656
+202676 getdents64(3, 0x55ddcd7f3ee0 /* 0 entries */, 32768) = 0
+202676 close(3)                         = 0
+202676 getpid()                         = 202676
+202676 sched_getaffinity(202676, 128, [0, 1, 2, 3, 4, 5, 6, 7]) = 32
+202676 newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=510, ...}, 0) = 0
+202676 newfstatat(AT_FDCWD, "/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+202676 openat(AT_FDCWD, "/etc/nsswitch.conf", O_RDONLY|O_CLOEXEC) = 3
+202676 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=510, ...}, AT_EMPTY_PATH) = 0
+202676 read(3, "# /etc/nsswitch.conf\n#\n# Example"..., 4096) = 510
+202676 read(3, "", 4096)                = 0
+202676 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=510, ...}, AT_EMPTY_PATH) = 0
+202676 close(3)                         = 0
+202676 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+202676 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=23259, ...}, AT_EMPTY_PATH) = 0
+202676 mmap(NULL, 23259, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f6077957000
+202676 close(3)                         = 0
+202676 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/glibc-hwcaps/x86-64-v4/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/glibc-hwcaps/x86-64-v4", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/glibc-hwcaps/x86-64-v3/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/glibc-hwcaps/x86-64-v3", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/glibc-hwcaps/x86-64-v2/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/glibc-hwcaps/x86-64-v2", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/tls/haswell/avx512_1/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/tls/haswell/avx512_1/x86_64", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/tls/haswell/avx512_1/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/tls/haswell/avx512_1", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/tls/haswell/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/tls/haswell/x86_64", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/tls/haswell/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/tls/haswell", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/tls/avx512_1/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/tls/avx512_1/x86_64", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/tls/avx512_1/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/tls/avx512_1", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/tls/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/tls/x86_64", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/tls/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/tls", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/haswell/avx512_1/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/haswell/avx512_1/x86_64", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/haswell/avx512_1/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/haswell/avx512_1", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/haswell/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/haswell/x86_64", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/haswell/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/haswell", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/avx512_1/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/avx512_1/x86_64", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/avx512_1/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/avx512_1", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu/x86_64", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/lib/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=36864, ...}, 0) = 0
+202676 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/glibc-hwcaps/x86-64-v4/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/glibc-hwcaps/x86-64-v4", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/glibc-hwcaps/x86-64-v3/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/glibc-hwcaps/x86-64-v3", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/glibc-hwcaps/x86-64-v2/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/glibc-hwcaps/x86-64-v2", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/tls/haswell/avx512_1/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/tls/haswell/avx512_1/x86_64", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/tls/haswell/avx512_1/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/tls/haswell/avx512_1", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/tls/haswell/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/tls/haswell/x86_64", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/tls/haswell/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/tls/haswell", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/tls/avx512_1/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/tls/avx512_1/x86_64", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/tls/avx512_1/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/tls/avx512_1", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/tls/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/tls/x86_64", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/tls/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/tls", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/haswell/avx512_1/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/haswell/avx512_1/x86_64", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/haswell/avx512_1/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/haswell/avx512_1", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/haswell/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/haswell/x86_64", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/haswell/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/haswell", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/avx512_1/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/avx512_1/x86_64", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/avx512_1/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/avx512_1", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/x86_64", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=36864, ...}, 0) = 0
+202676 openat(AT_FDCWD, "/lib/glibc-hwcaps/x86-64-v4/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/lib/glibc-hwcaps/x86-64-v4", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/lib/glibc-hwcaps/x86-64-v3/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/lib/glibc-hwcaps/x86-64-v3", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/lib/glibc-hwcaps/x86-64-v2/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/lib/glibc-hwcaps/x86-64-v2", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/lib/tls/haswell/avx512_1/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/lib/tls/haswell/avx512_1/x86_64", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/lib/tls/haswell/avx512_1/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/lib/tls/haswell/avx512_1", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/lib/tls/haswell/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/lib/tls/haswell/x86_64", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/lib/tls/haswell/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/lib/tls/haswell", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/lib/tls/avx512_1/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/lib/tls/avx512_1/x86_64", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/lib/tls/avx512_1/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/lib/tls/avx512_1", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/lib/tls/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/lib/tls/x86_64", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/lib/tls/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/lib/tls", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/lib/haswell/avx512_1/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/lib/haswell/avx512_1/x86_64", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/lib/haswell/avx512_1/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/lib/haswell/avx512_1", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/lib/haswell/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/lib/haswell/x86_64", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/lib/haswell/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/lib/haswell", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/lib/avx512_1/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/lib/avx512_1/x86_64", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/lib/avx512_1/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/lib/avx512_1", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/lib/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/lib/x86_64", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/lib/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+202676 openat(AT_FDCWD, "/usr/lib/glibc-hwcaps/x86-64-v4/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/usr/lib/glibc-hwcaps/x86-64-v4", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/usr/lib/glibc-hwcaps/x86-64-v3/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/usr/lib/glibc-hwcaps/x86-64-v3", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/usr/lib/glibc-hwcaps/x86-64-v2/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/usr/lib/glibc-hwcaps/x86-64-v2", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/usr/lib/tls/haswell/avx512_1/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/usr/lib/tls/haswell/avx512_1/x86_64", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/usr/lib/tls/haswell/avx512_1/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/usr/lib/tls/haswell/avx512_1", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/usr/lib/tls/haswell/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/usr/lib/tls/haswell/x86_64", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/usr/lib/tls/haswell/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/usr/lib/tls/haswell", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/usr/lib/tls/avx512_1/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/usr/lib/tls/avx512_1/x86_64", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/usr/lib/tls/avx512_1/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/usr/lib/tls/avx512_1", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/usr/lib/tls/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/usr/lib/tls/x86_64", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/usr/lib/tls/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/usr/lib/tls", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/usr/lib/haswell/avx512_1/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/usr/lib/haswell/avx512_1/x86_64", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/usr/lib/haswell/avx512_1/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/usr/lib/haswell/avx512_1", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/usr/lib/haswell/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/usr/lib/haswell/x86_64", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/usr/lib/haswell/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/usr/lib/haswell", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/usr/lib/avx512_1/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/usr/lib/avx512_1/x86_64", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/usr/lib/avx512_1/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/usr/lib/avx512_1", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/usr/lib/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/usr/lib/x86_64", 0x7ffd5f2ebc60, 0) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/usr/lib/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 newfstatat(AT_FDCWD, "/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+202676 munmap(0x7f6077957000, 23259)    = 0
+202676 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+202676 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=23259, ...}, AT_EMPTY_PATH) = 0
+202676 mmap(NULL, 23259, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f6077957000
+202676 close(3)                         = 0
+202676 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libnss_db-2.35.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libnss_db-2.35.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/lib/libnss_db-2.35.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 openat(AT_FDCWD, "/usr/lib/libnss_db-2.35.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+202676 munmap(0x7f6077957000, 23259)    = 0
+202676 openat(AT_FDCWD, "/etc/protocols", O_RDONLY|O_CLOEXEC) = 3
+202676 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2932, ...}, AT_EMPTY_PATH) = 0
+202676 lseek(3, 0, SEEK_SET)            = 0
+202676 read(3, "# Internet (IP) protocols\n#\n# Up"..., 4096) = 2932
+202676 read(3, "", 4096)                = 0
+202676 close(3)                         = 0
+202676 eventfd2(0, EFD_CLOEXEC)         = 3
+202676 fcntl(3, F_GETFL)                = 0x2 (flags O_RDWR)
+202676 fcntl(3, F_SETFL, O_RDWR|O_NONBLOCK) = 0
+202676 fcntl(3, F_GETFL)                = 0x802 (flags O_RDWR|O_NONBLOCK)
+202676 fcntl(3, F_SETFL, O_RDWR|O_NONBLOCK) = 0
+202676 getpid()                         = 202676
+202676 getpid()                         = 202676
+202676 getrandom("\x54\x47\x51\xe0\x6e\x7c\x27\x0b\xa8\x66\xcb\x35\x03\x0d\x27\x79", 16, 0) = 16
+202676 getrandom("\xe9\xe1\x48\x8f\x52\x9e\xc1\x1d\x07\xe5\xb6\xf0\x95\xbc\x38\xf7", 16, 0) = 16
+202676 newfstatat(1, "", {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0x4), ...}, AT_EMPTY_PATH) = 0
+202676 write(1, "Controller Node started. Listeni"..., 64) = 64
+202676 newfstatat(0, "", {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0x4), ...}, AT_EMPTY_PATH) = 0
+202676 read(0, "create 1 -1\n", 1024)   = 12
+202676 write(1, "Received command: create 1 -1\n", 30) = 30
+202676 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f6076fd9c90) = 202677
+202677 set_robust_list(0x7f6076fd9ca0, 24 <unfinished ...>
+202676 eventfd2(0, EFD_CLOEXEC <unfinished ...>
+202677 <... set_robust_list resumed>)   = 0
+202676 <... eventfd2 resumed>)          = 4
+202677 eventfd2(0, EFD_CLOEXEC <unfinished ...>
+202676 fcntl(4, F_GETFL <unfinished ...>
+202677 <... eventfd2 resumed>)          = 4
+202676 <... fcntl resumed>)             = 0x2 (flags O_RDWR)
+202677 fcntl(4, F_GETFL <unfinished ...>
+202676 fcntl(4, F_SETFL, O_RDWR|O_NONBLOCK <unfinished ...>
+202677 <... fcntl resumed>)             = 0x2 (flags O_RDWR)
+202676 <... fcntl resumed>)             = 0
+202677 fcntl(4, F_SETFL, O_RDWR|O_NONBLOCK <unfinished ...>
+202676 fcntl(4, F_GETFL <unfinished ...>
+202677 <... fcntl resumed>)             = 0
+202676 <... fcntl resumed>)             = 0x802 (flags O_RDWR|O_NONBLOCK)
+202677 fcntl(4, F_GETFL <unfinished ...>
+202676 fcntl(4, F_SETFL, O_RDWR|O_NONBLOCK <unfinished ...>
+202677 <... fcntl resumed>)             = 0x802 (flags O_RDWR|O_NONBLOCK)
+202676 <... fcntl resumed>)             = 0
+202677 fcntl(4, F_SETFL, O_RDWR|O_NONBLOCK <unfinished ...>
+202676 getpid( <unfinished ...>
+202677 <... fcntl resumed>)             = 0
+202676 <... getpid resumed>)            = 202676
+202677 getpid( <unfinished ...>
+202676 epoll_create1(EPOLL_CLOEXEC <unfinished ...>
+202677 <... getpid resumed>)            = 202677
+202676 <... epoll_create1 resumed>)     = 5
+202677 getpid( <unfinished ...>
+202676 epoll_ctl(5, EPOLL_CTL_ADD, 4, {events=0, data={u32=3447690784, u64=94411123824160}} <unfinished ...>
+202677 <... getpid resumed>)            = 202677
+202676 <... epoll_ctl resumed>)         = 0
+202676 epoll_ctl(5, EPOLL_CTL_MOD, 4, {events=EPOLLIN, data={u32=3447690784, u64=94411123824160}} <unfinished ...>
+202677 eventfd2(0, EFD_CLOEXEC <unfinished ...>
+202676 <... epoll_ctl resumed>)         = 0
+202677 <... eventfd2 resumed>)          = 5
+202676 getpid( <unfinished ...>
+202677 fcntl(5, F_GETFL <unfinished ...>
+202676 <... getpid resumed>)            = 202676
+202677 <... fcntl resumed>)             = 0x2 (flags O_RDWR)
+202676 rt_sigaction(SIGRT_1, {sa_handler=0x7f6077723870, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f60776d4520},  <unfinished ...>
+202677 fcntl(5, F_SETFL, O_RDWR|O_NONBLOCK <unfinished ...>
+202676 <... rt_sigaction resumed>NULL, 8) = 0
+202677 <... fcntl resumed>)             = 0
+202676 rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1],  <unfinished ...>
+202677 fcntl(5, F_GETFL <unfinished ...>
+202676 <... rt_sigprocmask resumed>NULL, 8) = 0
+202677 <... fcntl resumed>)             = 0x802 (flags O_RDWR|O_NONBLOCK)
+202676 mmap(NULL, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+202677 fcntl(5, F_SETFL, O_RDWR|O_NONBLOCK <unfinished ...>
+202676 <... mmap resumed>)              = 0x7f60767d6000
+202677 <... fcntl resumed>)             = 0
+202676 mprotect(0x7f60767d7000, 8388608, PROT_READ|PROT_WRITE <unfinished ...>
+202677 getpid( <unfinished ...>
+202676 <... mprotect resumed>)          = 0
+202677 <... getpid resumed>)            = 202677
+202676 rt_sigprocmask(SIG_BLOCK, ~[],  <unfinished ...>
+202677 epoll_create1(EPOLL_CLOEXEC <unfinished ...>
+202676 <... rt_sigprocmask resumed>[], 8) = 0
+202677 <... epoll_create1 resumed>)     = 6
+202676 clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7f6076fd6910, parent_tid=0x7f6076fd6910, exit_signal=0, stack=0x7f60767d6000, stack_size=0x7ffc80, tls=0x7f6076fd6640} <unfinished ...>
+202677 epoll_ctl(6, EPOLL_CTL_ADD, 5, {events=0, data={u32=3447669344, u64=94411123802720}} <unfinished ...>
+202676 <... clone3 resumed> => {parent_tid=[202678]}, 88) = 202678
+202677 <... epoll_ctl resumed>)         = 0
+202676 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+202678 rseq(0x7f6076fd6fe0, 0x20, 0, 0x53053053 <unfinished ...>
+202676 <... rt_sigprocmask resumed>NULL, 8) = 0
+202677 epoll_ctl(6, EPOLL_CTL_MOD, 5, {events=EPOLLIN, data={u32=3447669344, u64=94411123802720}} <unfinished ...>
+202676 eventfd2(0, EFD_CLOEXEC <unfinished ...>
+202678 <... rseq resumed>)              = 0
+202676 <... eventfd2 resumed>)          = 6
+202677 <... epoll_ctl resumed>)         = 0
+202676 fcntl(6, F_GETFL <unfinished ...>
+202678 set_robust_list(0x7f6076fd6920, 24 <unfinished ...>
+202676 <... fcntl resumed>)             = 0x2 (flags O_RDWR)
+202677 getpid( <unfinished ...>
+202676 fcntl(6, F_SETFL, O_RDWR|O_NONBLOCK <unfinished ...>
+202678 <... set_robust_list resumed>)   = 0
+202676 <... fcntl resumed>)             = 0
+202677 <... getpid resumed>)            = 202677
+202676 fcntl(6, F_GETFL <unfinished ...>
+202678 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+202676 <... fcntl resumed>)             = 0x802 (flags O_RDWR|O_NONBLOCK)
+202677 rt_sigaction(SIGRT_1, {sa_handler=0x7f6077723870, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f60776d4520},  <unfinished ...>
+202676 fcntl(6, F_SETFL, O_RDWR|O_NONBLOCK <unfinished ...>
+202678 <... rt_sigprocmask resumed>NULL, 8) = 0
+202676 <... fcntl resumed>)             = 0
+202677 <... rt_sigaction resumed>NULL, 8) = 0
+202676 getpid( <unfinished ...>
+202678 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1],  <unfinished ...>
+202676 <... getpid resumed>)            = 202676
+202677 rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1],  <unfinished ...>
+202676 epoll_create1(EPOLL_CLOEXEC <unfinished ...>
+202678 <... rt_sigprocmask resumed>NULL, 8) = 0
+202676 <... epoll_create1 resumed>)     = 7
+202677 <... rt_sigprocmask resumed>NULL, 8) = 0
+202676 epoll_ctl(7, EPOLL_CTL_ADD, 6, {events=0, data={u32=3447669344, u64=94411123802720}} <unfinished ...>
+202678 sched_getparam(202678,  <unfinished ...>
+202676 <... epoll_ctl resumed>)         = 0
+202677 mmap(NULL, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+202676 epoll_ctl(7, EPOLL_CTL_MOD, 6, {events=EPOLLIN, data={u32=3447669344, u64=94411123802720}} <unfinished ...>
+202678 <... sched_getparam resumed>[0]) = 0
+202676 <... epoll_ctl resumed>)         = 0
+202677 <... mmap resumed>)              = 0x7f60767d6000
+202676 mmap(NULL, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+202678 sched_getscheduler(202678 <unfinished ...>
+202676 <... mmap resumed>)              = 0x7f6075fd5000
+202677 mprotect(0x7f60767d7000, 8388608, PROT_READ|PROT_WRITE <unfinished ...>
+202676 mprotect(0x7f6075fd6000, 8388608, PROT_READ|PROT_WRITE <unfinished ...>
+202678 <... sched_getscheduler resumed>) = 0 (SCHED_OTHER)
+202676 <... mprotect resumed>)          = 0
+202677 <... mprotect resumed>)          = 0
+202676 rt_sigprocmask(SIG_BLOCK, ~[],  <unfinished ...>
+202678 sched_setscheduler(202678, SCHED_OTHER, [0] <unfinished ...>
+202676 <... rt_sigprocmask resumed>[], 8) = 0
+202677 rt_sigprocmask(SIG_BLOCK, ~[],  <unfinished ...>
+202676 clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7f60767d5910, parent_tid=0x7f60767d5910, exit_signal=0, stack=0x7f6075fd5000, stack_size=0x7ffc80, tls=0x7f60767d5640} <unfinished ...>
+202678 <... sched_setscheduler resumed>) = 0
+202677 <... rt_sigprocmask resumed>[], 8) = 0
+202676 <... clone3 resumed> => {parent_tid=[202679]}, 88) = 202679
+202679 rseq(0x7f60767d5fe0, 0x20, 0, 0x53053053 <unfinished ...>
+202678 prctl(PR_SET_NAME, "ZMQbg/Reaper" <unfinished ...>
+202676 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+202679 <... rseq resumed>)              = 0
+202677 clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7f6076fd6910, parent_tid=0x7f6076fd6910, exit_signal=0, stack=0x7f60767d6000, stack_size=0x7ffc80, tls=0x7f6076fd6640} <unfinished ...>
+202676 <... rt_sigprocmask resumed>NULL, 8) = 0
+202679 set_robust_list(0x7f60767d5920, 24 <unfinished ...>
+202678 <... prctl resumed>)             = 0
+202676 eventfd2(0, EFD_CLOEXEC <unfinished ...>
+202679 <... set_robust_list resumed>)   = 0
+202676 <... eventfd2 resumed>)          = 8
+202680 rseq(0x7f6076fd6fe0, 0x20, 0, 0x53053053 <unfinished ...>
+202679 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+202678 epoll_wait(5,  <unfinished ...>
+202676 fcntl(8, F_GETFL <unfinished ...>
+202680 <... rseq resumed>)              = 0
+202679 <... rt_sigprocmask resumed>NULL, 8) = 0
+202677 <... clone3 resumed> => {parent_tid=[202680]}, 88) = 202680
+202676 <... fcntl resumed>)             = 0x2 (flags O_RDWR)
+202680 set_robust_list(0x7f6076fd6920, 24 <unfinished ...>
+202679 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1],  <unfinished ...>
+202676 fcntl(8, F_SETFL, O_RDWR|O_NONBLOCK <unfinished ...>
+202680 <... set_robust_list resumed>)   = 0
+202677 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+202676 <... fcntl resumed>)             = 0
+202680 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+202679 <... rt_sigprocmask resumed>NULL, 8) = 0
+202676 fcntl(8, F_GETFL <unfinished ...>
+202680 <... rt_sigprocmask resumed>NULL, 8) = 0
+202677 <... rt_sigprocmask resumed>NULL, 8) = 0
+202676 <... fcntl resumed>)             = 0x802 (flags O_RDWR|O_NONBLOCK)
+202680 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1],  <unfinished ...>
+202679 sched_getparam(202679,  <unfinished ...>
+202676 fcntl(8, F_SETFL, O_RDWR|O_NONBLOCK <unfinished ...>
+202680 <... rt_sigprocmask resumed>NULL, 8) = 0
+202677 eventfd2(0, EFD_CLOEXEC <unfinished ...>
+202676 <... fcntl resumed>)             = 0
+202680 sched_getparam(202680,  <unfinished ...>
+202679 <... sched_getparam resumed>[0]) = 0
+202676 getpid( <unfinished ...>
+202680 <... sched_getparam resumed>[0]) = 0
+202677 <... eventfd2 resumed>)          = 7
+202676 <... getpid resumed>)            = 202676
+202680 sched_getscheduler(202680 <unfinished ...>
+202679 sched_getscheduler(202679 <unfinished ...>
+202676 getpid( <unfinished ...>
+202680 <... sched_getscheduler resumed>) = 0 (SCHED_OTHER)
+202677 fcntl(7, F_GETFL <unfinished ...>
+202676 <... getpid resumed>)            = 202676
+202680 sched_setscheduler(202680, SCHED_OTHER, [0] <unfinished ...>
+202679 <... sched_getscheduler resumed>) = 0 (SCHED_OTHER)
+202676 poll([{fd=8, events=POLLIN}], 1, 0 <unfinished ...>
+202680 <... sched_setscheduler resumed>) = 0
+202677 <... fcntl resumed>)             = 0x2 (flags O_RDWR)
+202676 <... poll resumed>)              = 0 (Timeout)
+202680 prctl(PR_SET_NAME, "ZMQbg/Reaper" <unfinished ...>
+202679 sched_setscheduler(202679, SCHED_OTHER, [0] <unfinished ...>
+202676 brk(0x55ddcd824000 <unfinished ...>
+202680 <... prctl resumed>)             = 0
+202677 fcntl(7, F_SETFL, O_RDWR|O_NONBLOCK <unfinished ...>
+202676 <... brk resumed>)               = 0x55ddcd824000
+202680 epoll_wait(6,  <unfinished ...>
+202679 <... sched_setscheduler resumed>) = 0
+202676 futex(0x7f607744d77c, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+202677 <... fcntl resumed>)             = 0
+202676 <... futex resumed>)             = 0
+202679 prctl(PR_SET_NAME, "ZMQbg/IO/0" <unfinished ...>
+202676 futex(0x7f607744d788, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+202677 fcntl(7, F_GETFL <unfinished ...>
+202676 <... futex resumed>)             = 0
+202679 <... prctl resumed>)             = 0
+202676 getpid( <unfinished ...>
+202677 <... fcntl resumed>)             = 0x802 (flags O_RDWR|O_NONBLOCK)
+202676 <... getpid resumed>)            = 202676
+202679 epoll_wait(7,  <unfinished ...>
+202676 write(6, "\1\0\0\0\0\0\0\0", 8 <unfinished ...>
+202677 fcntl(7, F_SETFL, O_RDWR|O_NONBLOCK <unfinished ...>
+202676 <... write resumed>)             = 8
+202679 <... epoll_wait resumed>[{events=EPOLLIN, data={u32=3447669344, u64=94411123802720}}], 256, -1) = 1
+202676 getpid( <unfinished ...>
+202677 <... fcntl resumed>)             = 0
+202676 <... getpid resumed>)            = 202676
+202679 getpid( <unfinished ...>
+202676 write(8, "\1\0\0\0\0\0\0\0", 8 <unfinished ...>
+202677 getpid( <unfinished ...>
+202676 <... write resumed>)             = 8
+202679 <... getpid resumed>)            = 202676
+202676 write(1, "Ok: 202677\n", 11 <unfinished ...>
+202677 <... getpid resumed>)            = 202677
+202676 <... write resumed>)             = 11
+202679 poll([{fd=6, events=POLLIN}], 1, 0 <unfinished ...>
+202676 read(0,  <unfinished ...>
+202677 epoll_create1(EPOLL_CLOEXEC <unfinished ...>
+202679 <... poll resumed>)              = 1 ([{fd=6, revents=POLLIN}])
+202677 <... epoll_create1 resumed>)     = 8
+202679 getpid( <unfinished ...>
+202677 epoll_ctl(8, EPOLL_CTL_ADD, 7, {events=0, data={u32=3447694688, u64=94411123828064}} <unfinished ...>
+202679 <... getpid resumed>)            = 202676
+202677 <... epoll_ctl resumed>)         = 0
+202679 read(6,  <unfinished ...>
+202677 epoll_ctl(8, EPOLL_CTL_MOD, 7, {events=EPOLLIN, data={u32=3447694688, u64=94411123828064}} <unfinished ...>
+202679 <... read resumed>"\1\0\0\0\0\0\0\0", 8) = 8
+202677 <... epoll_ctl resumed>)         = 0
+202679 mmap(NULL, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0 <unfinished ...>
+202677 mmap(NULL, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+202679 <... mmap resumed>)              = 0x7f606dfd5000
+202677 <... mmap resumed>)              = 0x7f6075fd5000
+202679 munmap(0x7f606dfd5000, 33730560 <unfinished ...>
+202677 mprotect(0x7f6075fd6000, 8388608, PROT_READ|PROT_WRITE <unfinished ...>
+202679 <... munmap resumed>)            = 0
+202677 <... mprotect resumed>)          = 0
+202679 munmap(0x7f6074000000, 33378304 <unfinished ...>
+202677 rt_sigprocmask(SIG_BLOCK, ~[],  <unfinished ...>
+202679 <... munmap resumed>)            = 0
+202677 <... rt_sigprocmask resumed>[], 8) = 0
+202679 mprotect(0x7f6070000000, 135168, PROT_READ|PROT_WRITE <unfinished ...>
+202677 clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7f60767d5910, parent_tid=0x7f60767d5910, exit_signal=0, stack=0x7f6075fd5000, stack_size=0x7ffc80, tls=0x7f60767d5640} <unfinished ...>
+202679 <... mprotect resumed>)          = 0
+202681 rseq(0x7f60767d5fe0, 0x20, 0, 0x53053053 <unfinished ...>
+202677 <... clone3 resumed> => {parent_tid=[202681]}, 88) = 202681
+202681 <... rseq resumed>)              = 0
+202679 socket(AF_INET, SOCK_STREAM|SOCK_CLOEXEC, IPPROTO_TCP <unfinished ...>
+202681 set_robust_list(0x7f60767d5920, 24 <unfinished ...>
+202677 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+202681 <... set_robust_list resumed>)   = 0
+202679 <... socket resumed>)            = 9
+202681 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+202677 <... rt_sigprocmask resumed>NULL, 8) = 0
+202681 <... rt_sigprocmask resumed>NULL, 8) = 0
+202679 fcntl(9, F_GETFL <unfinished ...>
+202681 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1],  <unfinished ...>
+202677 eventfd2(0, EFD_CLOEXEC <unfinished ...>
+202681 <... rt_sigprocmask resumed>NULL, 8) = 0
+202679 <... fcntl resumed>)             = 0x2 (flags O_RDWR)
+202681 sched_getparam(202681,  <unfinished ...>
+202677 <... eventfd2 resumed>)          = 9
+202681 <... sched_getparam resumed>[0]) = 0
+202679 fcntl(9, F_SETFL, O_RDWR|O_NONBLOCK <unfinished ...>
+202681 sched_getscheduler(202681 <unfinished ...>
+202677 fcntl(9, F_GETFL <unfinished ...>
+202681 <... sched_getscheduler resumed>) = 0 (SCHED_OTHER)
+202679 <... fcntl resumed>)             = 0
+202681 sched_setscheduler(202681, SCHED_OTHER, [0] <unfinished ...>
+202677 <... fcntl resumed>)             = 0x2 (flags O_RDWR)
+202681 <... sched_setscheduler resumed>) = 0
+202679 connect(9, {sa_family=AF_INET, sin_port=htons(5551), sin_addr=inet_addr("127.0.0.1")}, 16 <unfinished ...>
+202681 prctl(PR_SET_NAME, "ZMQbg/IO/0" <unfinished ...>
+202677 fcntl(9, F_SETFL, O_RDWR|O_NONBLOCK <unfinished ...>
+202681 <... prctl resumed>)             = 0
+202679 <... connect resumed>)           = -1 EINPROGRESS (Operation now in progress)
+202681 epoll_wait(8,  <unfinished ...>
+202677 <... fcntl resumed>)             = 0
+202679 epoll_ctl(7, EPOLL_CTL_ADD, 9, {events=0, data={u32=1879053360, u64=140052172641328}} <unfinished ...>
+202677 fcntl(9, F_GETFL <unfinished ...>
+202679 <... epoll_ctl resumed>)         = 0
+202677 <... fcntl resumed>)             = 0x802 (flags O_RDWR|O_NONBLOCK)
+202679 epoll_ctl(7, EPOLL_CTL_MOD, 9, {events=EPOLLOUT, data={u32=1879053360, u64=140052172641328}} <unfinished ...>
+202677 fcntl(9, F_SETFL, O_RDWR|O_NONBLOCK <unfinished ...>
+202679 <... epoll_ctl resumed>)         = 0
+202677 <... fcntl resumed>)             = 0
+202679 getpid( <unfinished ...>
+202677 getpid( <unfinished ...>
+202679 <... getpid resumed>)            = 202676
+202677 <... getpid resumed>)            = 202677
+202679 poll([{fd=6, events=POLLIN}], 1, 0 <unfinished ...>
+202677 getpid( <unfinished ...>
+202679 <... poll resumed>)              = 0 (Timeout)
+202677 <... getpid resumed>)            = 202677
+202679 epoll_wait(7,  <unfinished ...>
+202677 poll([{fd=9, events=POLLIN}], 1, 0 <unfinished ...>
+202679 <... epoll_wait resumed>[{events=EPOLLOUT|EPOLLERR|EPOLLHUP, data={u32=1879053360, u64=140052172641328}}], 256, -1) = 1
+202677 <... poll resumed>)              = 0 (Timeout)
+202679 epoll_ctl(7, EPOLL_CTL_DEL, 9, 0x7f6070001434 <unfinished ...>
+202677 socket(AF_NETLINK, SOCK_RAW|SOCK_CLOEXEC, NETLINK_ROUTE <unfinished ...>
+202679 <... epoll_ctl resumed>)         = 0
+202677 <... socket resumed>)            = 10
+202679 getsockopt(9, SOL_SOCKET, SO_ERROR,  <unfinished ...>
+202677 bind(10, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12 <unfinished ...>
+202679 <... getsockopt resumed>[ECONNREFUSED], [4]) = 0
+202677 <... bind resumed>)              = 0
+202679 close(9 <unfinished ...>
+202677 getsockname(10,  <unfinished ...>
+202679 <... close resumed>)             = 0
+202677 <... getsockname resumed>{sa_family=AF_NETLINK, nl_pid=202677, nl_groups=00000000}, [12]) = 0
+202679 epoll_wait(7,  <unfinished ...>
+202677 sendto(10, [{nlmsg_len=20, nlmsg_type=RTM_GETLINK, nlmsg_flags=NLM_F_REQUEST|NLM_F_DUMP, nlmsg_seq=1741547268, nlmsg_pid=0}, {ifi_family=AF_UNSPEC, ...}], 20, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 20
+202677 recvmsg(10, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=1348, nlmsg_type=RTM_NEWLINK, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1741547268, nlmsg_pid=202677}, {ifi_family=AF_UNSPEC, ifi_type=ARPHRD_LOOPBACK, ifi_index=if_nametoindex("lo"), ifi_flags=IFF_UP|IFF_LOOPBACK|IFF_RUNNING|IFF_LOWER_UP, ifi_change=0}, [[{nla_len=7, nla_type=IFLA_IFNAME}, "lo"], [{nla_len=8, nla_type=IFLA_TXQLEN}, 1000], [{nla_len=5, nla_type=IFLA_OPERSTATE}, 0], [{nla_len=5, nla_type=IFLA_LINKMODE}, 0], [{nla_len=8, nla_type=IFLA_MTU}, 65536], [{nla_len=8, nla_type=IFLA_MIN_MTU}, 0], [{nla_len=8, nla_type=IFLA_MAX_MTU}, 0], [{nla_len=8, nla_type=IFLA_GROUP}, 0], [{nla_len=8, nla_type=IFLA_PROMISCUITY}, 0], [{nla_len=8, nla_type=IFLA_NUM_TX_QUEUES}, 1], [{nla_len=8, nla_type=IFLA_GSO_MAX_SEGS}, 65535], [{nla_len=8, nla_type=IFLA_GSO_MAX_SIZE}, 65536], [{nla_len=8, nla_type=IFLA_NUM_RX_QUEUES}, 1], [{nla_len=5, nla_type=IFLA_CARRIER}, 1], [{nla_len=12, nla_type=IFLA_QDISC}, "noqueue"], [{nla_len=8, nla_type=IFLA_CARRIER_CHANGES}, 0], [{nla_len=8, nla_type=IFLA_CARRIER_UP_COUNT}, 0], [{nla_len=8, nla_type=IFLA_CARRIER_DOWN_COUNT}, 0], [{nla_len=5, nla_type=IFLA_PROTO_DOWN}, 0], [{nla_len=36, nla_type=IFLA_MAP}, {mem_start=0, mem_end=0, base_addr=0, irq=0, dma=0, port=0}], [{nla_len=10, nla_type=IFLA_ADDRESS}, 00:00:00:00:00:00], [{nla_len=10, nla_type=IFLA_BROADCAST}, 00:00:00:00:00:00], [{nla_len=196, nla_type=IFLA_STATS64}, {rx_packets=103944, tx_packets=103944, rx_bytes=5231694, tx_bytes=5231694, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=0, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}], [{nla_len=100, nla_type=IFLA_STATS}, {rx_packets=103944, tx_packets=103944, rx_bytes=5231694, tx_bytes=5231694, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=0, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}], [{nla_len=12, nla_type=IFLA_XDP}, [{nla_len=5, nla_type=IFLA_XDP_ATTACHED}, XDP_ATTACHED_NONE]], [{nla_len=792, nla_type=IFLA_AF_SPEC}, [[{nla_len=136, nla_type=AF_INET}, [{nla_len=132, nla_type=IFLA_INET_CONF}, [[IPV4_DEVCONF_FORWARDING-1] = 1, [IPV4_DEVCONF_MC_FORWARDING-1] = 0, [IPV4_DEVCONF_PROXY_ARP-1] = 0, [IPV4_DEVCONF_ACCEPT_REDIRECTS-1] = 1, [IPV4_DEVCONF_SECURE_REDIRECTS-1] = 1, [IPV4_DEVCONF_SEND_REDIRECTS-1] = 1, [IPV4_DEVCONF_SHARED_MEDIA-1] = 1, [IPV4_DEVCONF_RP_FILTER-1] = 2, [IPV4_DEVCONF_ACCEPT_SOURCE_ROUTE-1] = 0, [IPV4_DEVCONF_BOOTP_RELAY-1] = 0, [IPV4_DEVCONF_LOG_MARTIANS-1] = 0, [IPV4_DEVCONF_TAG-1] = 0, [IPV4_DEVCONF_ARPFILTER-1] = 0, [IPV4_DEVCONF_MEDIUM_ID-1] = 0, [IPV4_DEVCONF_NOXFRM-1] = 1, [IPV4_DEVCONF_NOPOLICY-1] = 1, [IPV4_DEVCONF_FORCE_IGMP_VERSION-1] = 0, [IPV4_DEVCONF_ARP_ANNOUNCE-1] = 0, [IPV4_DEVCONF_ARP_IGNORE-1] = 0, [IPV4_DEVCONF_PROMOTE_SECONDARIES-1] = 1, [IPV4_DEVCONF_ARP_ACCEPT-1] = 0, [IPV4_DEVCONF_ARP_NOTIFY-1] = 0, [IPV4_DEVCONF_ACCEPT_LOCAL-1] = 0, [IPV4_DEVCONF_SRC_VMARK-1] = 0, [IPV4_DEVCONF_PROXY_ARP_PVLAN-1] = 0, [IPV4_DEVCONF_ROUTE_LOCALNET-1] = 0, [IPV4_DEVCONF_IGMPV2_UNSOLICITED_REPORT_INTERVAL-1] = 10000, [IPV4_DEVCONF_IGMPV3_UNSOLICITED_REPORT_INTERVAL-1] = 1000, [IPV4_DEVCONF_IGNORE_ROUTES_WITH_LINKDOWN-1] = 0, [IPV4_DEVCONF_DROP_UNICAST_IN_L2_MULTICAST-1] = 0, [IPV4_DEVCONF_DROP_GRATUITOUS_ARP-1] = 0, [IPV4_DEVCONF_BC_FORWARDING-1] = 0]]], [{nla_len=652, nla_type=AF_INET6}, [[{nla_len=8, nla_type=IFLA_INET6_FLAGS}, IF_READY], [{nla_len=20, nla_type=IFLA_INET6_CACHEINFO}, {max_reasm_len=65535, tstamp=28, reachable_time=22590, retrans_time=1000}], [{nla_len=240, nla_type=IFLA_INET6_CONF}, [[DEVCONF_FORWARDING] = 0, [DEVCONF_HOPLIMIT] = 64, [DEVCONF_MTU6] = 65536, [DEVCONF_ACCEPT_RA] = 1, [DEVCONF_ACCEPT_REDIRECTS] = 1, [DEVCONF_AUTOCONF] = 1, [DEVCONF_DAD_TRANSMITS] = 1, [DEVCONF_RTR_SOLICITS] = -1, [DEVCONF_RTR_SOLICIT_INTERVAL] = 4000, [DEVCONF_RTR_SOLICIT_DELAY] = 1000, [DEVCONF_USE_TEMPADDR] = -1, [DEVCONF_TEMP_VALID_LFT] = 604800, [DEVCONF_TEMP_PREFERED_LFT] = 86400, [DEVCONF_REGEN_MAX_RETRY] = 3, [DEVCONF_MAX_DESYNC_FACTOR] = 600, [DEVCONF_MAX_ADDRESSES] = 16, [DEVCONF_FORCE_MLD_VERSION] = 0, [DEVCONF_ACCEPT_RA_DEFRTR] = 1, [DEVCONF_ACCEPT_RA_PINFO] = 1, [DEVCONF_ACCEPT_RA_RTR_PREF] = 0, [DEVCONF_RTR_PROBE_INTERVAL] = 0, [DEVCONF_ACCEPT_RA_RT_INFO_MAX_PLEN] = 0, [DEVCONF_PROXY_NDP] = 0, [DEVCONF_OPTIMISTIC_DAD] = 0, [DEVCONF_ACCEPT_SOURCE_ROUTE] = 0, [DEVCONF_MC_FORWARDING] = 0, [DEVCONF_DISABLE_IPV6] = 0, [DEVCONF_ACCEPT_DAD] = -1, [DEVCONF_FORCE_TLLAO] = 0, [DEVCONF_NDISC_NOTIFY] = 0, [DEVCONF_MLDV1_UNSOLICITED_REPORT_INTERVAL] = 10000, [DEVCONF_MLDV2_UNSOLICITED_REPORT_INTERVAL] = 1000, ...]], [{nla_len=300, nla_type=IFLA_INET6_STATS}, [[IPSTATS_MIB_NUM] = 37, [IPSTATS_MIB_INPKTS] = 0, [IPSTATS_MIB_INOCTETS] = 0, [IPSTATS_MIB_INDELIVERS] = 0, [IPSTATS_MIB_OUTFORWDATAGRAMS] = 0, [IPSTATS_MIB_OUTPKTS] = 0, [IPSTATS_MIB_OUTOCTETS] = 0, [IPSTATS_MIB_INHDRERRORS] = 0, [IPSTATS_MIB_INTOOBIGERRORS] = 0, [IPSTATS_MIB_INNOROUTES] = 0, [IPSTATS_MIB_INADDRERRORS] = 0, [IPSTATS_MIB_INUNKNOWNPROTOS] = 0, [IPSTATS_MIB_INTRUNCATEDPKTS] = 0, [IPSTATS_MIB_INDISCARDS] = 0, [IPSTATS_MIB_OUTDISCARDS] = 0, [IPSTATS_MIB_OUTNOROUTES] = 0, [IPSTATS_MIB_REASMTIMEOUT] = 0, [IPSTATS_MIB_REASMREQDS] = 0, [IPSTATS_MIB_REASMOKS] = 0, [IPSTATS_MIB_REASMFAILS] = 0, [IPSTATS_MIB_FRAGOKS] = 0, [IPSTATS_MIB_FRAGFAILS] = 0, [IPSTATS_MIB_FRAGCREATES] = 0, [IPSTATS_MIB_INMCASTPKTS] = 0, [IPSTATS_MIB_OUTMCASTPKTS] = 0, [IPSTATS_MIB_INBCASTPKTS] = 0, [IPSTATS_MIB_OUTBCASTPKTS] = 0, [IPSTATS_MIB_INMCASTOCTETS] = 0, [IPSTATS_MIB_OUTMCASTOCTETS] = 0, [IPSTATS_MIB_INBCASTOCTETS] = 0, [IPSTATS_MIB_OUTBCASTOCTETS] = 0, [IPSTATS_MIB_CSUMERRORS] = 0, ...]], [{nla_len=52, nla_type=IFLA_INET6_ICMP6STATS}, [[ICMP6_MIB_NUM] = 6, [ICMP6_MIB_INMSGS] = 0, [ICMP6_MIB_INERRORS] = 0, [ICMP6_MIB_OUTMSGS] = 0, [ICMP6_MIB_OUTERRORS] = 0, [ICMP6_MIB_CSUMERRORS] = 0]], [{nla_len=20, nla_type=IFLA_INET6_TOKEN}, inet_pton(AF_INET6, "::")], [{nla_len=5, nla_type=IFLA_INET6_ADDR_GEN_MODE}, IN6_ADDR_GEN_MODE_EUI64]]]]]]], [{nlmsg_len=1416, nlmsg_type=RTM_NEWLINK, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1741547268, nlmsg_pid=202677}, {ifi_family=AF_UNSPEC, ifi_type=ARPHRD_ETHER, ifi_index=if_nametoindex("eth0"), ifi_flags=IFF_UP|IFF_BROADCAST|IFF_RUNNING|IFF_MULTICAST|IFF_LOWER_UP, ifi_change=0}, [[{nla_len=9, nla_type=IFLA_IFNAME}, "eth0"], [{nla_len=8, nla_type=IFLA_TXQLEN}, 1000], [{nla_len=5, nla_type=IFLA_OPERSTATE}, 6], [{nla_len=5, nla_type=IFLA_LINKMODE}, 0], [{nla_len=8, nla_type=IFLA_MTU}, 1500], [{nla_len=8, nla_type=IFLA_MIN_MTU}, 68], [{nla_len=8, nla_type=IFLA_MAX_MTU}, 65521], [{nla_len=8, nla_type=IFLA_GROUP}, 0], [{nla_len=8, nla_type=IFLA_PROMISCUITY}, 0], [{nla_len=8, nla_type=IFLA_NUM_TX_QUEUES}, 64], [{nla_len=8, nla_type=IFLA_GSO_MAX_SEGS}, 65535], [{nla_len=8, nla_type=IFLA_GSO_MAX_SIZE}, 62780], [{nla_len=8, nla_type=IFLA_NUM_RX_QUEUES}, 64], [{nla_len=5, nla_type=IFLA_CARRIER}, 1], [{nla_len=7, nla_type=IFLA_QDISC}, "mq"], [{nla_len=8, nla_type=IFLA_CARRIER_CHANGES}, 1], [{nla_len=8, nla_type=IFLA_CARRIER_UP_COUNT}, 1], [{nla_len=8, nla_type=IFLA_CARRIER_DOWN_COUNT}, 0], [{nla_len=5, nla_type=IFLA_PROTO_DOWN}, 0], [{nla_len=36, nla_type=IFLA_MAP}, {mem_start=0, mem_end=0, base_addr=0, irq=0, dma=0, port=0}], [{nla_len=10, nla_type=IFLA_ADDRESS}, 00:15:5d:65:1f:8a], [{nla_len=10, nla_type=IFLA_BROADCAST}, ff:ff:ff:ff:ff:ff], [{nla_len=196, nla_type=IFLA_STATS64}, {rx_packets=60201, tx_packets=7670, rx_bytes=79733740, tx_bytes=708660, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=6999, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}], [{nla_len=100, nla_type=IFLA_STATS}, {rx_packets=60201, tx_packets=7670, rx_bytes=79733740, tx_bytes=708660, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=6999, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}], [{nla_len=12, nla_type=IFLA_XDP}, [{nla_len=5, nla_type=IFLA_XDP_ATTACHED}, XDP_ATTACHED_NONE]], [{nla_len=10, nla_type=IFLA_PERM_ADDRESS}, 00:15:5d:65:1f:8a], [{nla_len=792, nla_type=IFLA_AF_SPEC}, [[{nla_len=136, nla_type=AF_INET}, [{nla_len=132, nla_type=IFLA_INET_CONF}, [[IPV4_DEVCONF_FORWARDING-1] = 1, [IPV4_DEVCONF_MC_FORWARDING-1] = 0, [IPV4_DEVCONF_PROXY_ARP-1] = 0, [IPV4_DEVCONF_ACCEPT_REDIRECTS-1] = 1, [IPV4_DEVCONF_SECURE_REDIRECTS-1] = 1, [IPV4_DEVCONF_SEND_REDIRECTS-1] = 1, [IPV4_DEVCONF_SHARED_MEDIA-1] = 1, [IPV4_DEVCONF_RP_FILTER-1] = 2, [IPV4_DEVCONF_ACCEPT_SOURCE_ROUTE-1] = 0, [IPV4_DEVCONF_BOOTP_RELAY-1] = 0, [IPV4_DEVCONF_LOG_MARTIANS-1] = 0, [IPV4_DEVCONF_TAG-1] = 0, [IPV4_DEVCONF_ARPFILTER-1] = 0, [IPV4_DEVCONF_MEDIUM_ID-1] = 0, [IPV4_DEVCONF_NOXFRM-1] = 0, [IPV4_DEVCONF_NOPOLICY-1] = 0, [IPV4_DEVCONF_FORCE_IGMP_VERSION-1] = 0, [IPV4_DEVCONF_ARP_ANNOUNCE-1] = 0, [IPV4_DEVCONF_ARP_IGNORE-1] = 0, [IPV4_DEVCONF_PROMOTE_SECONDARIES-1] = 1, [IPV4_DEVCONF_ARP_ACCEPT-1] = 0, [IPV4_DEVCONF_ARP_NOTIFY-1] = 0, [IPV4_DEVCONF_ACCEPT_LOCAL-1] = 0, [IPV4_DEVCONF_SRC_VMARK-1] = 0, [IPV4_DEVCONF_PROXY_ARP_PVLAN-1] = 0, [IPV4_DEVCONF_ROUTE_LOCALNET-1] = 0, [IPV4_DEVCONF_IGMPV2_UNSOLICITED_REPORT_INTERVAL-1] = 10000, [IPV4_DEVCONF_IGMPV3_UNSOLICITED_REPORT_INTERVAL-1] = 1000, [IPV4_DEVCONF_IGNORE_ROUTES_WITH_LINKDOWN-1] = 0, [IPV4_DEVCONF_DROP_UNICAST_IN_L2_MULTICAST-1] = 0, [IPV4_DEVCONF_DROP_GRATUITOUS_ARP-1] = 0, [IPV4_DEVCONF_BC_FORWARDING-1] = 0]]], [{nla_len=652, nla_type=AF_INET6}, [[{nla_len=8, nla_type=IFLA_INET6_FLAGS}, IF_RS_SENT|IF_READY], [{nla_len=20, nla_type=IFLA_INET6_CACHEINFO}, {max_reasm_len=65535, tstamp=29, reachable_time=29720, retrans_time=1000}], [{nla_len=240, nla_type=IFLA_INET6_CONF}, [[DEVCONF_FORWARDING] = 0, [DEVCONF_HOPLIMIT] = 64, [DEVCONF_MTU6] = 1500, [DEVCONF_ACCEPT_RA] = 1, [DEVCONF_ACCEPT_REDIRECTS] = 1, [DEVCONF_AUTOCONF] = 1, [DEVCONF_DAD_TRANSMITS] = 1, [DEVCONF_RTR_SOLICITS] = -1, [DEVCONF_RTR_SOLICIT_INTERVAL] = 4000, [DEVCONF_RTR_SOLICIT_DELAY] = 1000, [DEVCONF_USE_TEMPADDR] = 0, [DEVCONF_TEMP_VALID_LFT] = 604800, [DEVCONF_TEMP_PREFERED_LFT] = 86400, [DEVCONF_REGEN_MAX_RETRY] = 3, [DEVCONF_MAX_DESYNC_FACTOR] = 600, [DEVCONF_MAX_ADDRESSES] = 16, [DEVCONF_FORCE_MLD_VERSION] = 0, [DEVCONF_ACCEPT_RA_DEFRTR] = 1, [DEVCONF_ACCEPT_RA_PINFO] = 1, [DEVCONF_ACCEPT_RA_RTR_PREF] = 0, [DEVCONF_RTR_PROBE_INTERVAL] = 0, [DEVCONF_ACCEPT_RA_RT_INFO_MAX_PLEN] = 0, [DEVCONF_PROXY_NDP] = 0, [DEVCONF_OPTIMISTIC_DAD] = 0, [DEVCONF_ACCEPT_SOURCE_ROUTE] = 0, [DEVCONF_MC_FORWARDING] = 0, [DEVCONF_DISABLE_IPV6] = 0, [DEVCONF_ACCEPT_DAD] = 1, [DEVCONF_FORCE_TLLAO] = 0, [DEVCONF_NDISC_NOTIFY] = 0, [DEVCONF_MLDV1_UNSOLICITED_REPORT_INTERVAL] = 10000, [DEVCONF_MLDV2_UNSOLICITED_REPORT_INTERVAL] = 1000, ...]], [{nla_len=300, nla_type=IFLA_INET6_STATS}, [[IPSTATS_MIB_NUM] = 37, [IPSTATS_MIB_INPKTS] = 4893, [IPSTATS_MIB_INOCTETS] = 419547, [IPSTATS_MIB_INDELIVERS] = 18, [IPSTATS_MIB_OUTFORWDATAGRAMS] = 0, [IPSTATS_MIB_OUTPKTS] = 71, [IPSTATS_MIB_OUTOCTETS] = 4072, [IPSTATS_MIB_INHDRERRORS] = 0, [IPSTATS_MIB_INTOOBIGERRORS] = 0, [IPSTATS_MIB_INNOROUTES] = 0, [IPSTATS_MIB_INADDRERRORS] = 0, [IPSTATS_MIB_INUNKNOWNPROTOS] = 0, [IPSTATS_MIB_INTRUNCATEDPKTS] = 0, [IPSTATS_MIB_INDISCARDS] = 0, [IPSTATS_MIB_OUTDISCARDS] = 0, [IPSTATS_MIB_OUTNOROUTES] = 0, [IPSTATS_MIB_REASMTIMEOUT] = 0, [IPSTATS_MIB_REASMREQDS] = 0, [IPSTATS_MIB_REASMOKS] = 0, [IPSTATS_MIB_REASMFAILS] = 0, [IPSTATS_MIB_FRAGOKS] = 0, [IPSTATS_MIB_FRAGFAILS] = 0, [IPSTATS_MIB_FRAGCREATES] = 0, [IPSTATS_MIB_INMCASTPKTS] = 4893, [IPSTATS_MIB_OUTMCASTPKTS] = 71, [IPSTATS_MIB_INBCASTPKTS] = 0, [IPSTATS_MIB_OUTBCASTPKTS] = 0, [IPSTATS_MIB_INMCASTOCTETS] = 419547, [IPSTATS_MIB_OUTMCASTOCTETS] = 4072, [IPSTATS_MIB_INBCASTOCTETS] = 0, [IPSTATS_MIB_OUTBCASTOCTETS] = 0, [IPSTATS_MIB_CSUMERRORS] = 0, ...]], [{nla_len=52, nla_type=IFLA_INET6_ICMP6STATS}, [[ICMP6_MIB_NUM] = 6, [ICMP6_MIB_INMSGS] = 18, [ICMP6_MIB_INERRORS] = 0, [ICMP6_MIB_OUTMSGS] = 71, [ICMP6_MIB_OUTERRORS] = 0, [ICMP6_MIB_CSUMERRORS] = 0]], [{nla_len=20, nla_type=IFLA_INET6_TOKEN}, inet_pton(AF_INET6, "::")], [{nla_len=5, nla_type=IFLA_INET6_ADDR_GEN_MODE}, IN6_ADDR_GEN_MODE_EUI64]]]]], [{nla_len=41, nla_type=IFLA_PARENT_DEV_NAME}, "9dccd9fd-33ed-4908-8f1c-63d83189"...], [{nla_len=10, nla_type=IFLA_PARENT_DEV_BUS_NAME}, "vmbus"]]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 2764
+202677 recvmsg(10, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{nlmsg_len=20, nlmsg_type=NLMSG_DONE, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1741547268, nlmsg_pid=202677}, 0], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 20
+202677 sendto(10, [{nlmsg_len=20, nlmsg_type=RTM_GETADDR, nlmsg_flags=NLM_F_REQUEST|NLM_F_DUMP, nlmsg_seq=1741547269, nlmsg_pid=0}, {ifa_family=AF_UNSPEC, ...}], 20, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 20
+202677 recvmsg(10, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=76, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1741547269, nlmsg_pid=202677}, {ifa_family=AF_INET, ifa_prefixlen=8, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("127.0.0.1")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("127.0.0.1")], [{nla_len=7, nla_type=IFA_LABEL}, "lo"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=28, tstamp=28}]]], [{nlmsg_len=88, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1741547269, nlmsg_pid=202677}, {ifa_family=AF_INET, ifa_prefixlen=20, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_UNIVERSE, ifa_index=if_nametoindex("eth0")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("172.23.33.73")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("172.23.33.73")], [{nla_len=8, nla_type=IFA_BROADCAST}, inet_addr("172.23.47.255")], [{nla_len=9, nla_type=IFA_LABEL}, "eth0"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=29, tstamp=29}]]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 164
+202677 recvmsg(10, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=72, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1741547269, nlmsg_pid=202677}, {ifa_family=AF_INET6, ifa_prefixlen=128, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=20, nla_type=IFA_ADDRESS}, inet_pton(AF_INET6, "::1")], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=28, tstamp=28}], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT]]], [{nlmsg_len=72, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1741547269, nlmsg_pid=202677}, {ifa_family=AF_INET6, ifa_prefixlen=64, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_LINK, ifa_index=if_nametoindex("eth0")}, [[{nla_len=20, nla_type=IFA_ADDRESS}, inet_pton(AF_INET6, "fe80::215:5dff:fe65:1f8a")], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=29, tstamp=29}], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT]]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 144
+202677 recvmsg(10, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{nlmsg_len=20, nlmsg_type=NLMSG_DONE, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1741547269, nlmsg_pid=202677}, 0], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 20
+202677 close(10)                        = 0
+202677 socket(AF_INET, SOCK_STREAM|SOCK_CLOEXEC, IPPROTO_TCP) = 10
+202677 setsockopt(10, SOL_SOCKET, SO_REUSEADDR, [1], 4) = 0
+202677 bind(10, {sa_family=AF_INET, sin_port=htons(5551), sin_addr=inet_addr("127.0.0.1")}, 16) = 0
+202677 listen(10, 100)                  = 0
+202677 getsockname(10, {sa_family=AF_INET, sin_port=htons(5551), sin_addr=inet_addr("127.0.0.1")}, [128 => 16]) = 0
+202677 getsockname(10, {sa_family=AF_INET, sin_port=htons(5551), sin_addr=inet_addr("127.0.0.1")}, [128 => 16]) = 0
+202677 getpid()                         = 202677
+202677 write(7, "\1\0\0\0\0\0\0\0", 8 <unfinished ...>
+202681 <... epoll_wait resumed>[{events=EPOLLIN, data={u32=3447694688, u64=94411123828064}}], 256, -1) = 1
+202677 <... write resumed>)             = 8
+202681 getpid( <unfinished ...>
+202677 getpid( <unfinished ...>
+202681 <... getpid resumed>)            = 202677
+202677 <... getpid resumed>)            = 202677
+202681 poll([{fd=7, events=POLLIN}], 1, 0 <unfinished ...>
+202677 write(9, "\1\0\0\0\0\0\0\0", 8 <unfinished ...>
+202681 <... poll resumed>)              = 1 ([{fd=7, revents=POLLIN}])
+202677 <... write resumed>)             = 8
+202681 getpid( <unfinished ...>
+202677 write(1, "Compute Node 1 started, listenin"..., 58 <unfinished ...>
+202681 <... getpid resumed>)            = 202677
+202677 <... write resumed>)             = 58
+202681 read(7,  <unfinished ...>
+202677 getpid( <unfinished ...>
+202681 <... read resumed>"\1\0\0\0\0\0\0\0", 8) = 8
+202677 <... getpid resumed>)            = 202677
+202681 mmap(NULL, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0 <unfinished ...>
+202677 poll([{fd=9, events=POLLIN}], 1, -1 <unfinished ...>
+202681 <... mmap resumed>)              = 0x7f606dfd5000
+202677 <... poll resumed>)              = 1 ([{fd=9, revents=POLLIN}])
+202681 munmap(0x7f606dfd5000, 33730560 <unfinished ...>
+202677 getpid( <unfinished ...>
+202681 <... munmap resumed>)            = 0
+202677 <... getpid resumed>)            = 202677
+202681 munmap(0x7f6074000000, 33378304 <unfinished ...>
+202677 read(9,  <unfinished ...>
+202681 <... munmap resumed>)            = 0
+202677 <... read resumed>"\1\0\0\0\0\0\0\0", 8) = 8
+202681 mprotect(0x7f6070000000, 135168, PROT_READ|PROT_WRITE <unfinished ...>
+202677 getpid( <unfinished ...>
+202681 <... mprotect resumed>)          = 0
+202677 <... getpid resumed>)            = 202677
+202681 epoll_ctl(8, EPOLL_CTL_ADD, 10, {events=0, data={u32=1879051120, u64=140052172639088}} <unfinished ...>
+202677 poll([{fd=9, events=POLLIN}], 1, 0 <unfinished ...>
+202681 <... epoll_ctl resumed>)         = 0
+202677 <... poll resumed>)              = 0 (Timeout)
+202681 epoll_ctl(8, EPOLL_CTL_MOD, 10, {events=EPOLLIN, data={u32=1879051120, u64=140052172639088}} <unfinished ...>
+202677 getpid( <unfinished ...>
+202681 <... epoll_ctl resumed>)         = 0
+202677 <... getpid resumed>)            = 202677
+202681 getpid( <unfinished ...>
+202677 poll([{fd=9, events=POLLIN}], 1, -1 <unfinished ...>
+202681 <... getpid resumed>)            = 202677
+202681 poll([{fd=7, events=POLLIN}], 1, 0) = 0 (Timeout)
+202681 epoll_wait(8,  <unfinished ...>
+202679 <... epoll_wait resumed>[], 256, 183) = 0
+202679 socket(AF_INET, SOCK_STREAM|SOCK_CLOEXEC, IPPROTO_TCP) = 9
+202679 fcntl(9, F_GETFL)                = 0x2 (flags O_RDWR)
+202679 fcntl(9, F_SETFL, O_RDWR|O_NONBLOCK) = 0
+202679 connect(9, {sa_family=AF_INET, sin_port=htons(5551), sin_addr=inet_addr("127.0.0.1")}, 16 <unfinished ...>
+202681 <... epoll_wait resumed>[{events=EPOLLIN, data={u32=1879051120, u64=140052172639088}}], 256, -1) = 1
+202679 <... connect resumed>)           = -1 EINPROGRESS (Operation now in progress)
+202681 accept4(10,  <unfinished ...>
+202679 epoll_ctl(7, EPOLL_CTL_ADD, 9, {events=0, data={u32=1879053360, u64=140052172641328}} <unfinished ...>
+202681 <... accept4 resumed>{sa_family=AF_INET, sin_port=htons(56288), sin_addr=inet_addr("127.0.0.1")}, [128 => 16], SOCK_CLOEXEC) = 11
+202679 <... epoll_ctl resumed>)         = 0
+202681 setsockopt(11, SOL_TCP, TCP_NODELAY, [1], 4 <unfinished ...>
+202679 epoll_ctl(7, EPOLL_CTL_MOD, 9, {events=EPOLLOUT, data={u32=1879053360, u64=140052172641328}} <unfinished ...>
+202681 <... setsockopt resumed>)        = 0
+202679 <... epoll_ctl resumed>)         = 0
+202681 getpeername(11,  <unfinished ...>
+202679 epoll_wait(7,  <unfinished ...>
+202681 <... getpeername resumed>{sa_family=AF_INET, sin_port=htons(56288), sin_addr=inet_addr("127.0.0.1")}, [128 => 16]) = 0
+202679 <... epoll_wait resumed>[{events=EPOLLOUT, data={u32=1879053360, u64=140052172641328}}], 256, -1) = 1
+202681 getsockname(11,  <unfinished ...>
+202679 epoll_ctl(7, EPOLL_CTL_DEL, 9, 0x7f6070001434 <unfinished ...>
+202681 <... getsockname resumed>{sa_family=AF_INET, sin_port=htons(5551), sin_addr=inet_addr("127.0.0.1")}, [128 => 16]) = 0
+202679 <... epoll_ctl resumed>)         = 0
+202681 getpeername(11,  <unfinished ...>
+202679 getsockopt(9, SOL_SOCKET, SO_ERROR,  <unfinished ...>
+202681 <... getpeername resumed>{sa_family=AF_INET, sin_port=htons(56288), sin_addr=inet_addr("127.0.0.1")}, [128 => 16]) = 0
+202679 <... getsockopt resumed>[0], [4]) = 0
+202681 fcntl(11, F_GETFL <unfinished ...>
+202679 setsockopt(9, SOL_TCP, TCP_NODELAY, [1], 4 <unfinished ...>
+202681 <... fcntl resumed>)             = 0x2 (flags O_RDWR)
+202679 <... setsockopt resumed>)        = 0
+202681 fcntl(11, F_SETFL, O_RDWR|O_NONBLOCK <unfinished ...>
+202679 getsockname(9,  <unfinished ...>
+202681 <... fcntl resumed>)             = 0
+202679 <... getsockname resumed>{sa_family=AF_INET, sin_port=htons(56288), sin_addr=inet_addr("127.0.0.1")}, [128 => 16]) = 0
+202681 getpid( <unfinished ...>
+202679 getpeername(9,  <unfinished ...>
+202681 <... getpid resumed>)            = 202677
+202679 <... getpeername resumed>{sa_family=AF_INET, sin_port=htons(5551), sin_addr=inet_addr("127.0.0.1")}, [128 => 16]) = 0
+202681 write(7, "\1\0\0\0\0\0\0\0", 8 <unfinished ...>
+202679 fcntl(9, F_GETFL <unfinished ...>
+202681 <... write resumed>)             = 8
+202679 <... fcntl resumed>)             = 0x802 (flags O_RDWR|O_NONBLOCK)
+202681 epoll_wait(8,  <unfinished ...>
+202679 fcntl(9, F_SETFL, O_RDWR|O_NONBLOCK <unfinished ...>
+202681 <... epoll_wait resumed>[{events=EPOLLIN, data={u32=3447694688, u64=94411123828064}}], 256, -1) = 1
+202679 <... fcntl resumed>)             = 0
+202681 getpid( <unfinished ...>
+202679 getpid( <unfinished ...>
+202681 <... getpid resumed>)            = 202677
+202679 <... getpid resumed>)            = 202676
+202681 poll([{fd=7, events=POLLIN}], 1, 0 <unfinished ...>
+202679 write(6, "\1\0\0\0\0\0\0\0", 8 <unfinished ...>
+202681 <... poll resumed>)              = 1 ([{fd=7, revents=POLLIN}])
+202679 <... write resumed>)             = 8
+202681 getpid( <unfinished ...>
+202679 epoll_wait(7,  <unfinished ...>
+202681 <... getpid resumed>)            = 202677
+202679 <... epoll_wait resumed>[{events=EPOLLIN, data={u32=3447669344, u64=94411123802720}}], 256, -1) = 1
+202681 read(7,  <unfinished ...>
+202679 getpid( <unfinished ...>
+202681 <... read resumed>"\1\0\0\0\0\0\0\0", 8) = 8
+202679 <... getpid resumed>)            = 202676
+202681 epoll_ctl(8, EPOLL_CTL_ADD, 11, {events=0, data={u32=1879051216, u64=140052172639184}} <unfinished ...>
+202679 poll([{fd=6, events=POLLIN}], 1, 0 <unfinished ...>
+202681 <... epoll_ctl resumed>)         = 0
+202679 <... poll resumed>)              = 1 ([{fd=6, revents=POLLIN}])
+202681 epoll_ctl(8, EPOLL_CTL_MOD, 11, {events=EPOLLIN, data={u32=1879051216, u64=140052172639184}} <unfinished ...>
+202679 getpid( <unfinished ...>
+202681 <... epoll_ctl resumed>)         = 0
+202679 <... getpid resumed>)            = 202676
+202681 epoll_ctl(8, EPOLL_CTL_MOD, 11, {events=EPOLLIN|EPOLLOUT, data={u32=1879051216, u64=140052172639184}} <unfinished ...>
+202679 read(6,  <unfinished ...>
+202681 <... epoll_ctl resumed>)         = 0
+202679 <... read resumed>"\1\0\0\0\0\0\0\0", 8) = 8
+202681 recvfrom(11,  <unfinished ...>
+202679 epoll_ctl(7, EPOLL_CTL_ADD, 9, {events=0, data={u32=1879053360, u64=140052172641328}} <unfinished ...>
+202681 <... recvfrom resumed>0x7f60700012f8, 12, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+202679 <... epoll_ctl resumed>)         = 0
+202681 getpid( <unfinished ...>
+202679 epoll_ctl(7, EPOLL_CTL_MOD, 9, {events=EPOLLIN, data={u32=1879053360, u64=140052172641328}} <unfinished ...>
+202681 <... getpid resumed>)            = 202677
+202679 <... epoll_ctl resumed>)         = 0
+202681 poll([{fd=7, events=POLLIN}], 1, 0 <unfinished ...>
+202679 epoll_ctl(7, EPOLL_CTL_MOD, 9, {events=EPOLLIN|EPOLLOUT, data={u32=1879053360, u64=140052172641328}} <unfinished ...>
+202681 <... poll resumed>)              = 0 (Timeout)
+202679 <... epoll_ctl resumed>)         = 0
+202681 epoll_wait(8,  <unfinished ...>
+202679 recvfrom(9,  <unfinished ...>
+202681 <... epoll_wait resumed>[{events=EPOLLOUT, data={u32=1879051216, u64=140052172639184}}], 256, 29998) = 1
+202679 <... recvfrom resumed>0x7f6070001c28, 12, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+202681 sendto(11, "\377\0\0\0\0\0\0\0\1\177", 10, 0, NULL, 0 <unfinished ...>
+202679 getpid( <unfinished ...>
+202681 <... sendto resumed>)            = 10
+202679 <... getpid resumed>)            = 202676
+202681 epoll_ctl(8, EPOLL_CTL_MOD, 11, {events=EPOLLIN, data={u32=1879051216, u64=140052172639184}} <unfinished ...>
+202679 poll([{fd=6, events=POLLIN}], 1, 0 <unfinished ...>
+202681 <... epoll_ctl resumed>)         = 0
+202679 <... poll resumed>)              = 0 (Timeout)
+202681 epoll_wait(8,  <unfinished ...>
+202679 epoll_wait(7, [{events=EPOLLIN|EPOLLOUT, data={u32=1879053360, u64=140052172641328}}], 256, 29998) = 1
+202679 sendto(9, "\377\0\0\0\0\0\0\0\1\177", 10, 0, NULL, 0 <unfinished ...>
+202681 <... epoll_wait resumed>[{events=EPOLLIN, data={u32=1879051216, u64=140052172639184}}], 256, 29997) = 1
+202679 <... sendto resumed>)            = 10
+202681 recvfrom(11,  <unfinished ...>
+202679 epoll_ctl(7, EPOLL_CTL_MOD, 9, {events=EPOLLIN, data={u32=1879053360, u64=140052172641328}} <unfinished ...>
+202681 <... recvfrom resumed>"\377\0\0\0\0\0\0\0\1\177", 12, 0, NULL, NULL) = 10
+202679 <... epoll_ctl resumed>)         = 0
+202681 epoll_ctl(8, EPOLL_CTL_MOD, 11, {events=EPOLLIN|EPOLLOUT, data={u32=1879051216, u64=140052172639184}} <unfinished ...>
+202679 recvfrom(9,  <unfinished ...>
+202681 <... epoll_ctl resumed>)         = 0
+202679 <... recvfrom resumed>"\377\0\0\0\0\0\0\0\1\177", 12, 0, NULL, NULL) = 10
+202681 recvfrom(11,  <unfinished ...>
+202679 epoll_ctl(7, EPOLL_CTL_MOD, 9, {events=EPOLLIN|EPOLLOUT, data={u32=1879053360, u64=140052172641328}} <unfinished ...>
+202681 <... recvfrom resumed>0x7f6070001302, 2, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+202679 <... epoll_ctl resumed>)         = 0
+202681 epoll_wait(8,  <unfinished ...>
+202679 recvfrom(9,  <unfinished ...>
+202681 <... epoll_wait resumed>[{events=EPOLLOUT, data={u32=1879051216, u64=140052172639184}}], 256, 29994) = 1
+202679 <... recvfrom resumed>0x7f6070001c32, 2, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+202681 sendto(11, "\3", 1, 0, NULL, 0 <unfinished ...>
+202679 epoll_wait(7,  <unfinished ...>
+202681 <... sendto resumed>)            = 1
+202679 <... epoll_wait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=1879053360, u64=140052172641328}}], 256, 29995) = 1
+202681 epoll_ctl(8, EPOLL_CTL_MOD, 11, {events=EPOLLIN, data={u32=1879051216, u64=140052172639184}} <unfinished ...>
+202679 sendto(9, "\3", 1, 0, NULL, 0 <unfinished ...>
+202681 <... epoll_ctl resumed>)         = 0
+202679 <... sendto resumed>)            = 1
+202681 epoll_wait(8,  <unfinished ...>
+202679 epoll_ctl(7, EPOLL_CTL_MOD, 9, {events=EPOLLIN, data={u32=1879053360, u64=140052172641328}} <unfinished ...>
+202681 <... epoll_wait resumed>[{events=EPOLLIN, data={u32=1879051216, u64=140052172639184}}], 256, 29993) = 1
+202679 <... epoll_ctl resumed>)         = 0
+202681 recvfrom(11,  <unfinished ...>
+202679 recvfrom(9,  <unfinished ...>
+202681 <... recvfrom resumed>"\3", 2, 0, NULL, NULL) = 1
+202679 <... recvfrom resumed>"\3", 2, 0, NULL, NULL) = 1
+202681 epoll_ctl(8, EPOLL_CTL_MOD, 11, {events=EPOLLIN|EPOLLOUT, data={u32=1879051216, u64=140052172639184}} <unfinished ...>
+202679 epoll_ctl(7, EPOLL_CTL_MOD, 9, {events=EPOLLIN|EPOLLOUT, data={u32=1879053360, u64=140052172641328}} <unfinished ...>
+202681 <... epoll_ctl resumed>)         = 0
+202679 <... epoll_ctl resumed>)         = 0
+202681 recvfrom(11,  <unfinished ...>
+202679 recvfrom(9,  <unfinished ...>
+202681 <... recvfrom resumed>0x7f6070001303, 53, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+202679 <... recvfrom resumed>0x7f6070001c33, 53, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+202681 epoll_wait(8,  <unfinished ...>
+202679 epoll_wait(7,  <unfinished ...>
+202681 <... epoll_wait resumed>[{events=EPOLLOUT, data={u32=1879051216, u64=140052172639184}}], 256, 29991) = 1
+202679 <... epoll_wait resumed>[{events=EPOLLOUT, data={u32=1879053360, u64=140052172641328}}], 256, 29992) = 1
+202681 sendto(11, "\1NULL\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 53, 0, NULL, 0 <unfinished ...>
+202679 sendto(9, "\1NULL\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 53, 0, NULL, 0 <unfinished ...>
+202681 <... sendto resumed>)            = 53
+202679 <... sendto resumed>)            = 53
+202681 epoll_ctl(8, EPOLL_CTL_MOD, 11, {events=EPOLLIN, data={u32=1879051216, u64=140052172639184}} <unfinished ...>
+202679 epoll_ctl(7, EPOLL_CTL_MOD, 9, {events=EPOLLIN, data={u32=1879053360, u64=140052172641328}} <unfinished ...>
+202681 <... epoll_ctl resumed>)         = 0
+202679 <... epoll_ctl resumed>)         = 0
+202681 epoll_wait(8,  <unfinished ...>
+202679 epoll_wait(7,  <unfinished ...>
+202681 <... epoll_wait resumed>[{events=EPOLLIN, data={u32=1879051216, u64=140052172639184}}], 256, 29990) = 1
+202679 <... epoll_wait resumed>[{events=EPOLLIN, data={u32=1879053360, u64=140052172641328}}], 256, 29991) = 1
+202681 recvfrom(11,  <unfinished ...>
+202679 recvfrom(9,  <unfinished ...>
+202681 <... recvfrom resumed>"\1NULL\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 53, 0, NULL, NULL) = 53
+202679 <... recvfrom resumed>"\1NULL\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 53, 0, NULL, NULL) = 53
+202681 epoll_ctl(8, EPOLL_CTL_MOD, 11, {events=EPOLLIN|EPOLLOUT, data={u32=1879051216, u64=140052172639184}} <unfinished ...>
+202679 epoll_ctl(7, EPOLL_CTL_MOD, 9, {events=EPOLLIN|EPOLLOUT, data={u32=1879053360, u64=140052172641328}} <unfinished ...>
+202681 <... epoll_ctl resumed>)         = 0
+202679 <... epoll_ctl resumed>)         = 0
+202681 recvfrom(11,  <unfinished ...>
+202679 recvfrom(9,  <unfinished ...>
+202681 <... recvfrom resumed>0x7f6070003b48, 8192, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+202679 <... recvfrom resumed>0x7f6070003d18, 8192, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+202681 epoll_wait(8,  <unfinished ...>
+202679 epoll_wait(7,  <unfinished ...>
+202681 <... epoll_wait resumed>[{events=EPOLLOUT, data={u32=1879051216, u64=140052172639184}}], 256, 29988) = 1
+202679 <... epoll_wait resumed>[{events=EPOLLOUT, data={u32=1879053360, u64=140052172641328}}], 256, 29989) = 1
+202681 sendto(11, "\4\32\5READY\vSocket-Type\0\0\0\4PULL", 28, 0, NULL, 0 <unfinished ...>
+202679 sendto(9, "\4\32\5READY\vSocket-Type\0\0\0\4PUSH", 28, 0, NULL, 0 <unfinished ...>
+202681 <... sendto resumed>)            = 28
+202679 <... sendto resumed>)            = 28
+202681 epoll_wait(8,  <unfinished ...>
+202679 epoll_wait(7,  <unfinished ...>
+202681 <... epoll_wait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=1879051216, u64=140052172639184}}], 256, 29988) = 1
+202679 <... epoll_wait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=1879053360, u64=140052172641328}}], 256, 29988) = 1
+202681 epoll_ctl(8, EPOLL_CTL_MOD, 11, {events=EPOLLIN, data={u32=1879051216, u64=140052172639184}} <unfinished ...>
+202679 epoll_ctl(7, EPOLL_CTL_MOD, 9, {events=EPOLLIN, data={u32=1879053360, u64=140052172641328}} <unfinished ...>
+202681 <... epoll_ctl resumed>)         = 0
+202679 <... epoll_ctl resumed>)         = 0
+202681 recvfrom(11,  <unfinished ...>
+202679 recvfrom(9,  <unfinished ...>
+202681 <... recvfrom resumed>"\4\32\5READY\vSocket-Type\0\0\0\4PUSH", 8192, 0, NULL, NULL) = 28
+202679 <... recvfrom resumed>"\4\32\5READY\vSocket-Type\0\0\0\4PULL", 8192, 0, NULL, NULL) = 28
+202681 getpid( <unfinished ...>
+202679 epoll_ctl(7, EPOLL_CTL_MOD, 9, {events=EPOLLIN|EPOLLOUT, data={u32=1879053360, u64=140052172641328}} <unfinished ...>
+202681 <... getpid resumed>)            = 202677
+202679 <... epoll_ctl resumed>)         = 0
+202681 write(9, "\1\0\0\0\0\0\0\0", 8 <unfinished ...>
+202679 epoll_ctl(7, EPOLL_CTL_MOD, 9, {events=EPOLLIN, data={u32=1879053360, u64=140052172641328}} <unfinished ...>
+202681 <... write resumed>)             = 8
+202677 <... poll resumed>)              = 1 ([{fd=9, revents=POLLIN}])
+202681 futex(0x7f607744d77c, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+202679 <... epoll_ctl resumed>)         = 0
+202681 <... futex resumed>)             = 0
+202677 getpid( <unfinished ...>
+202681 futex(0x7f607744d788, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+202679 epoll_wait(7,  <unfinished ...>
+202681 <... futex resumed>)             = 0
+202677 <... getpid resumed>)            = 202677
+202681 epoll_ctl(8, EPOLL_CTL_MOD, 11, {events=EPOLLIN|EPOLLOUT, data={u32=1879051216, u64=140052172639184}} <unfinished ...>
+202677 read(9,  <unfinished ...>
+202681 <... epoll_ctl resumed>)         = 0
+202677 <... read resumed>"\1\0\0\0\0\0\0\0", 8) = 8
+202681 epoll_ctl(8, EPOLL_CTL_MOD, 11, {events=EPOLLIN, data={u32=1879051216, u64=140052172639184}} <unfinished ...>
+202677 getpid( <unfinished ...>
+202681 <... epoll_ctl resumed>)         = 0
+202677 <... getpid resumed>)            = 202677
+202681 epoll_wait(8,  <unfinished ...>
+202677 poll([{fd=9, events=POLLIN}], 1, 0) = 0 (Timeout)
+202677 getpid()                         = 202677
+202677 poll([{fd=9, events=POLLIN}], 1, -1 <unfinished ...>
+202676 <... read resumed>"create 2 -1\n", 1024) = 12
+202676 write(1, "Received command: create 2 -1\n", 30) = 30
+202676 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f6076fd9c90) = 202682
+202682 set_robust_list(0x7f6076fd9ca0, 24 <unfinished ...>
+202676 eventfd2(0, EFD_CLOEXEC <unfinished ...>
+202682 <... set_robust_list resumed>)   = 0
+202676 <... eventfd2 resumed>)          = 10
+202676 fcntl(10, F_GETFL)               = 0x2 (flags O_RDWR)
+202682 eventfd2(0, EFD_CLOEXEC <unfinished ...>
+202676 fcntl(10, F_SETFL, O_RDWR|O_NONBLOCK <unfinished ...>
+202682 <... eventfd2 resumed>)          = 10
+202676 <... fcntl resumed>)             = 0
+202682 fcntl(10, F_GETFL <unfinished ...>
+202676 fcntl(10, F_GETFL <unfinished ...>
+202682 <... fcntl resumed>)             = 0x2 (flags O_RDWR)
+202676 <... fcntl resumed>)             = 0x802 (flags O_RDWR|O_NONBLOCK)
+202682 fcntl(10, F_SETFL, O_RDWR|O_NONBLOCK <unfinished ...>
+202676 fcntl(10, F_SETFL, O_RDWR|O_NONBLOCK <unfinished ...>
+202682 <... fcntl resumed>)             = 0
+202676 <... fcntl resumed>)             = 0
+202682 fcntl(10, F_GETFL <unfinished ...>
+202676 getpid( <unfinished ...>
+202682 <... fcntl resumed>)             = 0x802 (flags O_RDWR|O_NONBLOCK)
+202676 <... getpid resumed>)            = 202676
+202682 fcntl(10, F_SETFL, O_RDWR|O_NONBLOCK <unfinished ...>
+202676 getpid( <unfinished ...>
+202682 <... fcntl resumed>)             = 0
+202676 <... getpid resumed>)            = 202676
+202682 getpid( <unfinished ...>
+202676 poll([{fd=10, events=POLLIN}], 1, 0 <unfinished ...>
+202682 <... getpid resumed>)            = 202682
+202676 <... poll resumed>)              = 0 (Timeout)
+202682 getpid( <unfinished ...>
+202676 getpid( <unfinished ...>
+202682 <... getpid resumed>)            = 202682
+202676 <... getpid resumed>)            = 202676
+202682 eventfd2(0, EFD_CLOEXEC <unfinished ...>
+202676 write(6, "\1\0\0\0\0\0\0\0", 8 <unfinished ...>
+202682 <... eventfd2 resumed>)          = 11
+202676 <... write resumed>)             = 8
+202679 <... epoll_wait resumed>[{events=EPOLLIN, data={u32=3447669344, u64=94411123802720}}], 256, -1) = 1
+202676 getpid( <unfinished ...>
+202682 fcntl(11, F_GETFL <unfinished ...>
+202676 <... getpid resumed>)            = 202676
+202679 getpid( <unfinished ...>
+202676 write(10, "\1\0\0\0\0\0\0\0", 8 <unfinished ...>
+202682 <... fcntl resumed>)             = 0x2 (flags O_RDWR)
+202676 <... write resumed>)             = 8
+202679 <... getpid resumed>)            = 202676
+202676 write(1, "Ok: 202682\n", 11 <unfinished ...>
+202682 fcntl(11, F_SETFL, O_RDWR|O_NONBLOCK <unfinished ...>
+202676 <... write resumed>)             = 11
+202679 poll([{fd=6, events=POLLIN}], 1, 0 <unfinished ...>
+202676 read(0,  <unfinished ...>
+202682 <... fcntl resumed>)             = 0
+202679 <... poll resumed>)              = 1 ([{fd=6, revents=POLLIN}])
+202682 fcntl(11, F_GETFL <unfinished ...>
+202679 getpid( <unfinished ...>
+202682 <... fcntl resumed>)             = 0x802 (flags O_RDWR|O_NONBLOCK)
+202679 <... getpid resumed>)            = 202676
+202682 fcntl(11, F_SETFL, O_RDWR|O_NONBLOCK <unfinished ...>
+202679 read(6,  <unfinished ...>
+202682 <... fcntl resumed>)             = 0
+202679 <... read resumed>"\1\0\0\0\0\0\0\0", 8) = 8
+202682 getpid()                         = 202682
+202679 socket(AF_INET, SOCK_STREAM|SOCK_CLOEXEC, IPPROTO_TCP <unfinished ...>
+202682 epoll_create1(EPOLL_CLOEXEC <unfinished ...>
+202679 <... socket resumed>)            = 11
+202682 <... epoll_create1 resumed>)     = 12
+202679 fcntl(11, F_GETFL <unfinished ...>
+202682 epoll_ctl(12, EPOLL_CTL_ADD, 11, {events=0, data={u32=3447734688, u64=94411123868064}} <unfinished ...>
+202679 <... fcntl resumed>)             = 0x2 (flags O_RDWR)
+202682 <... epoll_ctl resumed>)         = 0
+202679 fcntl(11, F_SETFL, O_RDWR|O_NONBLOCK <unfinished ...>
+202682 epoll_ctl(12, EPOLL_CTL_MOD, 11, {events=EPOLLIN, data={u32=3447734688, u64=94411123868064}} <unfinished ...>
+202679 <... fcntl resumed>)             = 0
+202682 <... epoll_ctl resumed>)         = 0
+202679 connect(11, {sa_family=AF_INET, sin_port=htons(5552), sin_addr=inet_addr("127.0.0.1")}, 16 <unfinished ...>
+202682 getpid( <unfinished ...>
+202679 <... connect resumed>)           = -1 EINPROGRESS (Operation now in progress)
+202682 <... getpid resumed>)            = 202682
+202679 epoll_ctl(7, EPOLL_CTL_ADD, 11, {events=0, data={u32=1879053472, u64=140052172641440}} <unfinished ...>
+202682 rt_sigprocmask(SIG_BLOCK, ~[],  <unfinished ...>
+202679 <... epoll_ctl resumed>)         = 0
+202682 <... rt_sigprocmask resumed>[], 8) = 0
+202679 epoll_ctl(7, EPOLL_CTL_MOD, 11, {events=EPOLLOUT, data={u32=1879053472, u64=140052172641440}} <unfinished ...>
+202682 clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7f60767d5910, parent_tid=0x7f60767d5910, exit_signal=0, stack=0x7f6075fd5000, stack_size=0x7ffc80, tls=0x7f60767d5640} <unfinished ...>
+202679 <... epoll_ctl resumed>)         = 0
+202679 getpid()                         = 202676
+202683 rseq(0x7f60767d5fe0, 0x20, 0, 0x53053053 <unfinished ...>
+202682 <... clone3 resumed> => {parent_tid=[202683]}, 88) = 202683
+202683 <... rseq resumed>)              = 0
+202679 poll([{fd=6, events=POLLIN}], 1, 0 <unfinished ...>
+202683 set_robust_list(0x7f60767d5920, 24 <unfinished ...>
+202682 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+202683 <... set_robust_list resumed>)   = 0
+202679 <... poll resumed>)              = 0 (Timeout)
+202683 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+202682 <... rt_sigprocmask resumed>NULL, 8) = 0
+202683 <... rt_sigprocmask resumed>NULL, 8) = 0
+202679 epoll_wait(7,  <unfinished ...>
+202683 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1],  <unfinished ...>
+202682 eventfd2(0, EFD_CLOEXEC <unfinished ...>
+202683 <... rt_sigprocmask resumed>NULL, 8) = 0
+202679 <... epoll_wait resumed>[{events=EPOLLOUT|EPOLLERR|EPOLLHUP, data={u32=1879053472, u64=140052172641440}}], 256, -1) = 1
+202683 sched_getparam(202683,  <unfinished ...>
+202682 <... eventfd2 resumed>)          = 13
+202683 <... sched_getparam resumed>[0]) = 0
+202679 epoll_ctl(7, EPOLL_CTL_DEL, 11, 0x7f60700014a4 <unfinished ...>
+202683 sched_getscheduler(202683 <unfinished ...>
+202682 fcntl(13, F_GETFL <unfinished ...>
+202683 <... sched_getscheduler resumed>) = 0 (SCHED_OTHER)
+202679 <... epoll_ctl resumed>)         = 0
+202683 sched_setscheduler(202683, SCHED_OTHER, [0] <unfinished ...>
+202682 <... fcntl resumed>)             = 0x2 (flags O_RDWR)
+202683 <... sched_setscheduler resumed>) = 0
+202679 getsockopt(11, SOL_SOCKET, SO_ERROR,  <unfinished ...>
+202683 prctl(PR_SET_NAME, "ZMQbg/Reaper" <unfinished ...>
+202682 fcntl(13, F_SETFL, O_RDWR|O_NONBLOCK <unfinished ...>
+202683 <... prctl resumed>)             = 0
+202679 <... getsockopt resumed>[ECONNREFUSED], [4]) = 0
+202683 epoll_wait(12,  <unfinished ...>
+202682 <... fcntl resumed>)             = 0
+202679 close(11 <unfinished ...>
+202682 fcntl(13, F_GETFL <unfinished ...>
+202679 <... close resumed>)             = 0
+202682 <... fcntl resumed>)             = 0x802 (flags O_RDWR|O_NONBLOCK)
+202679 epoll_wait(7,  <unfinished ...>
+202682 fcntl(13, F_SETFL, O_RDWR|O_NONBLOCK) = 0
+202682 getpid()                         = 202682
+202682 epoll_create1(EPOLL_CLOEXEC)     = 14
+202682 epoll_ctl(14, EPOLL_CTL_ADD, 13, {events=0, data={u32=3447673312, u64=94411123806688}}) = 0
+202682 epoll_ctl(14, EPOLL_CTL_MOD, 13, {events=EPOLLIN, data={u32=3447673312, u64=94411123806688}}) = 0
+202682 rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0
+202682 clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7f6076fd6910, parent_tid=0x7f6076fd6910, exit_signal=0, stack=0x7f60767d6000, stack_size=0x7ffc80, tls=0x7f6076fd6640} <unfinished ...>
+202684 rseq(0x7f6076fd6fe0, 0x20, 0, 0x53053053 <unfinished ...>
+202682 <... clone3 resumed> => {parent_tid=[202684]}, 88) = 202684
+202684 <... rseq resumed>)              = 0
+202682 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+202684 set_robust_list(0x7f6076fd6920, 24 <unfinished ...>
+202682 <... rt_sigprocmask resumed>NULL, 8) = 0
+202684 <... set_robust_list resumed>)   = 0
+202682 eventfd2(0, EFD_CLOEXEC <unfinished ...>
+202684 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+202682 <... eventfd2 resumed>)          = 15
+202684 <... rt_sigprocmask resumed>NULL, 8) = 0
+202682 fcntl(15, F_GETFL <unfinished ...>
+202684 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1],  <unfinished ...>
+202682 <... fcntl resumed>)             = 0x2 (flags O_RDWR)
+202684 <... rt_sigprocmask resumed>NULL, 8) = 0
+202682 fcntl(15, F_SETFL, O_RDWR|O_NONBLOCK <unfinished ...>
+202684 sched_getparam(202684,  <unfinished ...>
+202682 <... fcntl resumed>)             = 0
+202684 <... sched_getparam resumed>[0]) = 0
+202682 fcntl(15, F_GETFL <unfinished ...>
+202684 sched_getscheduler(202684 <unfinished ...>
+202682 <... fcntl resumed>)             = 0x802 (flags O_RDWR|O_NONBLOCK)
+202684 <... sched_getscheduler resumed>) = 0 (SCHED_OTHER)
+202682 fcntl(15, F_SETFL, O_RDWR|O_NONBLOCK <unfinished ...>
+202684 sched_setscheduler(202684, SCHED_OTHER, [0] <unfinished ...>
+202682 <... fcntl resumed>)             = 0
+202684 <... sched_setscheduler resumed>) = 0
+202682 getpid( <unfinished ...>
+202684 prctl(PR_SET_NAME, "ZMQbg/IO/0" <unfinished ...>
+202682 <... getpid resumed>)            = 202682
+202684 <... prctl resumed>)             = 0
+202682 getpid( <unfinished ...>
+202684 epoll_wait(14,  <unfinished ...>
+202682 <... getpid resumed>)            = 202682
+202682 poll([{fd=15, events=POLLIN}], 1, 0) = 0 (Timeout)
+202682 socket(AF_NETLINK, SOCK_RAW|SOCK_CLOEXEC, NETLINK_ROUTE) = 16
+202682 bind(16, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 0
+202682 getsockname(16, {sa_family=AF_NETLINK, nl_pid=202682, nl_groups=00000000}, [12]) = 0
+202682 sendto(16, [{nlmsg_len=20, nlmsg_type=RTM_GETLINK, nlmsg_flags=NLM_F_REQUEST|NLM_F_DUMP, nlmsg_seq=1741547274, nlmsg_pid=0}, {ifi_family=AF_UNSPEC, ...}], 20, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 20
+202682 recvmsg(16, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=1348, nlmsg_type=RTM_NEWLINK, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1741547274, nlmsg_pid=202682}, {ifi_family=AF_UNSPEC, ifi_type=ARPHRD_LOOPBACK, ifi_index=if_nametoindex("lo"), ifi_flags=IFF_UP|IFF_LOOPBACK|IFF_RUNNING|IFF_LOWER_UP, ifi_change=0}, [[{nla_len=7, nla_type=IFLA_IFNAME}, "lo"], [{nla_len=8, nla_type=IFLA_TXQLEN}, 1000], [{nla_len=5, nla_type=IFLA_OPERSTATE}, 0], [{nla_len=5, nla_type=IFLA_LINKMODE}, 0], [{nla_len=8, nla_type=IFLA_MTU}, 65536], [{nla_len=8, nla_type=IFLA_MIN_MTU}, 0], [{nla_len=8, nla_type=IFLA_MAX_MTU}, 0], [{nla_len=8, nla_type=IFLA_GROUP}, 0], [{nla_len=8, nla_type=IFLA_PROMISCUITY}, 0], [{nla_len=8, nla_type=IFLA_NUM_TX_QUEUES}, 1], [{nla_len=8, nla_type=IFLA_GSO_MAX_SEGS}, 65535], [{nla_len=8, nla_type=IFLA_GSO_MAX_SIZE}, 65536], [{nla_len=8, nla_type=IFLA_NUM_RX_QUEUES}, 1], [{nla_len=5, nla_type=IFLA_CARRIER}, 1], [{nla_len=12, nla_type=IFLA_QDISC}, "noqueue"], [{nla_len=8, nla_type=IFLA_CARRIER_CHANGES}, 0], [{nla_len=8, nla_type=IFLA_CARRIER_UP_COUNT}, 0], [{nla_len=8, nla_type=IFLA_CARRIER_DOWN_COUNT}, 0], [{nla_len=5, nla_type=IFLA_PROTO_DOWN}, 0], [{nla_len=36, nla_type=IFLA_MAP}, {mem_start=0, mem_end=0, base_addr=0, irq=0, dma=0, port=0}], [{nla_len=10, nla_type=IFLA_ADDRESS}, 00:00:00:00:00:00], [{nla_len=10, nla_type=IFLA_BROADCAST}, 00:00:00:00:00:00], [{nla_len=196, nla_type=IFLA_STATS64}, {rx_packets=103960, tx_packets=103960, rx_bytes=5232722, tx_bytes=5232722, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=0, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}], [{nla_len=100, nla_type=IFLA_STATS}, {rx_packets=103960, tx_packets=103960, rx_bytes=5232722, tx_bytes=5232722, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=0, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}], [{nla_len=12, nla_type=IFLA_XDP}, [{nla_len=5, nla_type=IFLA_XDP_ATTACHED}, XDP_ATTACHED_NONE]], [{nla_len=792, nla_type=IFLA_AF_SPEC}, [[{nla_len=136, nla_type=AF_INET}, [{nla_len=132, nla_type=IFLA_INET_CONF}, [[IPV4_DEVCONF_FORWARDING-1] = 1, [IPV4_DEVCONF_MC_FORWARDING-1] = 0, [IPV4_DEVCONF_PROXY_ARP-1] = 0, [IPV4_DEVCONF_ACCEPT_REDIRECTS-1] = 1, [IPV4_DEVCONF_SECURE_REDIRECTS-1] = 1, [IPV4_DEVCONF_SEND_REDIRECTS-1] = 1, [IPV4_DEVCONF_SHARED_MEDIA-1] = 1, [IPV4_DEVCONF_RP_FILTER-1] = 2, [IPV4_DEVCONF_ACCEPT_SOURCE_ROUTE-1] = 0, [IPV4_DEVCONF_BOOTP_RELAY-1] = 0, [IPV4_DEVCONF_LOG_MARTIANS-1] = 0, [IPV4_DEVCONF_TAG-1] = 0, [IPV4_DEVCONF_ARPFILTER-1] = 0, [IPV4_DEVCONF_MEDIUM_ID-1] = 0, [IPV4_DEVCONF_NOXFRM-1] = 1, [IPV4_DEVCONF_NOPOLICY-1] = 1, [IPV4_DEVCONF_FORCE_IGMP_VERSION-1] = 0, [IPV4_DEVCONF_ARP_ANNOUNCE-1] = 0, [IPV4_DEVCONF_ARP_IGNORE-1] = 0, [IPV4_DEVCONF_PROMOTE_SECONDARIES-1] = 1, [IPV4_DEVCONF_ARP_ACCEPT-1] = 0, [IPV4_DEVCONF_ARP_NOTIFY-1] = 0, [IPV4_DEVCONF_ACCEPT_LOCAL-1] = 0, [IPV4_DEVCONF_SRC_VMARK-1] = 0, [IPV4_DEVCONF_PROXY_ARP_PVLAN-1] = 0, [IPV4_DEVCONF_ROUTE_LOCALNET-1] = 0, [IPV4_DEVCONF_IGMPV2_UNSOLICITED_REPORT_INTERVAL-1] = 10000, [IPV4_DEVCONF_IGMPV3_UNSOLICITED_REPORT_INTERVAL-1] = 1000, [IPV4_DEVCONF_IGNORE_ROUTES_WITH_LINKDOWN-1] = 0, [IPV4_DEVCONF_DROP_UNICAST_IN_L2_MULTICAST-1] = 0, [IPV4_DEVCONF_DROP_GRATUITOUS_ARP-1] = 0, [IPV4_DEVCONF_BC_FORWARDING-1] = 0]]], [{nla_len=652, nla_type=AF_INET6}, [[{nla_len=8, nla_type=IFLA_INET6_FLAGS}, IF_READY], [{nla_len=20, nla_type=IFLA_INET6_CACHEINFO}, {max_reasm_len=65535, tstamp=28, reachable_time=22590, retrans_time=1000}], [{nla_len=240, nla_type=IFLA_INET6_CONF}, [[DEVCONF_FORWARDING] = 0, [DEVCONF_HOPLIMIT] = 64, [DEVCONF_MTU6] = 65536, [DEVCONF_ACCEPT_RA] = 1, [DEVCONF_ACCEPT_REDIRECTS] = 1, [DEVCONF_AUTOCONF] = 1, [DEVCONF_DAD_TRANSMITS] = 1, [DEVCONF_RTR_SOLICITS] = -1, [DEVCONF_RTR_SOLICIT_INTERVAL] = 4000, [DEVCONF_RTR_SOLICIT_DELAY] = 1000, [DEVCONF_USE_TEMPADDR] = -1, [DEVCONF_TEMP_VALID_LFT] = 604800, [DEVCONF_TEMP_PREFERED_LFT] = 86400, [DEVCONF_REGEN_MAX_RETRY] = 3, [DEVCONF_MAX_DESYNC_FACTOR] = 600, [DEVCONF_MAX_ADDRESSES] = 16, [DEVCONF_FORCE_MLD_VERSION] = 0, [DEVCONF_ACCEPT_RA_DEFRTR] = 1, [DEVCONF_ACCEPT_RA_PINFO] = 1, [DEVCONF_ACCEPT_RA_RTR_PREF] = 0, [DEVCONF_RTR_PROBE_INTERVAL] = 0, [DEVCONF_ACCEPT_RA_RT_INFO_MAX_PLEN] = 0, [DEVCONF_PROXY_NDP] = 0, [DEVCONF_OPTIMISTIC_DAD] = 0, [DEVCONF_ACCEPT_SOURCE_ROUTE] = 0, [DEVCONF_MC_FORWARDING] = 0, [DEVCONF_DISABLE_IPV6] = 0, [DEVCONF_ACCEPT_DAD] = -1, [DEVCONF_FORCE_TLLAO] = 0, [DEVCONF_NDISC_NOTIFY] = 0, [DEVCONF_MLDV1_UNSOLICITED_REPORT_INTERVAL] = 10000, [DEVCONF_MLDV2_UNSOLICITED_REPORT_INTERVAL] = 1000, ...]], [{nla_len=300, nla_type=IFLA_INET6_STATS}, [[IPSTATS_MIB_NUM] = 37, [IPSTATS_MIB_INPKTS] = 0, [IPSTATS_MIB_INOCTETS] = 0, [IPSTATS_MIB_INDELIVERS] = 0, [IPSTATS_MIB_OUTFORWDATAGRAMS] = 0, [IPSTATS_MIB_OUTPKTS] = 0, [IPSTATS_MIB_OUTOCTETS] = 0, [IPSTATS_MIB_INHDRERRORS] = 0, [IPSTATS_MIB_INTOOBIGERRORS] = 0, [IPSTATS_MIB_INNOROUTES] = 0, [IPSTATS_MIB_INADDRERRORS] = 0, [IPSTATS_MIB_INUNKNOWNPROTOS] = 0, [IPSTATS_MIB_INTRUNCATEDPKTS] = 0, [IPSTATS_MIB_INDISCARDS] = 0, [IPSTATS_MIB_OUTDISCARDS] = 0, [IPSTATS_MIB_OUTNOROUTES] = 0, [IPSTATS_MIB_REASMTIMEOUT] = 0, [IPSTATS_MIB_REASMREQDS] = 0, [IPSTATS_MIB_REASMOKS] = 0, [IPSTATS_MIB_REASMFAILS] = 0, [IPSTATS_MIB_FRAGOKS] = 0, [IPSTATS_MIB_FRAGFAILS] = 0, [IPSTATS_MIB_FRAGCREATES] = 0, [IPSTATS_MIB_INMCASTPKTS] = 0, [IPSTATS_MIB_OUTMCASTPKTS] = 0, [IPSTATS_MIB_INBCASTPKTS] = 0, [IPSTATS_MIB_OUTBCASTPKTS] = 0, [IPSTATS_MIB_INMCASTOCTETS] = 0, [IPSTATS_MIB_OUTMCASTOCTETS] = 0, [IPSTATS_MIB_INBCASTOCTETS] = 0, [IPSTATS_MIB_OUTBCASTOCTETS] = 0, [IPSTATS_MIB_CSUMERRORS] = 0, ...]], [{nla_len=52, nla_type=IFLA_INET6_ICMP6STATS}, [[ICMP6_MIB_NUM] = 6, [ICMP6_MIB_INMSGS] = 0, [ICMP6_MIB_INERRORS] = 0, [ICMP6_MIB_OUTMSGS] = 0, [ICMP6_MIB_OUTERRORS] = 0, [ICMP6_MIB_CSUMERRORS] = 0]], [{nla_len=20, nla_type=IFLA_INET6_TOKEN}, inet_pton(AF_INET6, "::")], [{nla_len=5, nla_type=IFLA_INET6_ADDR_GEN_MODE}, IN6_ADDR_GEN_MODE_EUI64]]]]]]], [{nlmsg_len=1416, nlmsg_type=RTM_NEWLINK, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1741547274, nlmsg_pid=202682}, {ifi_family=AF_UNSPEC, ifi_type=ARPHRD_ETHER, ifi_index=if_nametoindex("eth0"), ifi_flags=IFF_UP|IFF_BROADCAST|IFF_RUNNING|IFF_MULTICAST|IFF_LOWER_UP, ifi_change=0}, [[{nla_len=9, nla_type=IFLA_IFNAME}, "eth0"], [{nla_len=8, nla_type=IFLA_TXQLEN}, 1000], [{nla_len=5, nla_type=IFLA_OPERSTATE}, 6], [{nla_len=5, nla_type=IFLA_LINKMODE}, 0], [{nla_len=8, nla_type=IFLA_MTU}, 1500], [{nla_len=8, nla_type=IFLA_MIN_MTU}, 68], [{nla_len=8, nla_type=IFLA_MAX_MTU}, 65521], [{nla_len=8, nla_type=IFLA_GROUP}, 0], [{nla_len=8, nla_type=IFLA_PROMISCUITY}, 0], [{nla_len=8, nla_type=IFLA_NUM_TX_QUEUES}, 64], [{nla_len=8, nla_type=IFLA_GSO_MAX_SEGS}, 65535], [{nla_len=8, nla_type=IFLA_GSO_MAX_SIZE}, 62780], [{nla_len=8, nla_type=IFLA_NUM_RX_QUEUES}, 64], [{nla_len=5, nla_type=IFLA_CARRIER}, 1], [{nla_len=7, nla_type=IFLA_QDISC}, "mq"], [{nla_len=8, nla_type=IFLA_CARRIER_CHANGES}, 1], [{nla_len=8, nla_type=IFLA_CARRIER_UP_COUNT}, 1], [{nla_len=8, nla_type=IFLA_CARRIER_DOWN_COUNT}, 0], [{nla_len=5, nla_type=IFLA_PROTO_DOWN}, 0], [{nla_len=36, nla_type=IFLA_MAP}, {mem_start=0, mem_end=0, base_addr=0, irq=0, dma=0, port=0}], [{nla_len=10, nla_type=IFLA_ADDRESS}, 00:15:5d:65:1f:8a], [{nla_len=10, nla_type=IFLA_BROADCAST}, ff:ff:ff:ff:ff:ff], [{nla_len=196, nla_type=IFLA_STATS64}, {rx_packets=60201, tx_packets=7670, rx_bytes=79733740, tx_bytes=708660, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=6999, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}], [{nla_len=100, nla_type=IFLA_STATS}, {rx_packets=60201, tx_packets=7670, rx_bytes=79733740, tx_bytes=708660, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=6999, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}], [{nla_len=12, nla_type=IFLA_XDP}, [{nla_len=5, nla_type=IFLA_XDP_ATTACHED}, XDP_ATTACHED_NONE]], [{nla_len=10, nla_type=IFLA_PERM_ADDRESS}, 00:15:5d:65:1f:8a], [{nla_len=792, nla_type=IFLA_AF_SPEC}, [[{nla_len=136, nla_type=AF_INET}, [{nla_len=132, nla_type=IFLA_INET_CONF}, [[IPV4_DEVCONF_FORWARDING-1] = 1, [IPV4_DEVCONF_MC_FORWARDING-1] = 0, [IPV4_DEVCONF_PROXY_ARP-1] = 0, [IPV4_DEVCONF_ACCEPT_REDIRECTS-1] = 1, [IPV4_DEVCONF_SECURE_REDIRECTS-1] = 1, [IPV4_DEVCONF_SEND_REDIRECTS-1] = 1, [IPV4_DEVCONF_SHARED_MEDIA-1] = 1, [IPV4_DEVCONF_RP_FILTER-1] = 2, [IPV4_DEVCONF_ACCEPT_SOURCE_ROUTE-1] = 0, [IPV4_DEVCONF_BOOTP_RELAY-1] = 0, [IPV4_DEVCONF_LOG_MARTIANS-1] = 0, [IPV4_DEVCONF_TAG-1] = 0, [IPV4_DEVCONF_ARPFILTER-1] = 0, [IPV4_DEVCONF_MEDIUM_ID-1] = 0, [IPV4_DEVCONF_NOXFRM-1] = 0, [IPV4_DEVCONF_NOPOLICY-1] = 0, [IPV4_DEVCONF_FORCE_IGMP_VERSION-1] = 0, [IPV4_DEVCONF_ARP_ANNOUNCE-1] = 0, [IPV4_DEVCONF_ARP_IGNORE-1] = 0, [IPV4_DEVCONF_PROMOTE_SECONDARIES-1] = 1, [IPV4_DEVCONF_ARP_ACCEPT-1] = 0, [IPV4_DEVCONF_ARP_NOTIFY-1] = 0, [IPV4_DEVCONF_ACCEPT_LOCAL-1] = 0, [IPV4_DEVCONF_SRC_VMARK-1] = 0, [IPV4_DEVCONF_PROXY_ARP_PVLAN-1] = 0, [IPV4_DEVCONF_ROUTE_LOCALNET-1] = 0, [IPV4_DEVCONF_IGMPV2_UNSOLICITED_REPORT_INTERVAL-1] = 10000, [IPV4_DEVCONF_IGMPV3_UNSOLICITED_REPORT_INTERVAL-1] = 1000, [IPV4_DEVCONF_IGNORE_ROUTES_WITH_LINKDOWN-1] = 0, [IPV4_DEVCONF_DROP_UNICAST_IN_L2_MULTICAST-1] = 0, [IPV4_DEVCONF_DROP_GRATUITOUS_ARP-1] = 0, [IPV4_DEVCONF_BC_FORWARDING-1] = 0]]], [{nla_len=652, nla_type=AF_INET6}, [[{nla_len=8, nla_type=IFLA_INET6_FLAGS}, IF_RS_SENT|IF_READY], [{nla_len=20, nla_type=IFLA_INET6_CACHEINFO}, {max_reasm_len=65535, tstamp=29, reachable_time=29720, retrans_time=1000}], [{nla_len=240, nla_type=IFLA_INET6_CONF}, [[DEVCONF_FORWARDING] = 0, [DEVCONF_HOPLIMIT] = 64, [DEVCONF_MTU6] = 1500, [DEVCONF_ACCEPT_RA] = 1, [DEVCONF_ACCEPT_REDIRECTS] = 1, [DEVCONF_AUTOCONF] = 1, [DEVCONF_DAD_TRANSMITS] = 1, [DEVCONF_RTR_SOLICITS] = -1, [DEVCONF_RTR_SOLICIT_INTERVAL] = 4000, [DEVCONF_RTR_SOLICIT_DELAY] = 1000, [DEVCONF_USE_TEMPADDR] = 0, [DEVCONF_TEMP_VALID_LFT] = 604800, [DEVCONF_TEMP_PREFERED_LFT] = 86400, [DEVCONF_REGEN_MAX_RETRY] = 3, [DEVCONF_MAX_DESYNC_FACTOR] = 600, [DEVCONF_MAX_ADDRESSES] = 16, [DEVCONF_FORCE_MLD_VERSION] = 0, [DEVCONF_ACCEPT_RA_DEFRTR] = 1, [DEVCONF_ACCEPT_RA_PINFO] = 1, [DEVCONF_ACCEPT_RA_RTR_PREF] = 0, [DEVCONF_RTR_PROBE_INTERVAL] = 0, [DEVCONF_ACCEPT_RA_RT_INFO_MAX_PLEN] = 0, [DEVCONF_PROXY_NDP] = 0, [DEVCONF_OPTIMISTIC_DAD] = 0, [DEVCONF_ACCEPT_SOURCE_ROUTE] = 0, [DEVCONF_MC_FORWARDING] = 0, [DEVCONF_DISABLE_IPV6] = 0, [DEVCONF_ACCEPT_DAD] = 1, [DEVCONF_FORCE_TLLAO] = 0, [DEVCONF_NDISC_NOTIFY] = 0, [DEVCONF_MLDV1_UNSOLICITED_REPORT_INTERVAL] = 10000, [DEVCONF_MLDV2_UNSOLICITED_REPORT_INTERVAL] = 1000, ...]], [{nla_len=300, nla_type=IFLA_INET6_STATS}, [[IPSTATS_MIB_NUM] = 37, [IPSTATS_MIB_INPKTS] = 4893, [IPSTATS_MIB_INOCTETS] = 419547, [IPSTATS_MIB_INDELIVERS] = 18, [IPSTATS_MIB_OUTFORWDATAGRAMS] = 0, [IPSTATS_MIB_OUTPKTS] = 71, [IPSTATS_MIB_OUTOCTETS] = 4072, [IPSTATS_MIB_INHDRERRORS] = 0, [IPSTATS_MIB_INTOOBIGERRORS] = 0, [IPSTATS_MIB_INNOROUTES] = 0, [IPSTATS_MIB_INADDRERRORS] = 0, [IPSTATS_MIB_INUNKNOWNPROTOS] = 0, [IPSTATS_MIB_INTRUNCATEDPKTS] = 0, [IPSTATS_MIB_INDISCARDS] = 0, [IPSTATS_MIB_OUTDISCARDS] = 0, [IPSTATS_MIB_OUTNOROUTES] = 0, [IPSTATS_MIB_REASMTIMEOUT] = 0, [IPSTATS_MIB_REASMREQDS] = 0, [IPSTATS_MIB_REASMOKS] = 0, [IPSTATS_MIB_REASMFAILS] = 0, [IPSTATS_MIB_FRAGOKS] = 0, [IPSTATS_MIB_FRAGFAILS] = 0, [IPSTATS_MIB_FRAGCREATES] = 0, [IPSTATS_MIB_INMCASTPKTS] = 4893, [IPSTATS_MIB_OUTMCASTPKTS] = 71, [IPSTATS_MIB_INBCASTPKTS] = 0, [IPSTATS_MIB_OUTBCASTPKTS] = 0, [IPSTATS_MIB_INMCASTOCTETS] = 419547, [IPSTATS_MIB_OUTMCASTOCTETS] = 4072, [IPSTATS_MIB_INBCASTOCTETS] = 0, [IPSTATS_MIB_OUTBCASTOCTETS] = 0, [IPSTATS_MIB_CSUMERRORS] = 0, ...]], [{nla_len=52, nla_type=IFLA_INET6_ICMP6STATS}, [[ICMP6_MIB_NUM] = 6, [ICMP6_MIB_INMSGS] = 18, [ICMP6_MIB_INERRORS] = 0, [ICMP6_MIB_OUTMSGS] = 71, [ICMP6_MIB_OUTERRORS] = 0, [ICMP6_MIB_CSUMERRORS] = 0]], [{nla_len=20, nla_type=IFLA_INET6_TOKEN}, inet_pton(AF_INET6, "::")], [{nla_len=5, nla_type=IFLA_INET6_ADDR_GEN_MODE}, IN6_ADDR_GEN_MODE_EUI64]]]]], [{nla_len=41, nla_type=IFLA_PARENT_DEV_NAME}, "9dccd9fd-33ed-4908-8f1c-63d83189"...], [{nla_len=10, nla_type=IFLA_PARENT_DEV_BUS_NAME}, "vmbus"]]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 2764
+202682 recvmsg(16, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{nlmsg_len=20, nlmsg_type=NLMSG_DONE, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1741547274, nlmsg_pid=202682}, 0], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 20
+202682 sendto(16, [{nlmsg_len=20, nlmsg_type=RTM_GETADDR, nlmsg_flags=NLM_F_REQUEST|NLM_F_DUMP, nlmsg_seq=1741547275, nlmsg_pid=0}, {ifa_family=AF_UNSPEC, ...}], 20, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 20
+202682 recvmsg(16, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=76, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1741547275, nlmsg_pid=202682}, {ifa_family=AF_INET, ifa_prefixlen=8, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("127.0.0.1")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("127.0.0.1")], [{nla_len=7, nla_type=IFA_LABEL}, "lo"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=28, tstamp=28}]]], [{nlmsg_len=88, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1741547275, nlmsg_pid=202682}, {ifa_family=AF_INET, ifa_prefixlen=20, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_UNIVERSE, ifa_index=if_nametoindex("eth0")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("172.23.33.73")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("172.23.33.73")], [{nla_len=8, nla_type=IFA_BROADCAST}, inet_addr("172.23.47.255")], [{nla_len=9, nla_type=IFA_LABEL}, "eth0"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=29, tstamp=29}]]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 164
+202682 recvmsg(16, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=72, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1741547275, nlmsg_pid=202682}, {ifa_family=AF_INET6, ifa_prefixlen=128, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=20, nla_type=IFA_ADDRESS}, inet_pton(AF_INET6, "::1")], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=28, tstamp=28}], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT]]], [{nlmsg_len=72, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1741547275, nlmsg_pid=202682}, {ifa_family=AF_INET6, ifa_prefixlen=64, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_LINK, ifa_index=if_nametoindex("eth0")}, [[{nla_len=20, nla_type=IFA_ADDRESS}, inet_pton(AF_INET6, "fe80::215:5dff:fe65:1f8a")], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=29, tstamp=29}], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT]]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 144
+202682 recvmsg(16, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{nlmsg_len=20, nlmsg_type=NLMSG_DONE, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1741547275, nlmsg_pid=202682}, 0], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 20
+202682 close(16)                        = 0
+202682 socket(AF_INET, SOCK_STREAM|SOCK_CLOEXEC, IPPROTO_TCP) = 16
+202682 setsockopt(16, SOL_SOCKET, SO_REUSEADDR, [1], 4) = 0
+202682 bind(16, {sa_family=AF_INET, sin_port=htons(5552), sin_addr=inet_addr("127.0.0.1")}, 16) = 0
+202682 listen(16, 100)                  = 0
+202682 getsockname(16, {sa_family=AF_INET, sin_port=htons(5552), sin_addr=inet_addr("127.0.0.1")}, [128 => 16]) = 0
+202682 getsockname(16, {sa_family=AF_INET, sin_port=htons(5552), sin_addr=inet_addr("127.0.0.1")}, [128 => 16]) = 0
+202682 getpid()                         = 202682
+202682 write(13, "\1\0\0\0\0\0\0\0", 8 <unfinished ...>
+202684 <... epoll_wait resumed>[{events=EPOLLIN, data={u32=3447673312, u64=94411123806688}}], 256, -1) = 1
+202682 <... write resumed>)             = 8
+202684 getpid( <unfinished ...>
+202682 getpid( <unfinished ...>
+202684 <... getpid resumed>)            = 202682
+202682 <... getpid resumed>)            = 202682
+202684 poll([{fd=13, events=POLLIN}], 1, 0 <unfinished ...>
+202682 write(15, "\1\0\0\0\0\0\0\0", 8 <unfinished ...>
+202684 <... poll resumed>)              = 1 ([{fd=13, revents=POLLIN}])
+202682 <... write resumed>)             = 8
+202684 getpid( <unfinished ...>
+202682 write(1, "Compute Node 2 started, listenin"..., 58 <unfinished ...>
+202684 <... getpid resumed>)            = 202682
+202682 <... write resumed>)             = 58
+202684 read(13,  <unfinished ...>
+202682 getpid( <unfinished ...>
+202684 <... read resumed>"\1\0\0\0\0\0\0\0", 8) = 8
+202682 <... getpid resumed>)            = 202682
+202684 epoll_ctl(14, EPOLL_CTL_ADD, 16, {events=0, data={u32=1879052272, u64=140052172640240}} <unfinished ...>
+202682 poll([{fd=15, events=POLLIN}], 1, -1 <unfinished ...>
+202684 <... epoll_ctl resumed>)         = 0
+202682 <... poll resumed>)              = 1 ([{fd=15, revents=POLLIN}])
+202684 epoll_ctl(14, EPOLL_CTL_MOD, 16, {events=EPOLLIN, data={u32=1879052272, u64=140052172640240}} <unfinished ...>
+202682 getpid( <unfinished ...>
+202684 <... epoll_ctl resumed>)         = 0
+202682 <... getpid resumed>)            = 202682
+202684 getpid( <unfinished ...>
+202682 read(15,  <unfinished ...>
+202684 <... getpid resumed>)            = 202682
+202682 <... read resumed>"\1\0\0\0\0\0\0\0", 8) = 8
+202684 poll([{fd=13, events=POLLIN}], 1, 0 <unfinished ...>
+202682 getpid( <unfinished ...>
+202684 <... poll resumed>)              = 0 (Timeout)
+202682 <... getpid resumed>)            = 202682
+202684 epoll_wait(14,  <unfinished ...>
+202682 poll([{fd=15, events=POLLIN}], 1, 0) = 0 (Timeout)
+202682 getpid()                         = 202682
+202682 poll([{fd=15, events=POLLIN}], 1, -1 <unfinished ...>
+202679 <... epoll_wait resumed>[], 256, 125) = 0
+202679 socket(AF_INET, SOCK_STREAM|SOCK_CLOEXEC, IPPROTO_TCP) = 11
+202679 fcntl(11, F_GETFL)               = 0x2 (flags O_RDWR)
+202679 fcntl(11, F_SETFL, O_RDWR|O_NONBLOCK) = 0
+202679 connect(11, {sa_family=AF_INET, sin_port=htons(5552), sin_addr=inet_addr("127.0.0.1")}, 16) = -1 EINPROGRESS (Operation now in progress)
+202684 <... epoll_wait resumed>[{events=EPOLLIN, data={u32=1879052272, u64=140052172640240}}], 256, -1) = 1
+202679 epoll_ctl(7, EPOLL_CTL_ADD, 11, {events=0, data={u32=1879053472, u64=140052172641440}} <unfinished ...>
+202684 accept4(16,  <unfinished ...>
+202679 <... epoll_ctl resumed>)         = 0
+202684 <... accept4 resumed>{sa_family=AF_INET, sin_port=htons(55662), sin_addr=inet_addr("127.0.0.1")}, [128 => 16], SOCK_CLOEXEC) = 17
+202679 epoll_ctl(7, EPOLL_CTL_MOD, 11, {events=EPOLLOUT, data={u32=1879053472, u64=140052172641440}} <unfinished ...>
+202684 setsockopt(17, SOL_TCP, TCP_NODELAY, [1], 4 <unfinished ...>
+202679 <... epoll_ctl resumed>)         = 0
+202684 <... setsockopt resumed>)        = 0
+202679 epoll_wait(7,  <unfinished ...>
+202684 getpeername(17,  <unfinished ...>
+202679 <... epoll_wait resumed>[{events=EPOLLOUT, data={u32=1879053472, u64=140052172641440}}], 256, -1) = 1
+202684 <... getpeername resumed>{sa_family=AF_INET, sin_port=htons(55662), sin_addr=inet_addr("127.0.0.1")}, [128 => 16]) = 0
+202684 getsockname(17,  <unfinished ...>
+202679 epoll_ctl(7, EPOLL_CTL_DEL, 11, 0x7f60700014a4 <unfinished ...>
+202684 <... getsockname resumed>{sa_family=AF_INET, sin_port=htons(5552), sin_addr=inet_addr("127.0.0.1")}, [128 => 16]) = 0
+202679 <... epoll_ctl resumed>)         = 0
+202684 getpeername(17,  <unfinished ...>
+202679 getsockopt(11, SOL_SOCKET, SO_ERROR,  <unfinished ...>
+202684 <... getpeername resumed>{sa_family=AF_INET, sin_port=htons(55662), sin_addr=inet_addr("127.0.0.1")}, [128 => 16]) = 0
+202679 <... getsockopt resumed>[0], [4]) = 0
+202684 fcntl(17, F_GETFL <unfinished ...>
+202679 setsockopt(11, SOL_TCP, TCP_NODELAY, [1], 4 <unfinished ...>
+202684 <... fcntl resumed>)             = 0x2 (flags O_RDWR)
+202679 <... setsockopt resumed>)        = 0
+202684 fcntl(17, F_SETFL, O_RDWR|O_NONBLOCK <unfinished ...>
+202679 getsockname(11,  <unfinished ...>
+202684 <... fcntl resumed>)             = 0
+202679 <... getsockname resumed>{sa_family=AF_INET, sin_port=htons(55662), sin_addr=inet_addr("127.0.0.1")}, [128 => 16]) = 0
+202684 getpid( <unfinished ...>
+202679 getpeername(11,  <unfinished ...>
+202684 <... getpid resumed>)            = 202682
+202679 <... getpeername resumed>{sa_family=AF_INET, sin_port=htons(5552), sin_addr=inet_addr("127.0.0.1")}, [128 => 16]) = 0
+202684 write(13, "\1\0\0\0\0\0\0\0", 8 <unfinished ...>
+202679 fcntl(11, F_GETFL <unfinished ...>
+202684 <... write resumed>)             = 8
+202679 <... fcntl resumed>)             = 0x802 (flags O_RDWR|O_NONBLOCK)
+202684 epoll_wait(14,  <unfinished ...>
+202679 fcntl(11, F_SETFL, O_RDWR|O_NONBLOCK <unfinished ...>
+202684 <... epoll_wait resumed>[{events=EPOLLIN, data={u32=3447673312, u64=94411123806688}}], 256, -1) = 1
+202679 <... fcntl resumed>)             = 0
+202684 getpid( <unfinished ...>
+202679 getpid( <unfinished ...>
+202684 <... getpid resumed>)            = 202682
+202679 <... getpid resumed>)            = 202676
+202684 poll([{fd=13, events=POLLIN}], 1, 0 <unfinished ...>
+202679 write(6, "\1\0\0\0\0\0\0\0", 8 <unfinished ...>
+202684 <... poll resumed>)              = 1 ([{fd=13, revents=POLLIN}])
+202679 <... write resumed>)             = 8
+202684 getpid( <unfinished ...>
+202679 epoll_wait(7,  <unfinished ...>
+202684 <... getpid resumed>)            = 202682
+202679 <... epoll_wait resumed>[{events=EPOLLIN, data={u32=3447669344, u64=94411123802720}}], 256, -1) = 1
+202684 read(13,  <unfinished ...>
+202679 getpid( <unfinished ...>
+202684 <... read resumed>"\1\0\0\0\0\0\0\0", 8) = 8
+202679 <... getpid resumed>)            = 202676
+202684 epoll_ctl(14, EPOLL_CTL_ADD, 17, {events=0, data={u32=1879052368, u64=140052172640336}} <unfinished ...>
+202679 poll([{fd=6, events=POLLIN}], 1, 0 <unfinished ...>
+202684 <... epoll_ctl resumed>)         = 0
+202679 <... poll resumed>)              = 1 ([{fd=6, revents=POLLIN}])
+202684 epoll_ctl(14, EPOLL_CTL_MOD, 17, {events=EPOLLIN, data={u32=1879052368, u64=140052172640336}} <unfinished ...>
+202679 getpid( <unfinished ...>
+202684 <... epoll_ctl resumed>)         = 0
+202679 <... getpid resumed>)            = 202676
+202684 epoll_ctl(14, EPOLL_CTL_MOD, 17, {events=EPOLLIN|EPOLLOUT, data={u32=1879052368, u64=140052172640336}} <unfinished ...>
+202679 read(6,  <unfinished ...>
+202684 <... epoll_ctl resumed>)         = 0
+202679 <... read resumed>"\1\0\0\0\0\0\0\0", 8) = 8
+202684 recvfrom(17,  <unfinished ...>
+202679 epoll_ctl(7, EPOLL_CTL_ADD, 11, {events=0, data={u32=1879053472, u64=140052172641440}} <unfinished ...>
+202684 <... recvfrom resumed>0x7f6070009378, 12, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+202679 <... epoll_ctl resumed>)         = 0
+202684 getpid( <unfinished ...>
+202679 epoll_ctl(7, EPOLL_CTL_MOD, 11, {events=EPOLLIN, data={u32=1879053472, u64=140052172641440}} <unfinished ...>
+202684 <... getpid resumed>)            = 202682
+202679 <... epoll_ctl resumed>)         = 0
+202684 poll([{fd=13, events=POLLIN}], 1, 0 <unfinished ...>
+202679 epoll_ctl(7, EPOLL_CTL_MOD, 11, {events=EPOLLIN|EPOLLOUT, data={u32=1879053472, u64=140052172641440}} <unfinished ...>
+202684 <... poll resumed>)              = 0 (Timeout)
+202679 <... epoll_ctl resumed>)         = 0
+202684 epoll_wait(14,  <unfinished ...>
+202679 recvfrom(11,  <unfinished ...>
+202684 <... epoll_wait resumed>[{events=EPOLLOUT, data={u32=1879052368, u64=140052172640336}}], 256, 29997) = 1
+202684 sendto(17, "\377\0\0\0\0\0\0\0\1\177", 10, 0, NULL, 0 <unfinished ...>
+202679 <... recvfrom resumed>0x7f60700096c8, 12, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+202684 <... sendto resumed>)            = 10
+202679 getpid( <unfinished ...>
+202684 epoll_ctl(14, EPOLL_CTL_MOD, 17, {events=EPOLLIN, data={u32=1879052368, u64=140052172640336}} <unfinished ...>
+202679 <... getpid resumed>)            = 202676
+202684 <... epoll_ctl resumed>)         = 0
+202679 poll([{fd=6, events=POLLIN}], 1, 0 <unfinished ...>
+202684 epoll_wait(14,  <unfinished ...>
+202679 <... poll resumed>)              = 0 (Timeout)
+202679 epoll_wait(7, [{events=EPOLLIN|EPOLLOUT, data={u32=1879053472, u64=140052172641440}}], 256, 29998) = 1
+202679 sendto(11, "\377\0\0\0\0\0\0\0\1\177", 10, 0, NULL, 0 <unfinished ...>
+202684 <... epoll_wait resumed>[{events=EPOLLIN, data={u32=1879052368, u64=140052172640336}}], 256, 29996) = 1
+202679 <... sendto resumed>)            = 10
+202684 recvfrom(17,  <unfinished ...>
+202679 epoll_ctl(7, EPOLL_CTL_MOD, 11, {events=EPOLLIN, data={u32=1879053472, u64=140052172641440}} <unfinished ...>
+202684 <... recvfrom resumed>"\377\0\0\0\0\0\0\0\1\177", 12, 0, NULL, NULL) = 10
+202679 <... epoll_ctl resumed>)         = 0
+202684 epoll_ctl(14, EPOLL_CTL_MOD, 17, {events=EPOLLIN|EPOLLOUT, data={u32=1879052368, u64=140052172640336}} <unfinished ...>
+202679 recvfrom(11,  <unfinished ...>
+202684 <... epoll_ctl resumed>)         = 0
+202679 <... recvfrom resumed>"\377\0\0\0\0\0\0\0\1\177", 12, 0, NULL, NULL) = 10
+202684 recvfrom(17,  <unfinished ...>
+202679 epoll_ctl(7, EPOLL_CTL_MOD, 11, {events=EPOLLIN|EPOLLOUT, data={u32=1879053472, u64=140052172641440}} <unfinished ...>
+202684 <... recvfrom resumed>0x7f6070009382, 2, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+202679 <... epoll_ctl resumed>)         = 0
+202684 epoll_wait(14,  <unfinished ...>
+202679 recvfrom(11,  <unfinished ...>
+202684 <... epoll_wait resumed>[{events=EPOLLOUT, data={u32=1879052368, u64=140052172640336}}], 256, 29994) = 1
+202679 <... recvfrom resumed>0x7f60700096d2, 2, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+202684 sendto(17, "\3", 1, 0, NULL, 0 <unfinished ...>
+202679 epoll_wait(7,  <unfinished ...>
+202684 <... sendto resumed>)            = 1
+202679 <... epoll_wait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=1879053472, u64=140052172641440}}], 256, 29995) = 1
+202684 epoll_ctl(14, EPOLL_CTL_MOD, 17, {events=EPOLLIN, data={u32=1879052368, u64=140052172640336}} <unfinished ...>
+202679 sendto(11, "\3", 1, 0, NULL, 0 <unfinished ...>
+202684 <... epoll_ctl resumed>)         = 0
+202679 <... sendto resumed>)            = 1
+202684 epoll_wait(14,  <unfinished ...>
+202679 epoll_ctl(7, EPOLL_CTL_MOD, 11, {events=EPOLLIN, data={u32=1879053472, u64=140052172641440}} <unfinished ...>
+202684 <... epoll_wait resumed>[{events=EPOLLIN, data={u32=1879052368, u64=140052172640336}}], 256, 29992) = 1
+202679 <... epoll_ctl resumed>)         = 0
+202684 recvfrom(17,  <unfinished ...>
+202679 recvfrom(11,  <unfinished ...>
+202684 <... recvfrom resumed>"\3", 2, 0, NULL, NULL) = 1
+202679 <... recvfrom resumed>"\3", 2, 0, NULL, NULL) = 1
+202684 epoll_ctl(14, EPOLL_CTL_MOD, 17, {events=EPOLLIN|EPOLLOUT, data={u32=1879052368, u64=140052172640336}} <unfinished ...>
+202679 epoll_ctl(7, EPOLL_CTL_MOD, 11, {events=EPOLLIN|EPOLLOUT, data={u32=1879053472, u64=140052172641440}} <unfinished ...>
+202684 <... epoll_ctl resumed>)         = 0
+202679 <... epoll_ctl resumed>)         = 0
+202684 recvfrom(17,  <unfinished ...>
+202679 recvfrom(11,  <unfinished ...>
+202684 <... recvfrom resumed>0x7f6070009383, 53, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+202679 <... recvfrom resumed>0x7f60700096d3, 53, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+202684 epoll_wait(14,  <unfinished ...>
+202679 epoll_wait(7,  <unfinished ...>
+202684 <... epoll_wait resumed>[{events=EPOLLOUT, data={u32=1879052368, u64=140052172640336}}], 256, 29990) = 1
+202679 <... epoll_wait resumed>[{events=EPOLLOUT, data={u32=1879053472, u64=140052172641440}}], 256, 29992) = 1
+202684 sendto(17, "\1NULL\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 53, 0, NULL, 0 <unfinished ...>
+202679 sendto(11, "\1NULL\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 53, 0, NULL, 0 <unfinished ...>
+202684 <... sendto resumed>)            = 53
+202679 <... sendto resumed>)            = 53
+202684 epoll_ctl(14, EPOLL_CTL_MOD, 17, {events=EPOLLIN, data={u32=1879052368, u64=140052172640336}} <unfinished ...>
+202679 epoll_ctl(7, EPOLL_CTL_MOD, 11, {events=EPOLLIN, data={u32=1879053472, u64=140052172641440}} <unfinished ...>
+202684 <... epoll_ctl resumed>)         = 0
+202679 <... epoll_ctl resumed>)         = 0
+202684 epoll_wait(14,  <unfinished ...>
+202679 epoll_wait(7,  <unfinished ...>
+202684 <... epoll_wait resumed>[{events=EPOLLIN, data={u32=1879052368, u64=140052172640336}}], 256, 29989) = 1
+202679 <... epoll_wait resumed>[{events=EPOLLIN, data={u32=1879053472, u64=140052172641440}}], 256, 29991) = 1
+202684 recvfrom(17,  <unfinished ...>
+202679 recvfrom(11,  <unfinished ...>
+202684 <... recvfrom resumed>"\1NULL\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 53, 0, NULL, NULL) = 53
+202679 <... recvfrom resumed>"\1NULL\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 53, 0, NULL, NULL) = 53
+202684 epoll_ctl(14, EPOLL_CTL_MOD, 17, {events=EPOLLIN|EPOLLOUT, data={u32=1879052368, u64=140052172640336}} <unfinished ...>
+202679 epoll_ctl(7, EPOLL_CTL_MOD, 11, {events=EPOLLIN|EPOLLOUT, data={u32=1879053472, u64=140052172641440}} <unfinished ...>
+202684 <... epoll_ctl resumed>)         = 0
+202679 <... epoll_ctl resumed>)         = 0
+202684 recvfrom(17,  <unfinished ...>
+202679 recvfrom(11,  <unfinished ...>
+202684 <... recvfrom resumed>0x7f607000bb58, 8192, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+202679 <... recvfrom resumed>0x7f607000b778, 8192, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+202684 epoll_wait(14,  <unfinished ...>
+202679 epoll_wait(7,  <unfinished ...>
+202684 <... epoll_wait resumed>[{events=EPOLLOUT, data={u32=1879052368, u64=140052172640336}}], 256, 29987) = 1
+202679 <... epoll_wait resumed>[{events=EPOLLOUT, data={u32=1879053472, u64=140052172641440}}], 256, 29989) = 1
+202684 sendto(17, "\4\32\5READY\vSocket-Type\0\0\0\4PULL", 28, 0, NULL, 0 <unfinished ...>
+202679 sendto(11, "\4\32\5READY\vSocket-Type\0\0\0\4PUSH", 28, 0, NULL, 0 <unfinished ...>
+202684 <... sendto resumed>)            = 28
+202679 <... sendto resumed>)            = 28
+202684 epoll_wait(14,  <unfinished ...>
+202679 epoll_wait(7,  <unfinished ...>
+202684 <... epoll_wait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=1879052368, u64=140052172640336}}], 256, 29986) = 1
+202679 <... epoll_wait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=1879053472, u64=140052172641440}}], 256, 29988) = 1
+202684 epoll_ctl(14, EPOLL_CTL_MOD, 17, {events=EPOLLIN, data={u32=1879052368, u64=140052172640336}} <unfinished ...>
+202679 epoll_ctl(7, EPOLL_CTL_MOD, 11, {events=EPOLLIN, data={u32=1879053472, u64=140052172641440}} <unfinished ...>
+202684 <... epoll_ctl resumed>)         = 0
+202679 <... epoll_ctl resumed>)         = 0
+202684 recvfrom(17,  <unfinished ...>
+202679 recvfrom(11,  <unfinished ...>
+202684 <... recvfrom resumed>"\4\32\5READY\vSocket-Type\0\0\0\4PUSH", 8192, 0, NULL, NULL) = 28
+202679 <... recvfrom resumed>"\4\32\5READY\vSocket-Type\0\0\0\4PULL", 8192, 0, NULL, NULL) = 28
+202684 getpid( <unfinished ...>
+202679 epoll_ctl(7, EPOLL_CTL_MOD, 11, {events=EPOLLIN|EPOLLOUT, data={u32=1879053472, u64=140052172641440}} <unfinished ...>
+202684 <... getpid resumed>)            = 202682
+202679 <... epoll_ctl resumed>)         = 0
+202684 write(15, "\1\0\0\0\0\0\0\0", 8 <unfinished ...>
+202679 epoll_ctl(7, EPOLL_CTL_MOD, 11, {events=EPOLLIN, data={u32=1879053472, u64=140052172641440}} <unfinished ...>
+202684 <... write resumed>)             = 8
+202682 <... poll resumed>)              = 1 ([{fd=15, revents=POLLIN}])
+202684 epoll_ctl(14, EPOLL_CTL_MOD, 17, {events=EPOLLIN|EPOLLOUT, data={u32=1879052368, u64=140052172640336}} <unfinished ...>
+202679 <... epoll_ctl resumed>)         = 0
+202684 <... epoll_ctl resumed>)         = 0
+202682 getpid( <unfinished ...>
+202684 epoll_ctl(14, EPOLL_CTL_MOD, 17, {events=EPOLLIN, data={u32=1879052368, u64=140052172640336}} <unfinished ...>
+202679 epoll_wait(7,  <unfinished ...>
+202684 <... epoll_ctl resumed>)         = 0
+202682 <... getpid resumed>)            = 202682
+202684 epoll_wait(14,  <unfinished ...>
+202682 read(15, "\1\0\0\0\0\0\0\0", 8)  = 8
+202682 getpid()                         = 202682
+202682 poll([{fd=15, events=POLLIN}], 1, 0) = 0 (Timeout)
+202682 getpid()                         = 202682
+202682 poll([{fd=15, events=POLLIN}], 1, -1 <unfinished ...>
+202676 <... read resumed>"exec 1 start\n", 1024) = 13
+202676 write(1, "Received command: exec 1 start\n", 31) = 31
+202676 getpid()                         = 202676
+202676 poll([{fd=8, events=POLLIN}], 1, 0) = 1 ([{fd=8, revents=POLLIN}])
+202676 getpid()                         = 202676
+202676 read(8, "\1\0\0\0\0\0\0\0", 8)   = 8
+202676 getpid()                         = 202676
+202676 poll([{fd=8, events=POLLIN}], 1, 0) = 0 (Timeout)
+202676 getpid()                         = 202676
+202676 write(6, "\1\0\0\0\0\0\0\0", 8)  = 8
+202679 <... epoll_wait resumed>[{events=EPOLLIN, data={u32=3447669344, u64=94411123802720}}], 256, -1) = 1
+202676 wait4(202677,  <unfinished ...>
+202679 getpid( <unfinished ...>
+202676 <... wait4 resumed>0x7ffd5f2eeaf0, WNOHANG|WSTOPPED, NULL) = 0
+202679 <... getpid resumed>)            = 202676
+202676 read(0,  <unfinished ...>
+202679 poll([{fd=6, events=POLLIN}], 1, 0) = 1 ([{fd=6, revents=POLLIN}])
+202679 getpid()                         = 202676
+202679 read(6, "\1\0\0\0\0\0\0\0", 8)   = 8
+202679 epoll_ctl(7, EPOLL_CTL_MOD, 9, {events=EPOLLIN|EPOLLOUT, data={u32=1879053360, u64=140052172641328}}) = 0
+202679 sendto(9, "\0\vexec start\0", 13, 0, NULL, 0 <unfinished ...>
+202681 <... epoll_wait resumed>[{events=EPOLLIN, data={u32=1879051216, u64=140052172639184}}], 256, -1) = 1
+202679 <... sendto resumed>)            = 13
+202681 recvfrom(11,  <unfinished ...>
+202679 getpid( <unfinished ...>
+202681 <... recvfrom resumed>"\0\vexec start\0", 8192, 0, NULL, NULL) = 13
+202679 <... getpid resumed>)            = 202676
+202681 getpid( <unfinished ...>
+202679 poll([{fd=6, events=POLLIN}], 1, 0 <unfinished ...>
+202681 <... getpid resumed>)            = 202677
+202679 <... poll resumed>)              = 0 (Timeout)
+202681 write(9, "\1\0\0\0\0\0\0\0", 8 <unfinished ...>
+202679 epoll_wait(7,  <unfinished ...>
+202681 <... write resumed>)             = 8
+202677 <... poll resumed>)              = 1 ([{fd=9, revents=POLLIN}])
+202681 epoll_wait(8,  <unfinished ...>
+202679 <... epoll_wait resumed>[{events=EPOLLOUT, data={u32=1879053360, u64=140052172641328}}], 256, -1) = 1
+202677 getpid( <unfinished ...>
+202679 epoll_ctl(7, EPOLL_CTL_MOD, 9, {events=EPOLLIN, data={u32=1879053360, u64=140052172641328}} <unfinished ...>
+202677 <... getpid resumed>)            = 202677
+202679 <... epoll_ctl resumed>)         = 0
+202677 read(9,  <unfinished ...>
+202679 epoll_wait(7,  <unfinished ...>
+202677 <... read resumed>"\1\0\0\0\0\0\0\0", 8) = 8
+202677 getpid()                         = 202677
+202677 poll([{fd=9, events=POLLIN}], 1, 0) = 0 (Timeout)
+202677 write(1, "Ok:1\n", 5)            = 5
+202677 getpid()                         = 202677
+202677 poll([{fd=9, events=POLLIN}], 1, -1 <unfinished ...>
+202676 <... read resumed>"exec 1 stop\n", 1024) = 12
+202676 write(1, "Received command: exec 1 stop\n", 30) = 30
+202676 getpid()                         = 202676
+202676 poll([{fd=8, events=POLLIN}], 1, 0) = 0 (Timeout)
+202676 getpid()                         = 202676
+202676 write(6, "\1\0\0\0\0\0\0\0", 8)  = 8
+202679 <... epoll_wait resumed>[{events=EPOLLIN, data={u32=3447669344, u64=94411123802720}}], 256, -1) = 1
+202676 wait4(202677,  <unfinished ...>
+202679 getpid( <unfinished ...>
+202676 <... wait4 resumed>0x7ffd5f2eeaf0, WNOHANG|WSTOPPED, NULL) = 0
+202679 <... getpid resumed>)            = 202676
+202676 read(0,  <unfinished ...>
+202679 poll([{fd=6, events=POLLIN}], 1, 0) = 1 ([{fd=6, revents=POLLIN}])
+202679 getpid()                         = 202676
+202679 read(6, "\1\0\0\0\0\0\0\0", 8)   = 8
+202679 epoll_ctl(7, EPOLL_CTL_MOD, 9, {events=EPOLLIN|EPOLLOUT, data={u32=1879053360, u64=140052172641328}}) = 0
+202679 sendto(9, "\0\nexec stop\0", 12, 0, NULL, 0 <unfinished ...>
+202681 <... epoll_wait resumed>[{events=EPOLLIN, data={u32=1879051216, u64=140052172639184}}], 256, -1) = 1
+202679 <... sendto resumed>)            = 12
+202681 recvfrom(11,  <unfinished ...>
+202679 getpid( <unfinished ...>
+202681 <... recvfrom resumed>"\0\nexec stop\0", 8192, 0, NULL, NULL) = 12
+202679 <... getpid resumed>)            = 202676
+202681 getpid( <unfinished ...>
+202679 poll([{fd=6, events=POLLIN}], 1, 0 <unfinished ...>
+202681 <... getpid resumed>)            = 202677
+202679 <... poll resumed>)              = 0 (Timeout)
+202681 write(9, "\1\0\0\0\0\0\0\0", 8 <unfinished ...>
+202679 epoll_wait(7,  <unfinished ...>
+202681 <... write resumed>)             = 8
+202677 <... poll resumed>)              = 1 ([{fd=9, revents=POLLIN}])
+202681 epoll_wait(8,  <unfinished ...>
+202679 <... epoll_wait resumed>[{events=EPOLLOUT, data={u32=1879053360, u64=140052172641328}}], 256, -1) = 1
+202677 getpid( <unfinished ...>
+202679 epoll_ctl(7, EPOLL_CTL_MOD, 9, {events=EPOLLIN, data={u32=1879053360, u64=140052172641328}} <unfinished ...>
+202677 <... getpid resumed>)            = 202677
+202679 <... epoll_ctl resumed>)         = 0
+202677 read(9,  <unfinished ...>
+202679 epoll_wait(7,  <unfinished ...>
+202677 <... read resumed>"\1\0\0\0\0\0\0\0", 8) = 8
+202677 getpid()                         = 202677
+202677 poll([{fd=9, events=POLLIN}], 1, 0) = 0 (Timeout)
+202677 write(1, "Ok:1\n", 5)            = 5
+202677 getpid()                         = 202677
+202677 poll([{fd=9, events=POLLIN}], 1, -1 <unfinished ...>
+202676 <... read resumed>"exec 1 time\n", 1024) = 12
+202676 write(1, "Received command: exec 1 time\n", 30) = 30
+202676 getpid()                         = 202676
+202676 poll([{fd=8, events=POLLIN}], 1, 0) = 0 (Timeout)
+202676 getpid()                         = 202676
+202676 write(6, "\1\0\0\0\0\0\0\0", 8)  = 8
+202679 <... epoll_wait resumed>[{events=EPOLLIN, data={u32=3447669344, u64=94411123802720}}], 256, -1) = 1
+202676 wait4(202677,  <unfinished ...>
+202679 getpid( <unfinished ...>
+202676 <... wait4 resumed>0x7ffd5f2eeaf0, WNOHANG|WSTOPPED, NULL) = 0
+202679 <... getpid resumed>)            = 202676
+202676 read(0,  <unfinished ...>
+202679 poll([{fd=6, events=POLLIN}], 1, 0) = 1 ([{fd=6, revents=POLLIN}])
+202679 getpid()                         = 202676
+202679 read(6, "\1\0\0\0\0\0\0\0", 8)   = 8
+202679 epoll_ctl(7, EPOLL_CTL_MOD, 9, {events=EPOLLIN|EPOLLOUT, data={u32=1879053360, u64=140052172641328}}) = 0
+202679 sendto(9, "\0\nexec time\0", 12, 0, NULL, 0 <unfinished ...>
+202681 <... epoll_wait resumed>[{events=EPOLLIN, data={u32=1879051216, u64=140052172639184}}], 256, -1) = 1
+202679 <... sendto resumed>)            = 12
+202681 recvfrom(11,  <unfinished ...>
+202679 getpid( <unfinished ...>
+202681 <... recvfrom resumed>"\0\nexec time\0", 8192, 0, NULL, NULL) = 12
+202679 <... getpid resumed>)            = 202676
+202681 getpid( <unfinished ...>
+202679 poll([{fd=6, events=POLLIN}], 1, 0 <unfinished ...>
+202681 <... getpid resumed>)            = 202677
+202679 <... poll resumed>)              = 0 (Timeout)
+202681 write(9, "\1\0\0\0\0\0\0\0", 8 <unfinished ...>
+202679 epoll_wait(7,  <unfinished ...>
+202681 <... write resumed>)             = 8
+202677 <... poll resumed>)              = 1 ([{fd=9, revents=POLLIN}])
+202681 epoll_wait(8,  <unfinished ...>
+202679 <... epoll_wait resumed>[{events=EPOLLOUT, data={u32=1879053360, u64=140052172641328}}], 256, -1) = 1
+202677 getpid( <unfinished ...>
+202679 epoll_ctl(7, EPOLL_CTL_MOD, 9, {events=EPOLLIN, data={u32=1879053360, u64=140052172641328}} <unfinished ...>
+202677 <... getpid resumed>)            = 202677
+202679 <... epoll_ctl resumed>)         = 0
+202677 read(9,  <unfinished ...>
+202679 epoll_wait(7,  <unfinished ...>
+202677 <... read resumed>"\1\0\0\0\0\0\0\0", 8) = 8
+202677 getpid()                         = 202677
+202677 poll([{fd=9, events=POLLIN}], 1, 0) = 0 (Timeout)
+202677 write(1, "Ok:1:4666\n", 10)      = 10
+202677 getpid()                         = 202677
+202677 poll([{fd=9, events=POLLIN}], 1, -1 <unfinished ...>
+202676 <... read resumed>"ping 1\n", 1024) = 7
+202676 write(1, "Received command: ping 1\n", 25) = 25
+202676 getpid()                         = 202676
+202676 poll([{fd=8, events=POLLIN}], 1, 0) = 0 (Timeout)
+202676 getpid()                         = 202676
+202676 write(6, "\1\0\0\0\0\0\0\0", 8)  = 8
+202679 <... epoll_wait resumed>[{events=EPOLLIN, data={u32=3447669344, u64=94411123802720}}], 256, -1) = 1
+202676 wait4(202677,  <unfinished ...>
+202679 getpid( <unfinished ...>
+202676 <... wait4 resumed>0x7ffd5f2eeaf0, WNOHANG|WSTOPPED, NULL) = 0
+202679 <... getpid resumed>)            = 202676
+202676 read(0,  <unfinished ...>
+202679 poll([{fd=6, events=POLLIN}], 1, 0) = 1 ([{fd=6, revents=POLLIN}])
+202679 getpid()                         = 202676
+202679 read(6, "\1\0\0\0\0\0\0\0", 8)   = 8
+202679 epoll_ctl(7, EPOLL_CTL_MOD, 9, {events=EPOLLIN|EPOLLOUT, data={u32=1879053360, u64=140052172641328}}) = 0
+202679 sendto(9, "\0\5ping\0", 7, 0, NULL, 0 <unfinished ...>
+202681 <... epoll_wait resumed>[{events=EPOLLIN, data={u32=1879051216, u64=140052172639184}}], 256, -1) = 1
+202679 <... sendto resumed>)            = 7
+202681 recvfrom(11,  <unfinished ...>
+202679 getpid( <unfinished ...>
+202681 <... recvfrom resumed>"\0\5ping\0", 8192, 0, NULL, NULL) = 7
+202679 <... getpid resumed>)            = 202676
+202681 getpid( <unfinished ...>
+202679 poll([{fd=6, events=POLLIN}], 1, 0 <unfinished ...>
+202681 <... getpid resumed>)            = 202677
+202679 <... poll resumed>)              = 0 (Timeout)
+202681 write(9, "\1\0\0\0\0\0\0\0", 8 <unfinished ...>
+202679 epoll_wait(7,  <unfinished ...>
+202681 <... write resumed>)             = 8
+202677 <... poll resumed>)              = 1 ([{fd=9, revents=POLLIN}])
+202681 epoll_wait(8,  <unfinished ...>
+202679 <... epoll_wait resumed>[{events=EPOLLOUT, data={u32=1879053360, u64=140052172641328}}], 256, -1) = 1
+202677 getpid( <unfinished ...>
+202679 epoll_ctl(7, EPOLL_CTL_MOD, 9, {events=EPOLLIN, data={u32=1879053360, u64=140052172641328}} <unfinished ...>
+202677 <... getpid resumed>)            = 202677
+202679 <... epoll_ctl resumed>)         = 0
+202677 read(9,  <unfinished ...>
+202679 epoll_wait(7,  <unfinished ...>
+202677 <... read resumed>"\1\0\0\0\0\0\0\0", 8) = 8
+202677 getpid()                         = 202677
+202677 poll([{fd=9, events=POLLIN}], 1, 0) = 0 (Timeout)
+202677 write(1, "Ok: 1 // \321\203\320\267\320\265\320\273 1 \320\264\320\276\321\201\321\202\321\203\320\277"..., 37) = 37
+202677 getpid()                         = 202677
+202677 poll([{fd=9, events=POLLIN}], 1, -1 <unfinished ...>
+202676 <... read resumed>"ping 2\n", 1024) = 7
+202676 write(1, "Received command: ping 2\n", 25) = 25
+202676 getpid()                         = 202676
+202676 poll([{fd=10, events=POLLIN}], 1, 0) = 1 ([{fd=10, revents=POLLIN}])
+202676 getpid()                         = 202676
+202676 read(10, "\1\0\0\0\0\0\0\0", 8)  = 8
+202676 getpid()                         = 202676
+202676 poll([{fd=10, events=POLLIN}], 1, 0) = 0 (Timeout)
+202676 getpid()                         = 202676
+202676 write(6, "\1\0\0\0\0\0\0\0", 8)  = 8
+202679 <... epoll_wait resumed>[{events=EPOLLIN, data={u32=3447669344, u64=94411123802720}}], 256, -1) = 1
+202676 wait4(202682,  <unfinished ...>
+202679 getpid( <unfinished ...>
+202676 <... wait4 resumed>0x7ffd5f2eeaf0, WNOHANG|WSTOPPED, NULL) = 0
+202679 <... getpid resumed>)            = 202676
+202676 read(0,  <unfinished ...>
+202679 poll([{fd=6, events=POLLIN}], 1, 0) = 1 ([{fd=6, revents=POLLIN}])
+202679 getpid()                         = 202676
+202679 read(6, "\1\0\0\0\0\0\0\0", 8)   = 8
+202679 epoll_ctl(7, EPOLL_CTL_MOD, 11, {events=EPOLLIN|EPOLLOUT, data={u32=1879053472, u64=140052172641440}}) = 0
+202679 sendto(11, "\0\5ping\0", 7, 0, NULL, 0 <unfinished ...>
+202684 <... epoll_wait resumed>[{events=EPOLLIN, data={u32=1879052368, u64=140052172640336}}], 256, -1) = 1
+202679 <... sendto resumed>)            = 7
+202684 recvfrom(17,  <unfinished ...>
+202679 getpid( <unfinished ...>
+202684 <... recvfrom resumed>"\0\5ping\0", 8192, 0, NULL, NULL) = 7
+202679 <... getpid resumed>)            = 202676
+202684 getpid( <unfinished ...>
+202679 poll([{fd=6, events=POLLIN}], 1, 0 <unfinished ...>
+202684 <... getpid resumed>)            = 202682
+202679 <... poll resumed>)              = 0 (Timeout)
+202684 write(15, "\1\0\0\0\0\0\0\0", 8 <unfinished ...>
+202679 epoll_wait(7,  <unfinished ...>
+202684 <... write resumed>)             = 8
+202682 <... poll resumed>)              = 1 ([{fd=15, revents=POLLIN}])
+202684 epoll_wait(14,  <unfinished ...>
+202679 <... epoll_wait resumed>[{events=EPOLLOUT, data={u32=1879053472, u64=140052172641440}}], 256, -1) = 1
+202682 getpid( <unfinished ...>
+202679 epoll_ctl(7, EPOLL_CTL_MOD, 11, {events=EPOLLIN, data={u32=1879053472, u64=140052172641440}} <unfinished ...>
+202682 <... getpid resumed>)            = 202682
+202679 <... epoll_ctl resumed>)         = 0
+202682 read(15,  <unfinished ...>
+202679 epoll_wait(7,  <unfinished ...>
+202682 <... read resumed>"\1\0\0\0\0\0\0\0", 8) = 8
+202682 getpid()                         = 202682
+202682 poll([{fd=15, events=POLLIN}], 1, 0) = 0 (Timeout)
+202682 write(1, "Ok: 1 // \321\203\320\267\320\265\320\273 2 \320\264\320\276\321\201\321\202\321\203\320\277"..., 37) = 37
+202682 getpid()                         = 202682
+202682 poll([{fd=15, events=POLLIN}], 1, -1 <unfinished ...>
+202676 <... read resumed>"", 1024)      = 0
+202676 write(1, "Exiting on EOF.\n", 16) = 16
+202676 getpid()                         = 202676
+202676 getpid()                         = 202676
+202676 write(8, "\1\0\0\0\0\0\0\0", 8)  = 8
+202676 getpid()                         = 202676
+202676 write(10, "\1\0\0\0\0\0\0\0", 8) = 8
+202676 getpid()                         = 202676
+202676 poll([{fd=3, events=POLLIN}], 1, -1) = ? ERESTART_RESTARTBLOCK (Interrupted by signal)
+202682 <... poll resumed>)              = ? ERESTART_RESTARTBLOCK (Interrupted by signal)
+202677 <... poll resumed>)              = ? ERESTART_RESTARTBLOCK (Interrupted by signal)
+202676 --- SIGINT {si_signo=SIGINT, si_code=SI_KERNEL} ---
+202682 --- SIGINT {si_signo=SIGINT, si_code=SI_KERNEL} ---
+202679 <... epoll_wait resumed> <unfinished ...>) = ?
+202678 <... epoll_wait resumed> <unfinished ...>) = ?
+202677 --- SIGINT {si_signo=SIGINT, si_code=SI_KERNEL} ---
+202684 <... epoll_wait resumed> <unfinished ...>) = ?
+202683 <... epoll_wait resumed> <unfinished ...>) = ?
+202679 +++ killed by SIGINT +++
+202684 +++ killed by SIGINT +++
+202683 +++ killed by SIGINT +++
+202682 +++ killed by SIGINT +++
+202681 <... epoll_wait resumed> <unfinished ...>) = ?
+202680 <... epoll_wait resumed> <unfinished ...>) = ?
+202678 +++ killed by SIGINT +++
+202676 +++ killed by SIGINT +++
+202681 +++ killed by SIGINT +++
+202680 +++ killed by SIGINT +++
+202677 +++ killed by SIGINT +++
