@@ -62,7 +62,7 @@ int main(){
         }
 
         // Запуск дочернего процесса
-        execl("./child", "child", NULL);
+        execl("./child", "child", NULL); //Замещение тела процесса
         printf("Ошибка при вызове execl\n");
         return 1;
     }

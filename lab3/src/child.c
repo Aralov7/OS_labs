@@ -9,12 +9,12 @@
 
 #define MAX_SIZE 100
 
-struct SharedData {
+struct SharedData { // Структура передаваеммых данных
     int numbers[MAX_SIZE];
     char message[256];
 };
 
-int sum_array(int *array, int size) {
+int sum_array(int *array, int size) { // Функция сумирования чисел в массиве
     int sum = 0;
     for (int i = 0; i < size; i++) {
         sum += array[i + 1];
@@ -28,7 +28,7 @@ int main() {
 
 
     // Открытие разделяемой памяти
-    int fd = open("/my_shared_memory", O_RDWR, 0666);
+    int fd = shm_open("/my_shared_memory", O_RDWR, 0666);
     if (fd == -1) {
         perror("Ошибка при открытии разделяемой памяти");
         return 1;
@@ -43,6 +43,7 @@ int main() {
     }
 
     close(fd);
+    shm_unlink("/my_shared_memory");
     
     // Открытие семафоров
     sem_t* sem_parent = sem_open("/sem_parent", 0);
@@ -92,6 +93,6 @@ int main() {
     strncpy(shared_data->message, "Сумма записана в файл", sizeof(shared_data->message));
     close(file);
     sem_post(sem_parent);
-    munmap(shared_data, shared_size);
+    munmap(shared_data, shared_size); //Снимает отображение
     return 0;
 }
