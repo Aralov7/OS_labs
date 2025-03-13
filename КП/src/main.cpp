@@ -1,63 +1,78 @@
 #include <iostream>
 #include <chrono>
+#include <vector>
+#include <cstdlib>
+#include <random>
+
 #include "BF.cpp"
 #include "Buddy.cpp"
 
-template <typename Allocator>
-void test_allocator(Allocator& allocator, const std::string& name, size_t total_memory) {
-    const int ITERATIONS = 10000;
-    const size_t BLOCK_SIZE = 64;
-    void* blocks[ITERATIONS];
-    size_t allocated_count = 0;
+const size_t MEMORY_SIZE = 4 * 1024 * 1024; // 4 MB
+const int NUM_OPERATIONS = 10000;        // Количество операций
+const int MAX_BLOCK_SIZE = 128;         // Максимальный размер блока
 
-    // Тестируем выделение памяти
-    auto start_alloc = std::chrono::high_resolution_clock::now();
-    for (int i = 0; i < ITERATIONS; ++i) {
-        blocks[i] = allocator.alloc(BLOCK_SIZE);
-        if (blocks[i]) allocated_count++;
+// Общая функция для тестирования любого аллокатора
+template<typename Allocator>
+void test_allocator(const std::string& name, void* memory) {
+    Allocator allocator(memory, MEMORY_SIZE);
+    std::vector<void*> pointers;
+    std::mt19937 rng(42);  // Фиксированный seed для воспроизводимости
+    std::uniform_int_distribution<size_t> size_dist(1, MAX_BLOCK_SIZE);
+
+    // Тест скорости выделения памяти
+    auto start = std::chrono::high_resolution_clock::now();
+    for (int i = 0; i < NUM_OPERATIONS; ++i) {
+        void* ptr = allocato йr.alloc(size_dist(rng));
+        pointers.push_back(ptr);
     }
-    auto end_alloc = std::chrono::high_resolution_clock::now();
-    std::chrono::duration<double> alloc_time = end_alloc - start_alloc;
+    auto duration = std::chrono::high_resolution_clock::now() - start;
+    std::cout << "[" << name << "] Allocation: "
+              << std::chrono::duration<double>(duration).count() << " sec\n";
 
-    // Вычисляем фактор использования
-    size_t current_free = allocator.get_free_memory();
-    size_t used_memory = total_memory - current_free;
-    double usage_factor = static_cast<double>(used_memory) / total_memory;
-
-    // Тестируем освобождение памяти
-    auto start_free = std::chrono::high_resolution_clock::now();
-    for (int i = 0; i < ITERATIONS; ++i) {
-        if (blocks[i]) allocator.free(blocks[i]);
+    // Тест скорости освобождения памяти
+    start = std::chrono::high_resolution_clock::now();
+    for (void* ptr : pointers) {
+        allocator.free(ptr);
     }
-    auto end_free = std::chrono::high_resolution_clock::now();
-    std::chrono::duration<double> free_time = end_free - start_free;
+    duration = std::chrono::high_resolution_clock::now() - start;
+    std::cout << "[" << name << "] Free:      "
+              << std::chrono::duration<double>(duration).count() << " sec\n";
 
-    // Вывод результатов
-    std::cout << "=== " << name << " ===\n"
-              << "Allocated blocks: " << allocated_count << "/" << ITERATIONS << "\n"
-              << "Allocation Time: " << alloc_time.count() << " s\n"
-              << "Free Time: " << free_time.count() << " s\n"
-              << "Memory Usage Factor: " << usage_factor << "\n\n";
+    // Тест эффективности использования памяти
+    size_t total_allocated = 0;
+    pointers.clear();
+    for (int i = 0; i < NUM_OPERATIONS; ++i) {
+        size_t size = size_dist(rng);
+        if (void* ptr = allocator.alloc(size)) {
+            total_allocated += size;
+            pointers.push_back(ptr);
+        }
+    }
+    
+    const size_t free_mem = allocator.get_free_memory();
+    const double utilization = total_allocated / static_cast<double>(MEMORY_SIZE - free_mem);
+    
+    std::cout << "[" << name << "] Utilization: " 
+              << std::fixed << utilization * 100 << "%\n\n";
+
+    // Очистка памяти
+    for (void* ptr : pointers) {
+        allocator.free(ptr);
+    }
 }
 
 int main() {
-    const size_t MEMORY_SIZE =  4 * 1024 * 1024; // 4 МБ
-
     // Выделяем память для аллокаторов
-    void* buddy_memory = malloc(MEMORY_SIZE);
-    void* BF_memory = malloc(MEMORY_SIZE);
+    char* bf_memory = new char[MEMORY_SIZE];
+    char* buddy_memory = new char[MEMORY_SIZE];
 
-    // Создаем аллокаторы
-    Allocator_Buddy buddy_allocator(buddy_memory, MEMORY_SIZE);
-    Allocator_BF BF_allocator(BF_memory, MEMORY_SIZE);
+    // Запуск тестов
+    test_allocator<Allocator_BF>("Best-Fit", bf_memory);
+    test_allocator<Allocator_Buddy>("Buddy", buddy_memory);
 
-    // Тестируем
-    test_allocator(buddy_allocator, "Buddy Allocator", MEMORY_SIZE);
-    test_allocator(BF_allocator, "BF Allocator", MEMORY_SIZE);
-
-    // Освобождаем память
-    free(buddy_memory);
-    free(BF_memory);
+    // Освобождение памяти
+    delete[] bf_memory;
+    delete[] buddy_memory;
 
     return 0;
 }

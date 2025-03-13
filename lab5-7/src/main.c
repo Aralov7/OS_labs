@@ -17,7 +17,6 @@
 #define FATAL(msg) { fprintf(stderr, "FATAL ERROR: %s, exiting.\n", msg); exit(EXIT_FAILURE); }
 #define ERROR(msg) { fprintf(stderr, "ERROR: %s\n", msg); }
 
-#define DEFAULT_TIMEOUT 2
 
 typedef struct compute_node_t {
     int id;
@@ -25,7 +24,7 @@ typedef struct compute_node_t {
     int parent_id; 
     void *socket; // ZeroMQ socket to this node
     struct compute_node_t *prev;
-    struct compute_node_t *next;
+    struct compute_node_t *next; 
 } compute_node_t;
 
 typedef struct 
@@ -115,11 +114,12 @@ int is_process_zombie(pid_t pid) {
 }
 void send_command_to_node(compute_node_t *node, const char *command) {
     zmq_msg_t request; 
-    zmq_msg_init_size(&request, strlen(command) + 1);
-    strcpy(zmq_msg_data(&request), command);
+    zmq_msg_init_size(&request, strlen(command) + 1); 
+    strcpy(zmq_msg_data(&request), command); // записывает команду в дату, zmq_msg_data(&request) возвращает указатель на данные внутри сообщения
 
-    if (zmq_msg_send(&request, node->socket, 0) == -1 || (is_process_zombie(node->pid) == 1)) {
-        zmq_msg_close(&request);
+    if (zmq_msg_send(&request, node->socket, 0) == -1 || (is_process_zombie(node->pid) == 1)) { 
+        //zmq_msg_send(msg, socket, flags) Отправляет сообщение через сокет
+        zmq_msg_close(&request); // Освобождение ресурсов сообщения 
         if (strcmp(command, "ping" ) == 0) {
             printf("Ok: 0 // узел %d недоступен\n", node->id);
         } else {
@@ -137,11 +137,19 @@ void compute_node_process(int node_id) {
     bool is_running = false;
 
 
-    void *zmq_context = zmq_ctx_new();
-    void *responder = zmq_socket(zmq_context, ZMQ_PULL);
+    void *zmq_context = zmq_ctx_new(); // Управляет глобальными ресрурсами библы, обеспечивает изоляцию между разными процессами
+    void *responder = zmq_socket(zmq_context, ZMQ_PULL); // Возвращает указатель на сокет в данном контексте конкретного типа
+    // ZMQ PULL получение сообщения без ответа
+    // Сокет - абстракция определяющая тип межпроцесного взаимодействия, API 
     char address[50];
-    sprintf(address, "tcp://127.0.0.1:%d", 5550 + node_id); 
-    int bind_result = zmq_bind(responder, address);
+    sprintf(address, "tcp://127.0.0.1:%d", 5550 + node_id);
+    //tcp(Transmission Control Protocol) 
+    //1. Устройства устанавливают сеанс связи
+    //2. Протокол нумерует пакеты и отправляет их получателю  
+    //3. Получатель подтверждает получение пакетов  
+
+
+    int bind_result = zmq_bind(responder, address); // привязывает сокет к адресу, endpoint
     if (bind_result != 0) {
         printf("Error code: %d", bind_result);
         FATAL("Compute node bind failed");
